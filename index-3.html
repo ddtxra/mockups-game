@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+
+<script src="https://cdn.rawgit.com/calipho-sib/feature-viewer/v1.0.0/dist/feature-viewer.nextprot.js"></script>
+
+<style type="text/css">
+
+  #container {
+      overflow-y: scroll; 
+      max-height: 800px; 
+      border-width: 1px; 
+      border-color: grey;
+      border-style: solid;
+      width: 1200px;
+      margin: 10px;
+  }
+
+  select {
+    margin: 10px;
+  }
+
+  table {
+    margin: 10px;
+  }
+
+  table tr td {
+      border-width: 1px;
+      border-color: grey;
+      border-style: solid;
+  }
+
+</style>
+<body>
+
+  <div>
+    This mockup attemps to explore the feasibility of doing a kind of runner like Super Mario World or even Rider Ketchapp.
+
+  </div>
+
+ <div>
+   <select class="target">
+     <option selected="">Select Your Protein</option>
+     <option value="P01308">Insulin (related to diabetes) Chromosome 11 #2 exons easy!</option>
+     <option value="P68871">HBB (hemoglobine) Chromosome 11 #3 exons</option>
+     <option value="P10275">AR (calivitie) Chromosome X #8 exons</option>
+     <option value="Q15306">IRF4 (hair color) Chromosome 6 #9 exons</option>
+     <option value="Q71RS6">Q71RS6 (clear skin) Chromsome 15 #500</option>
+     <option value="Q9H4L7">SMARCAD1 (no fingerprints) Ch4 #24 exons</option>
+     <option value="Q08043">ACTN3 (more muscle powers) Ch11 #21 exons</option>
+     <option value="P38398">Breast Cancer Chromsome 17 #23 exons</option>
+     <option value="O95714">HERC2 (mutant responsible for the eye color) #93 exons (super complicated level)</option>
+     
+    </select>
+    <input id="accession"></input>
+    <button id="loadButton" type="submit">Load</button>
+ <div>
+  <div style="margin: 10px">
+       <span id="nRows"></span>
+  </div>
+
+<div id="container">
+  <div id="div2" style="width:1024px;height:480px" ></div>
+</div>
+    <img src="https://i.ytimg.com/vi/3DSFPrZN-Sw/hqdefault.jpg"></img>
+    <img src="https://i.ytimg.com/vi/L5aA95nYO_0/hqdefault.jpg"></img>
+    <p style="color: blue">
+      Proposed rules (can be changed... ):<br>
+      <ul>
+        <li>Need to jump over all exons (can be a avatar, can be a fish swimming in a water pipe, there may be physics involved for the gravity...)</li>
+        <li>Need to avoid some bad variants related to cancer. </li>
+        <li>There is a SUPER variant in each level that he must get for example to have blue eyes, or red hair. Otherwiser the level is completed without the super bonus....</li>
+      </ul>
+    </p>
+    <p style="color: blue">
+      To think about...<br>
+      <ul>
+        <li>Still need to place the variants to check their positions in the world </li>
+      </ul>
+    </p>
+    <p style="color: green">
+      Strenght: 
+      <ul>
+        <li>Can be very addictive and with stories at each level about the SUPER variant</li>
+      </ul>
+    </p>
+    <p style="color: red">
+      Weaknesses: 
+      <ul>
+      </ul>
+    </p>
+
+</body>
+
+
+<script>
+
+
+
+ var nBallsPerLine = 10
+
+ var applicationName = 'game-test'; //please provide a name for your application
+ var clientInfo='gist'; //please provide some information about you
+ var nx = new Nextprot.Client(applicationName, clientInfo);
+
+$( ".target" ).change(function() {
+  $('#accession').val(this.value);
+  loadProtein()
+})
+
+$("#loadButton").click(function() {
+  loadProtein()
+});
+
+function getBaseLog(x, y) {
+  return Math.log(y) / Math.log(x);
+}
+
+function normalizeLength(exonIntron) {
+  
+  var length = exonIntron.y - exonIntron.x;
+  var normalizedLength = length;
+
+  console.log("-----")
+  if(exonIntron.type == "intron"){
+  console.log("Max Intron: " , maxLIntron)
+   normalizedLength = Math.floor((20 * length /  maxLIntron)) + 10
+  }else if(exonIntron.type == "exon"){
+   console.log("Max Exon: " , maxLExon)
+   normalizedLength = Math.floor((100 * length /  maxLExon)) + 30
+  }
+
+  console.log("Real length: " , length)
+  console.log("normalizedLength: " , normalizedLength)
+  
+  exonIntron.description = exonIntron.description + ", normalizedLength : " + normalizedLength
+  exonIntron.y = exonIntron.x + normalizedLength
+  return exonIntron
+
+}
+
+function removeHoles (exonsAndIntrons) {
+  var newExonsIntrons = []
+  for(var i=0; i<exonsAndIntrons.length; i++){
+    var ei = exonsAndIntrons[i]
+
+    if(i+1<exonsAndIntrons.length){
+      var nextei = exonsAndIntrons[i+1]
+      var nextlenght = nextei.y - nextei.x
+      nextei.x = ei.y
+      nextei.y = nextei.x + nextlenght
+    }
+    newExonsIntrons.push(ei)
+  }
+  return newExonsIntrons;
+
+}
+
+//Terrible hack !!!
+var maxLIntron = -1;
+var maxLExon = -1;
+
+function normalizeExonsAndIntrons (exonsAndIntrons) {
+
+  var intron =  exonsAndIntrons.filter(function(e) {return e.type === "intron"})
+  var exons =  exonsAndIntrons.filter(function(e) {return e.type === "exon"})
+
+  intron.forEach(function(e) { if((e.y - e.x) > maxLIntron){ maxLIntron = (e.y - e.x);}})
+  exons.forEach(function(e) { if((e.y - e.x) > maxLExon){ maxLExon = (e.y - e.x); }})
+
+  console.log("Max Intron: " + maxLIntron)
+  console.log("Max Exon: " + maxLExon)
+
+  var exonsAndIntronsNormalized = exonsAndIntrons.map(normalizeLength)
+  return exonsAndIntronsNormalized;
+}
+
+function renderTranscript (transcript) {
+
+
+    var transcriptAccession = transcript.accession
+
+    var exons = transcript.exons
+
+    $("#nRows").html("Exons count:" + exons.length + " more info in nextprot: <a target=\"blank\" href=\"https://www.nextprot.org/entry/NX_"+ accession + "/exons\">NX_" + accession  + "</a>")
+
+    var maxLength = -1;
+    var minLength = Number.MAX_SAFE_INTEGER;
+
+    var exons = exons.map(function(e) {
+
+      var endPos = e.lastPositionOnGene;
+      var startPos = e.firstPositionOnGene;
+
+      console.log(endPos)
+      console.log(startPos)
+
+      if(endPos > maxLength){
+        maxLength = endPos;
+      }
+
+      if(startPos < minLength){
+        minLength = startPos;
+      }
+
+      var offset = minLength - 10;
+
+      return {
+        "x": startPos - offset,
+        "y": endPos - offset,
+        "description": e.accession + ". Real size: " + (endPos - startPos),
+        "type" : "exon",
+        "id" : e.accession,
+        "color" : "green",
+        "height" : "2px"
+      }
+    })
+
+    var exonsAndIntrons = [];
+    for(var i=0; i<exons.length; i++){
+      var exon = exons[i];
+
+
+      exonsAndIntrons.push(exon)
+
+      if(i+1 < exons.length) {
+
+        var nextexon = exons[i+1];
+        var intron = {
+          "x": exon.y + 1,
+          "y": nextexon.x - 1,
+          "description": "intron. Real size: " + (nextexon.x - exon.y) ,
+          "id" : "intron",
+          "color" : "red",
+          "type" : "intron",
+          "height" : 4
+        }
+        exonsAndIntrons.push(intron)
+      }
+    }
+
+    exonsAndIntronsNormalized = removeHoles(normalizeExonsAndIntrons(exonsAndIntrons))
+
+
+
+    var maxLength = -1;
+    var minLength = Number.MAX_SAFE_INTEGER;
+    var exons = exonsAndIntronsNormalized.forEach(function(e) {
+      var startPos = e.x;
+      var endPos = e.y;
+      if(endPos > maxLength){ maxLength = endPos;}
+      if(startPos < minLength){ minLength = startPos;}
+    })
+
+
+    //Create a new Feature Viewer and add some rendering options
+    var ft2 = new FeatureViewer(maxLength + 20,"#div2", 
+      { showAxis: true, 
+        showSequence: true, 
+        brushActive: true,
+        toolbar:true,
+        bubbleHelp:true,
+        zoomMax:10});
+
+
+    //Add some features
+    ft2.addFeature({
+        data: exonsAndIntrons,
+        name: transcriptAccession,
+        className: "test1",
+        color: "#005572",
+        type: "rect",
+        filter: "type1"
+    });
+
+function getRandomArbitrary(min, max) {
+  return Math.floor(Math.random() * (max - min) + min);
+}
+
+function getNumber (x){
+  
+  for (var i=0; i<exonsAndIntrons.length; i++){
+    var ei = exonsAndIntrons[i];
+    if(x >= ei.x && x <= ei.y){
+      if(ei.type == "exon")
+        return getRandomArbitrary((40), (50 + i))
+      else if(ei.type == "intron")
+        return - getRandomArbitrary(40, 50) ;
+    }
+  }
+
+  return 0
+}
+
+var dataDemo = [];
+for (var i=1;i<maxLength;i+=2) {
+    var x = i*2;
+    dataDemo.push({ x: x, y: getNumber(x)})
+}
+
+ft2.addFeature({
+    data: dataDemo,
+    name: "terrain",
+    className: "test5",
+    color: "#008B8D",
+    type: "line",
+    filter: "type2",
+    height: "5"
+});
+
+
+
+}
+function loadProtein () {
+
+  $( "#div2" ).empty();
+
+  //Terrible hack !!!
+  var maxLIntron = -1;
+  var maxLExon = -1;
+
+  $("#nRows").text("")
+  accession = $('#accession').val();
+
+   nx.getEntry('NX_' + accession).then(function (data){
+
+   data.genomicMappings.forEach(function (gm) {
+     gm.isoformMappings.forEach(function (im) {
+       im.transcriptMappings.forEach(function (t) {
+          renderTranscript(t)
+       })
+    })
+  })
+
+   
+})}
+
+
+</script>

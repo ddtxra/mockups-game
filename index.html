@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+
+<script src="d3.v4.min.js"></script>
+<script src="nextprot.bundle.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/0.8.3/jquery.csv.min.js"></script>
+
+<script>
+ 
+ var colorsCategory = {
+    "nonpolar": " #008744", // Non Polar
+    "polar" : "#0057e7", // Polar (non charged)
+    "acidic polar" : "#d62d20", //+ negatively charged
+    "basic polar": "#ffa700", //+ posively charged 
+    "helix" : "grey"
+ }
+
+var arraydata;
+
+$.ajax({ type: "GET", 
+         url: "amino-acids.tsv", 
+         dataType: "text", 
+         async: false, 
+         success: function(csv) {arraydata = $.csv.toArrays(csv,{separator:'\t'}); }
+       });
+
+var dict = {}
+
+var header = arraydata[0]
+
+
+arraydata.slice(1,).forEach(function (d) {
+    dict[d[2]] = {
+      "fullName" : d[0],
+      "shortName" : d[1],
+      "oneLetterCode" : d[2],
+      "sideChainClass" : d[3],
+      "sideChainPolarity" : d[4],
+      "sideChainCharge" : d[5],
+    }
+})
+
+
+console.log(arraydata)
+console.log(dict)
+
+
+
+</script>
+<style type="text/css">
+
+  #container {
+      overflow-y: scroll; 
+      max-height: 800px; 
+      border-width: 1px; 
+      border-color: grey;
+      border-style: solid;
+      width: 550px;
+      margin: 10px;
+  }
+
+  select {
+    margin: 10px;
+  }
+
+  table {
+    margin: 10px;
+  }
+
+
+  table tr td {
+      border-width: 1px;
+      border-color: grey;
+      border-style: solid;
+  }
+
+  /* Green */
+  .nonpolar {
+    background-color: #008744 
+  }
+  /* Blue */
+  .polar {
+    background-color: #0057e7 
+  }
+
+  /* Blue */
+  .acid-polar {
+    background-color: #d62d20 
+  }
+
+    /* Blue */
+  .basic-polar {
+    background-color: #ffa700 
+  }
+
+</style>
+<body>
+
+  <div>
+    This mockup attemps to explore the feasibility of doing a kind of bubble shooting / candy crush / ballz using the polar group of the amino acids of real sequences.
+
+  </div>
+  <div>
+  <table>
+    <tr>
+      <th>Color</th>
+      <th>Group</th>
+      <th>Characteristics</th>
+      <th>Names</th>
+    </tr>
+    <tr>
+      <td class="nonpolar"></td>
+      <td>non-polar</td>
+      <td>hydrophobic</td>
+      <td>Ala, Val, Leu, Ile, Pro, Phe, Trp, Met</td>
+    </tr>
+    <tr>
+      <td class="polar"></td>
+      <td>polar</td>
+      <td>hydrophilic (non-charged)</td>
+      <td>Gly, Ser, Thr, Cys, Tyr, Asn, Gln</td>
+    </tr>
+    <tr>
+      <td class="acid-polar"></td>
+      <td>acidic</td>
+      <td>negatively-charged</td>
+      <td>Asp, Glu</td>
+    </tr>
+    <tr>
+      <td class="basic-polar"></td>
+      <td>basic</td>
+      <td>positively-charged</td>
+      <td>Lys, Arg, His</td>
+    </tr>
+  </table>
+  </div>
+
+ <div>
+   <select class="target">
+     <option selected="">Select Your Protein</option>
+     <option value="P01308">Insulin (related to diabetes) #110</option>
+     <option value="P68871">HBB (hemoglobine) Ch11 #147</option>
+     <option value="Q01726">MC1R (cheveux roux) #Ch16 317</option>
+     <option value="P16442">ABO (blood) #354</option>
+     <option value="P38398">Breast Cancer #1863</option>
+     <option value="O95714">HERC2 (mutant responsible for the eye color) #4834</option>
+     <option value="Q15306">IRF4 (hair color) #451</option>
+     <option value="Q71RS6">Q71RS6 (clear skin) #500</option>
+     <option value="Q9H4L7">SMARCAD1 (no fingerprints) Ch4 #11026</option>
+     <option value="Q08043">ACTN3 (more muscle powers) Ch11 #901</option>
+     <option value="P10275">AR (calivitie) ChX #920</option>
+    </select>
+    <input id="accession"></input>
+    <button id="loadButton" type="submit">Load</button>
+ <div>
+  <div style="margin: 10px">
+       <span id="nRows"></span>
+  </div>
+
+<div id="container">
+   <svg id="canva" width="960" height="20000" font-family="sans-serif" font-size="10" text-anchor="middle"></svg> 
+</div>
+
+ <div>
+   <select id="firstCodon" class="base">
+     <option value="U">U</option>
+     <option value="C">C</option>
+     <option value="A">A</option>
+     <option value="G">G</option>
+    </select>
+   <select id="secondCodon"  class="base">
+     <option value="U">U</option>
+     <option value="C">C</option>
+     <option value="A">A</option>
+     <option value="G">G</option>
+    </select>
+   <select id="thirdCodon" class="base">
+     <option value="U">U</option>
+     <option value="C">C</option>
+     <option value="A">A</option>
+     <option value="G">G</option>
+    </select>
+    <span id="aminoAcid"></span>
+    <svg id="bubble" width="100" height="50" font-family="sans-serif" font-size="10" text-anchor="middle"></svg> 
+ <div>
+
+
+
+    <p style="color: blue">
+      Proposed rules (can be changed... ):<br>
+      <ul>
+        <li>When shooting the correct color (not the same amino acid) only the shot bubble disappears</li>
+        <li>When shooting the correct amino acid (not only the color) everything adjacent with the same color falls down</li>
+        <li>When shooting an amino acid with different color it stays stuck</li>
+      </ul>
+    </p>
+    <p style="color: blue">
+      To think about...<br>
+      <ul>
+        <li>Some proteins like HBB has too many green (non polar) amino acids, and therefore it is easy to finish the level with just one shot. We may need to introduce some kind of shields between adjacent proteins. Could be helixes annotations or other thing...</li>
+      </ul>
+    </p>
+    <p style="color: green">
+      Strenght: 
+      <ul>
+        <li>People get to know amino acids and their polarity</li>
+        <li>People get to know translation</li>
+      </ul>
+    </p>
+    <p style="color: red">
+      Weaknesses: 
+      <ul>
+        <li>Not enough dynamic? (Too much thinking?) May be boring....</li>
+        <li>People may think a protein is like a "collier de perle"</li>
+      </ul>
+    </p>
+
+</body>
+
+
+<script>
+
+
+
+ var nBallsPerLine = 10
+
+ var applicationName = 'game-test'; //please provide a name for your application
+ var clientInfo='gist'; //please provide some information about you
+ var nx = new Nextprot.Client(applicationName, clientInfo);
+
+$( ".base" ).change(function() {
+
+  $( "#bubble" ).empty();
+  var codons = $('#firstCodon').val() + $('#secondCodon').val() + $('#thirdCodon').val() 
+
+  var aminoAcid = "Not defined"
+
+  if(codons === "UUU") aminoAcid = "F"
+  else if(codons === "UUC") aminoAcid = "F"
+  else if(codons === "UUA") aminoAcid = "L"
+  else if(codons === "UUG") aminoAcid = "L"
+  else if(codons === "CUU") aminoAcid = "L"
+  else if(codons === "CUC") aminoAcid = "L"
+  else if(codons === "CUG") aminoAcid = "L"
+  else if(codons === "AUU") aminoAcid = "I"
+  else if(codons === "AUC") aminoAcid = "I"
+  else if(codons === "AUA") aminoAcid = "I"
+  else if(codons === "AUG") aminoAcid = "M"
+  else if(codons === "GUU") aminoAcid = "V"
+  else if(codons === "GUC") aminoAcid = "V"
+  else if(codons === "GUA") aminoAcid = "V"
+  else if(codons === "GUG") aminoAcid = "V"
+
+  else if(codons === "UCU") aminoAcid = "S"
+  else if(codons === "UCC") aminoAcid = "S"
+  else if(codons === "UCA") aminoAcid = "S"
+  else if(codons === "UCG") aminoAcid = "S"
+  else if(codons === "CCU") aminoAcid = "P"
+  else if(codons === "CCC") aminoAcid = "P"
+  else if(codons === "CCA") aminoAcid = "P"
+  else if(codons === "CCG") aminoAcid = "P"
+  else if(codons === "ACU") aminoAcid = "T"
+  else if(codons === "ACC") aminoAcid = "T"
+  else if(codons === "ACA") aminoAcid = "T"
+  else if(codons === "ACG") aminoAcid = "T"
+  else if(codons === "GCU") aminoAcid = "A"
+  else if(codons === "GCC") aminoAcid = "A"
+  else if(codons === "GCA") aminoAcid = "A"
+  else if(codons === "GCG") aminoAcid = "A"
+
+  else if(codons === "UAU") aminoAcid = "T"
+  else if(codons === "UAC") aminoAcid = "T"
+  else if(codons === "UAA") aminoAcid = "STOP"
+  else if(codons === "UAG") aminoAcid = "STOP"
+  else if(codons === "CAU") aminoAcid = "H"
+  else if(codons === "CAC") aminoAcid = "H"
+  else if(codons === "CAA") aminoAcid = "Q"
+  else if(codons === "CAG") aminoAcid = "Q"
+  else if(codons === "AAU") aminoAcid = "N"
+  else if(codons === "AAC") aminoAcid = "N"
+  else if(codons === "AAA") aminoAcid = "K"
+  else if(codons === "AAG") aminoAcid = "K"
+  else if(codons === "GAU") aminoAcid = "D"
+  else if(codons === "GAC") aminoAcid = "D"
+  else if(codons === "GAA") aminoAcid = "E"
+  else if(codons === "GAG") aminoAcid = "E"
+ 
+  else if(codons === "UGU") aminoAcid = "C"
+  else if(codons === "UGC") aminoAcid = "C"
+  else if(codons === "UGA") aminoAcid = "STOP"
+  else if(codons === "UGG") aminoAcid = "W"
+  else if(codons === "CGU") aminoAcid = "R"
+  else if(codons === "CGC") aminoAcid = "R"
+  else if(codons === "CGA") aminoAcid = "R"
+  else if(codons === "CGG") aminoAcid = "R"
+  else if(codons === "AGU") aminoAcid = "S"
+  else if(codons === "AGC") aminoAcid = "S"
+  else if(codons === "AGA") aminoAcid = "R"
+  else if(codons === "AGG") aminoAcid = "R"
+  else if(codons === "GGU") aminoAcid = "G"
+  else if(codons === "GGC") aminoAcid = "G"
+  else if(codons === "GGA") aminoAcid = "G"
+  else if(codons === "GGG") aminoAcid = "G"
+ 
+  $("#aminoAcid").text("You can shoot a " +  aminoAcid)
+
+  if(aminoAcid !== "STOP") {
+
+    var aa = dict[aminoAcid].sideChainPolarity
+
+    var svg = d3.select("#bubble"), width = +svg.attr("width"), height = +svg.attr("height");
+    var group = svg.selectAll('circle').data([1]).enter().append("g")
+    .attr("transform", function(d,i){ return "translate("+((i%1)*45+25)+","+(~~(i/1)*45 + 25)+")"});
+    group.append('circle').attr("r", 20).attr("fill", function(d,i){ return colorsCategory[aa]});
+    group.append('text').text(function(d){ return aminoAcid})
+
+  }
+
+})
+
+$( ".target" ).change(function() {
+  $('#accession').val(this.value);
+  loadProtein()
+})
+
+$("#loadButton").click(function() {
+  loadProtein()
+});
+
+function loadProtein () {
+
+  //Clearing
+  d3.select("#canva").selectAll("*").remove()
+
+
+  $("#nRows").text("")
+  accession = $('#accession').val();
+
+ nx.getEntry('NX_' + accession, "secondary-structure").then(function (data){
+
+
+    var sequence = data.isoforms[0].sequence;
+    var aminoAcids = sequence.split("").reverse()
+
+    $("#nRows").html("Rows:" + (aminoAcids.length / nBallsPerLine) + " amino acid length:" + aminoAcids.length + " more info in nextprot: <a target=\"blank\" href=\"https://www.nextprot.org/entry/NX_"+ accession + " \"/sequence>NX_" + accession + "</a> or UniProt  <a target=\"blank\" href=\"http://www.uniprot.org/uniprot/"+ accession + " \">" + accession + "</a> ")
+
+    var svg = d3.select("#canva"), width = +svg.attr("width"), height = +svg.attr("height");
+    var format = d3.format(",d");
+    var color = d3.scaleOrdinal(d3.schemeCategory10);
+
+    var pack = d3.pack().size([width, height]).padding(1.5);
+
+    var i= 0;
+    d3.request("genes.json")
+        .mimeType("application/json")
+        .response(function(xhr) {
+         return JSON.parse(xhr.responseText); 
+     }).get(function (data) {
+      var aas = aminoAcids.map(function (a){ return {
+        "i" : i++,
+        "id" : a, 
+        "value": dict[a].MW,
+        "package": (false && ((i >= 33 && i <= 43) || (i >= 44 && i < 46) || (i >= 79 && i < 81))) ? "helix" : dict[a].sideChainPolarity,
+        "class": dict[a].oneLetterCode + "-" + dict[a].shortName // "\n" + i++
+      }})
+
+      var group = svg.selectAll('circle').data(aas).enter().append("g")
+        .attr("transform", function(d,i){
+          var lineNumber = ~~(i/nBallsPerLine)
+          if(lineNumber % 2){
+            return "translate("+((i%nBallsPerLine)*45+50)+","+(~~(i/nBallsPerLine)*45 + 50)+")"
+          }
+          else {
+                   return "translate("+((i%nBallsPerLine)*45+70)+","+(~~(i/nBallsPerLine)*45 + 50)+")"}
+          } 
+          );
+        
+        group.append('circle').attr("r", 20).attr("fill", function(d,i){ return colorsCategory[d.package]});
+        group.append('text').text(function(d){return d.class})
+
+    });
+    });
+
+}
+
+
+</script>
