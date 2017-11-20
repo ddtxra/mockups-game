@@ -1,1 +1,4 @@
-Bubble charts encode data in the area of circles. Although less perceptually-accurate than bar charts, they can pack hundreds of values into a small space. Implementation based on work by [Jeff Heer](http://jheer.org/). Data shows the [Flare](http://flare.prefuse.org/) class hierarchy, also courtesy Jeff Heer.
+
+
+Test it:
+https://rawgit.com/ddtxra/mockups-game/master/index-3.html
