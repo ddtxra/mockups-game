@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>hello phaser!</title>
+        <script src="phaser-ninja-physics.js"></script>
+    </head>
+    <body>
+
+    <script type="text/javascript">
+
+    window.onload = function() {
+
+        var game = new Phaser.Game(800, 600, Phaser.AUTO, 'phaser-example', { preload: preload, create: create, update: update});
+
+
+function preload() {
+
+    game.load.tilemap('map', 'assets/ninja-tilemap.json', null, Phaser.Tilemap.TILED_JSON);
+    game.load.spritesheet('ball', 'assets/dude.png', 32, 48);
+    game.load.image('sky', 'assets/sky2.png');
+    game.load.image('kenney', 'assets/rna.png');
+
+
+}
+
+var sprite1;
+var cursors;
+var map;
+var layer;
+var tiles;
+
+function create() {
+
+    var sky = game.add.image(0, 0, 'sky');
+    sky.fixedToCamera = true;
+
+    //  Activate the Ninja physics system
+    game.physics.startSystem(Phaser.Physics.NINJA);
+
+    map = game.add.tilemap('map');
+
+    map.addTilesetImage('kenney');
+    
+    layer = map.createLayer('Tile Layer 1');
+
+    layer.resizeWorld();
+
+    var slopeMap = { '28': 1, '77': 1, '95': 2, '36': 3, '137': 3, '140': 2 };
+
+    tiles = game.physics.ninja.convertTilemap(map, layer, slopeMap);
+
+    sprite1 = game.add.sprite(50, 50, 'ball');
+
+    sprite1.animations.add('right', [5, 6, 7, 8], 10, true);
+
+    game.physics.ninja.enableCircle(sprite1, sprite1.width / 2);
+
+    //  A little more bounce
+    sprite1.body.bounce = 0.1;
+
+    game.camera.follow(sprite1);
+
+    cursors = game.input.keyboard.createCursorKeys();
+
+}
+
+function update() {
+
+    sprite1.animations.play('right');
+
+    for (var i = 0; i < tiles.length; i++)
+    {
+        sprite1.body.circle.collideCircleVsTile(tiles[i].tile);
+
+    }
+    sprite1.body.moveRight(5);
+
+    if (cursors.up.isDown && sprite1.body.y === 544)
+    {
+        console.log(sprite1.body.y)
+        sprite1.body.moveUp(2000);
+    }
+
+    //Just to come back quicker
+    if (cursors.left.isDown)
+    {
+        sprite1.body.moveLeft(100);
+    }
+
+    }
+
+
+    };
+
+    </script>
+
+    </body>
+</html>
