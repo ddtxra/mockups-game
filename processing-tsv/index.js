@@ -9,25 +9,48 @@ function getMinForType(blocks, type){
     return Math.min.apply(Math,blocks.filter(g => g.type === type).map(function(o){return o.length;}))
 }
 
-function toNonZeroLogRounded(n){ 
-    var number = Math.round(Number(Math.log(n)));
-    if (number == 0) 
-        return 1 
-    else return number * 10
-};
-
-function toIntronClassification(number){ 
+function getNormalizedLength(number){ 
     //Based on histogram in R
     //hist(log(exons$V6), breaks=5, col="lightgreen")
-    if (number < 6) 
-        return "small"
-    if (number < 8) 
-        return "medium"
-    if (number < 8) 
-        return "large"
-    if (number < 10) 
-        return "big" //Complicated spliceosome
-    return "huge" //SR protein (Catapult)
+    if (number < 50) 
+        return {class: "small-", length: 1} 
+    else if (number < 75) 
+        return {class: "small", length: 2} 
+    else if (number < 100) 
+        return {class: "small+", length: 3} 
+    else if (number < 125) 
+        return {class: "medium-", length: 4} 
+    else if (number < 150) 
+        return {class: "medium", length: 5} 
+    else if (number < 175) 
+        return {class: "medium+", length: 6} 
+    else if (number < 200) 
+        return {class: "large-", length: 7} 
+    else if (number < 225) 
+        return {class: "large", length: 8} 
+    else if (number < 250) 
+        return {class: "large+", length: 9} 
+    else if (number < 350) 
+        return {class: "big-", length: 10} 
+    else if (number < 1000) 
+        return {class: "big", length: 20} 
+    //Huge exons (bigger than 1000)
+    else return {class: "huge", length: 40} 
+        
+};
+
+function getNormalizedLengthForIntrons(number){ 
+    //Based on histogram in R
+    //hist(log(exons$V6), breaks=5, col="lightgreen")
+    if (number < 5000) 
+        return {class: "small-intron", length: 1} //simple jump --> most of them end up in this category
+    if (number < 10000) 
+        return {class: "medium-intron", length: 5} //mutiple jumps (kind of rocks) 
+    if (number < 15000) 
+        return {class: "large-intron", length: 10} //spliceosome
+    if (number < 20000) 
+        return {class: "big-intron", length: 20} //Complicated spliceosome
+    return {class: "huge-intron", length: 100} //SR protein (Catapult)
 };
 
 function groupBy(xs, key) {
@@ -41,40 +64,39 @@ var inputFile='gene_coordinates.txt';
 var parser = parse({delimiter: '\t'}, function (err, data) {
 
 
+    var rejected = ["ENST00000368804", "ENST00000445772"]
+    
     ////////////////// FLAT FILE //////////////////////////////////////////////////////////
     var blocks = []
     data.forEach(function(line) {
 
-      var transcript = line[0].split("|");
-      var block = { 
-          "geneName" : transcript[1],
-          "transcript" : transcript[2], 
-          "geneTranscript" : transcript[1] + "-" + transcript[2] + "-Chr" + line[1],
-          "ensg" : transcript[0],
-          "chromosome" : line[1],
-          "type" : line[6],
-          "realLength" : parseInt(line[5]),
-          "normalizedLength" : toNonZeroLogRounded(line[5])
-      };
-    
-    if(block.type === "intron"){
-        block.intronClasses = toIntronClassification(toNonZeroLogRounded(line[5]))
-        if(block.intronClasses === "small") {
-            block.normalizedLength = 1
-        }else if(block.intronClasses === "medium") {
-            block.normalizedLength = 3
-        }else if(block.intronClasses === "large") {
-            block.normalizedLength = 10
-        }else if(block.intronClasses === "big") {
-            block.normalizedLength = 20
-        }else if(block.intronClasses === "huge") {
-            block.normalizedLength = 100
-        }
+        var transcript = line[0].split("|");
+        if(rejected.indexOf(transcript[2]) == -1){
             
-    }
+          var block = { 
+              "geneName" : transcript[1],
+              "transcript" : transcript[2], 
+              "geneTranscript" : transcript[1] + "-" + transcript[2] + "-Chr" + line[1],
+              "ensg" : transcript[0],
+              "chromosome" : line[1],
+              "type" : line[6],
+              "realLength" : parseInt(line[5]),
+              "normalizedLength" : getNormalizedLength(line[5])
+          };
     
-    blocks.push(block);
-    //console.log(JSON.stringify(block));
+            if(block.type === "intron"){
+                var normalizedIntron = getNormalizedLengthForIntrons(block.realLength);
+                block.class = normalizedIntron.class
+                block.normalizedLength = normalizedIntron.length
+            }else {
+                var normalized = getNormalizedLength(block.realLength);
+                block.class = normalized.class
+                block.normalizedLength = normalized.length
+            }
+
+            blocks.push(block);
+            //console.log(JSON.stringify(block));
+        }
 
     });
     
@@ -104,10 +126,8 @@ var parser = parse({delimiter: '\t'}, function (err, data) {
         var level = {
             type: block.type,
             realLength: block.realLength,
-            normalizedLength : block.normalizedLength
-        }
-        if(block.type === "intron"){
-            level.intronClasses = block.intronClasses
+            normalizedLength : block.normalizedLength,
+            class: block.class
         }
         currentGeneObject.levelData.push(level)
 

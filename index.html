@@ -49,7 +49,7 @@
         
             genes.forEach(function (gene) {
 
-                    $("#genes").append("<p>Gene name:" + gene.id + " Exons count:" + gene.exonsCount  +"</p>")
+                    $("#genes").append("<p>Gene name:" + gene.geneName + "Transcript: " +  gene.transcript + " Exons:" + gene.exonsCount  +"</p>")
                     $("#genes").append("<p style='font-size:8px'>" + JSON.stringify(gene, null, 2) + "</p>")
                     $("#genes").append("<div id=\'" + gene.id  +"\'></div>")
 
@@ -62,7 +62,6 @@
                         bubbleHelp: true,
                         zoomMax: 10
                     });
-
                 
                     console.log(gene)
 
@@ -77,19 +76,21 @@
                             exonData.push({
                                 "x": cursor,
                                 "y": cursor+ len,
+                                "description" : ld.class,
                                 "color" : (ld.type == "exon") ? "green" : "blue"
                             })
                         }else if(ld.type === "intron") {
                             intronData.push({
                                 "x": cursor,
                                 "y": cursor+ len,
-                                "description" : ld.intronClasses,
+                                "description" : ld.class,
                                 "color" : "red"
                             })
                         }else if(ld.type === "start_codon" || ld.type === "stop_codon") {
                             starsData.push({
                                 "x": cursor,
                                 "y": cursor+ len,
+                                "description" : ld.class,
                                 "color" : "orange",
                                 "description" : ld.type
                             })
