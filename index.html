@@ -49,7 +49,7 @@
         
             genes.forEach(function (gene) {
 
-                    $("#genes").append("<p>Gene name:" + gene.geneName + "Transcript: " +  gene.transcript + " Exons:" + gene.exonsCount  +"</p>")
+                    $("#genes").append("<p>Gene name:" + gene.geneName + " Transcript: <a target='_blank' href='http://www.ensembl.org/Homo_sapiens/transview?db=core;transcript=" +  gene.transcript + "'>" + gene.transcript + "</a> Exons:" + gene.exonsCount  +"</p>")
                     $("#genes").append("<p style='font-size:8px'>" + JSON.stringify(gene, null, 2) + "</p>")
                     $("#genes").append("<div id=\'" + gene.id  +"\'></div>")
 

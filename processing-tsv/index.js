@@ -43,14 +43,14 @@ function getNormalizedLengthForIntrons(number){
     //Based on histogram in R
     //hist(log(exons$V6), breaks=5, col="lightgreen")
     if (number < 5000) 
-        return {class: "small-intron", length: 1} //simple jump --> most of them end up in this category
+        return {class: "small-intron: The avatar can easily jump", length: 1} //simple jump --> most of them end up in this category
     if (number < 10000) 
-        return {class: "medium-intron", length: 5} //mutiple jumps (kind of rocks) 
+        return {class: "medium-intron: need an easy spliceosome, can be small 1,2 rocks that needs to jump", length: 5} //mutiple jumps (kind of rocks) 
     if (number < 15000) 
-        return {class: "large-intron", length: 10} //spliceosome
+        return {class: "large-intron: need a more complicated spliceosome", length: 10} //spliceosome
     if (number < 20000) 
-        return {class: "big-intron", length: 20} //Complicated spliceosome
-    return {class: "huge-intron", length: 100} //SR protein (Catapult)
+        return {class: "big-intron: need a difficult spliceosome", length: 20} //Complicated spliceosome
+    return {class: "huge-intron: we need a SR protein before, like a catapult", length: 100} //SR protein (Catapult)
 };
 
 function groupBy(xs, key) {
