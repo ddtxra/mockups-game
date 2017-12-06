@@ -1,4 +1,4 @@
-<script src="https://cdn.rawgit.com/calipho-sib/feature-viewer/v1.0.0/dist/feature-viewer.nextprot.js"></script>
+<script src="feature-viewer.nextprot.js"></script>
 
 <style type="text/css">
     #container {
@@ -14,15 +14,15 @@
     .svgHeader {
         display: none;
     }
-
+    
     select {
         margin: 10px;
     }
-
+    
     table {
         margin: 10px;
     }
-
+    
     table tr td {
         border-width: 1px;
         border-color: grey;
@@ -39,94 +39,160 @@
 
 
 <script>
-    
     loadProtein()
+
     function getBaseLog(x, y) {
         return Math.log(y) / Math.log(x);
     }
+    
+    function normalizeLength(levelData){
+        
+        if (levelData.type === "intron") {
+            var normalizedIntron = getNormalizedLengthForIntrons(levelData.realLength);
+            levelData.class = normalizedIntron.class
+            levelData.normalizedLength = normalizedIntron.normalizedLength
+        } else {
+            var normalized = getNormalizedLengthForNonIntron(levelData.realLength);
+            levelData.normalizedLength = normalized.normalizedLength
+        }
+        
+    }
+
+    function getNormalizedLengthForNonIntron(realLength) {
+
+        //Based on histogram in R
+        //hist(log(exons$V6), breaks=5, col="lightgreen")
+        var continousNormalization = Math.round(realLength / 5);
+        if (continousNormalization > 100) {
+            continousNormalization = 100;
+        }
+        if (continousNormalization < 1) {
+            continousNormalization = 1;
+        }
+
+        return { normalizedLength: continousNormalization }
+
+    };
+
+    function getNormalizedLengthForIntrons(number) {
+
+        //Based on histogram in R
+        //hist(log(exons$V6), breaks=5, col="lightgreen")
+        if (number < 5000)
+            return {
+                class: "small-intron: The avatar can easily jump",
+                normalizedLength: 1
+            } //simple jump --> most of them end up in this category
+        if (number < 10000)
+            return {
+                class: "medium-intron: need an easy spliceosome, can be small 1,2 rocks that needs to jump",
+                normalizedLength: 5
+            } //mutiple jumps (kind of rocks) 
+        if (number < 15000)
+            return {
+                class: "large-intron: need a more complicated spliceosome",
+                normalizedLength: 10
+            } //spliceosome
+        if (number < 20000)
+            return {
+                class: "big-intron: need a difficult spliceosome",
+                normalizedLength: 20
+            } //Complicated spliceosome
+        return {
+            class: "huge-intron: we need a SR protein before, like a catapult",
+            normalizedLength: 100
+        } //SR protein (Catapult)
+    };
+    
 
     function renderGenes(genes) {
-        
-            genes.forEach(function (gene) {
 
-                    $("#genes").append("<p>Gene name:" + gene.geneName + " Transcript: <a target='_blank' href='http://www.ensembl.org/Homo_sapiens/transview?db=core;transcript=" +  gene.transcript + "'>" + gene.transcript + "</a> Exons:" + gene.exonsCount  +"</p>")
-                    $("#genes").append("<p style='font-size:8px'>" + JSON.stringify(gene, null, 2) + "</p>")
-                    $("#genes").append("<div id=\'" + gene.id  +"\'></div>")
+        genes.forEach(function (gene) {
+            
+            gene.levelData.forEach(function (ld) {
+                normalizeLength(ld);
+            })
 
-                    //Create a new Feature Viewer and add some rendering options
-                    var ft = new FeatureViewer(800, "#" + gene.id, {
-                        showAxis: true,
-                        showSequence: true,
-                        brushActive: true,
-                        toolbar: true,
-                        bubbleHelp: true,
-                        zoomMax: 10
-                    });
+
+            $("#genes").append("<p>Gene name:" + gene.geneName + " Transcript: <a target='_blank' href='http://www.ensembl.org/Homo_sapiens/transview?db=core;transcript=" + gene.transcript + "'>" + gene.transcript + "</a> Exons:" + gene.exonsCount + " Chromosome:" + gene.chromosome + " base pairs:" + gene.geneLength + " amino acids:" + Math.ceil((gene.exonsLength + 1) / 3.0) + "</p>")
+            $("#genes").append("<p style='font-size:8px'>" + JSON.stringify(gene, null, 2) + "</p>")
+            $("#genes").append("<div id=\'" + gene.id + "\'></div>")
+
+            //Create a new Feature Viewer and add some rendering options
+            var ft = new FeatureViewer(2000, "#" + gene.id, {
+                showAxis: true,
+                showSequence: true,
+                brushActive: true,
+                toolbar: true,
+                bubbleHelp: true,
+                zoomMax: 10
+            });
+
+            var exonData = [];
+            var intronData = [];
+            var starsData = [];
+
+            var cursor = 0;
+            gene.levelData.forEach(function (ld) {
                 
-                    console.log(gene)
-
-                    var exonData = [];
-                    var intronData = [];
-                    var starsData = [];
-
-                    var cursor = 0;
-                    gene.levelData.forEach(function (ld){
-                        var len = ld.normalizedLength;
-                        if(ld.type === "exon" || ld.type === "utr") {
-                            exonData.push({
-                                "x": cursor,
-                                "y": cursor+ len,
-                                "description" : ld.class,
-                                "color" : (ld.type == "exon") ? "green" : "blue"
-                            })
-                        }else if(ld.type === "intron") {
-                            intronData.push({
-                                "x": cursor,
-                                "y": cursor+ len,
-                                "description" : ld.class,
-                                "color" : "red"
-                            })
-                        }else if(ld.type === "start_codon" || ld.type === "stop_codon") {
-                            starsData.push({
-                                "x": cursor,
-                                "y": cursor+ len,
-                                "description" : ld.class,
-                                "color" : "orange",
-                                "description" : ld.type
-                            })
-                        }
-                        cursor += len
+                var desc = ld.class ? ld.class : "" + "\n normalizedLength:" + ld.normalizedLength + "\n realLength:" + ld.realLength;
+                var normalizedLength = ld.normalizedLength;
+                if (ld.type === "exon" || ld.type === "utr") {
+                    exonData.push({
+                        "x": cursor,
+                        "y": cursor + normalizedLength,
+                        "description": desc,
+                        "color": (ld.type == "exon") ? "green" : "lightgreen"
+                    })
+                } else if (ld.type === "intron") {
+                    intronData.push({
+                        "x": cursor,
+                        "y": cursor + normalizedLength,
+                        "description": desc,
+                        "color": "blue"
+                    })
+                } else if (ld.type === "start_codon" || ld.type === "stop_codon") {
+                    starsData.push({
+                        "x": cursor,
+                        "y": cursor + normalizedLength,
+                        "description": desc,
+                        "color": "orange",
+                        "description": ld.type
                     })
 
-                    //Add some features
-                    ft.addFeature({
-                        data: starsData,
-                        name: "stars",
-                        type: "rect"
-                    });
-                    
-                    //Add some features
-                    ft.addFeature({
-                        data: exonData,
-                        name: "exons",
-                        type: "rect"
-                    });
-
-                    //Add some features
-                    ft.addFeature({
-                        data: intronData,
-                        name: "introns",
-                        type: "rect"
-                    });
-
+                }
+                cursor += normalizedLength
             })
+
+            //Add some features
+            ft.addFeature({
+                data: starsData,
+                name: "stars",
+                type: "rect"
+            });
+
+            //Add some features
+            ft.addFeature({
+                data: exonData,
+                name: "exons",
+                type: "rect"
+            });
+
+            //Add some features
+            ft.addFeature({
+                data: intronData,
+                name: "introns",
+                type: "rect"
+            });
+
+        })
 
 
     }
 
     function loadProtein() {
-        $.getJSON('processing-tsv/data.json', function(genes) {
+        $.getJSON('processing-tsv/data.json', function (genes) {
             renderGenes(genes);
         })
     }
-    </script>
+</script>
