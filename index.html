@@ -108,18 +108,21 @@
     function renderGenes(genes) {
 
         genes.forEach(function (gene) {
-            
+
+            gene.totalNormalizedLength = 0
             gene.levelData.forEach(function (ld) {
                 normalizeLength(ld);
+                gene.totalNormalizedLength += ld.normalizedLength
             })
 
 
-            $("#genes").append("<p>Gene name:" + gene.geneName + " Transcript: <a target='_blank' href='http://www.ensembl.org/Homo_sapiens/transview?db=core;transcript=" + gene.transcript + "'>" + gene.transcript + "</a> Exons:" + gene.exonsCount + " Chromosome:" + gene.chromosome + " base pairs:" + gene.geneLength + " amino acids:" + Math.ceil((gene.exonsLength + 1) / 3.0) + "</p>")
+            $("#genes").append("<p>Gene name:" + gene.geneName + " Transcript: <a target='_blank' href='http://www.ensembl.org/Homo_sapiens/transview?db=core;transcript=" + gene.transcript + "'>" + gene.transcript + "</a> Exons:" + gene.exonsCount + " Chromosome:" + gene.chromosome + " base pairs:" + gene.geneLength + " computed amino acids:" + Math.ceil((gene.exonsLength + 1) / 3.0)  + 
+                              " total normalized length:" + gene.totalNormalizedLength + "</p>")
             $("#genes").append("<p style='font-size:8px'>" + JSON.stringify(gene, null, 2) + "</p>")
             $("#genes").append("<div id=\'" + gene.id + "\'></div>")
 
             //Create a new Feature Viewer and add some rendering options
-            var ft = new FeatureViewer(2000, "#" + gene.id, {
+            var ft = new FeatureViewer(3000, "#" + gene.id, {
                 showAxis: true,
                 showSequence: true,
                 brushActive: true,
