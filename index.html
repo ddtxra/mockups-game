@@ -31,8 +31,23 @@
 </style>
 
 <body>
+      <div style="display:none">
+        <div><label>small-intron must be smaller than </label><input id="small-intron" type="number"></div>
+        <button>Normalize</button>
+      </div>
+    <div>
+        <h3>Notes</h3>
+        <ul>
+            <li>If there is more than one transcript for a gene, we still need to choose the transcript</li>
+            <li>Real exon length can be found in <a target="_blank" href="processing-tsv/data.json">here</a></li>
+            <li>Normalization paramaters can only be adjusted in this javascript code for now. We will add some input boxes so we can play with different normalization parameters to find a better fit for the game</li>
+            <li>SNP variant is still missing</li>
+            <li>There is not a hole below the start and stop codon (it should be one exon with different color) from exon to utr (untranslated region)</li>
+            <li>Wait 10 seconds to see the results below...</li>
+        </ul>
+    </div>
     <div id="container">
-        <div id="genes" style="width:1680px;height:1050px"></div>
+      <div id="genes" style="width:1680px;height:1050px;padding:5px"></div>
     </div>
 </body>
 
@@ -107,22 +122,45 @@
 
     function renderGenes(genes) {
 
+        //Normalization and get max
+        var maxNormalizedLength = 0;
+        var minNormalizedLength = Number.MAX_SAFE_INTEGER;
         genes.forEach(function (gene) {
-
             gene.totalNormalizedLength = 0
             gene.levelData.forEach(function (ld) {
                 normalizeLength(ld);
                 gene.totalNormalizedLength += ld.normalizedLength
             })
+            maxNormalizedLength = Math.max(maxNormalizedLength, gene.totalNormalizedLength)
+            minNormalizedLength = Math.min(maxNormalizedLength, gene.totalNormalizedLength)
 
+        })
+        
+        console.log("Max normalized length: " + maxNormalizedLength)
+        console.log("Min normalized length: " + minNormalizedLength)
+            
+        genes.forEach(function (gene) {
 
-            $("#genes").append("<p>Gene name:" + gene.geneName + " Transcript: <a target='_blank' href='http://www.ensembl.org/Homo_sapiens/transview?db=core;transcript=" + gene.transcript + "'>" + gene.transcript + "</a> Exons:" + gene.exonsCount + " Chromosome:" + gene.chromosome + " base pairs:" + gene.geneLength + " computed amino acids:" + Math.ceil((gene.exonsLength + 1) / 3.0)  + 
-                              " total normalized length:" + gene.totalNormalizedLength + "</p>")
+        
+            $("#genes").append("<p style='font-size:12px'>" + 
+                               "<br>Gene name: " + gene.geneName + " (links to neXtProt and UniProt)" +
+                               "<br>Transcript: <a target='_blank' href='http://www.ensembl.org/Homo_sapiens/transview?db=core;transcript=" + gene.transcript + "'>" + gene.transcript + "</a>"+
+                               "<br>Chromosome: " + gene.chromosome + 
+                               "<br>Exons: " + gene.exonsCount + 
+                               "<br>???% of protein coding (exons)" +
+                               "<br>" + gene.geneLength + "bp   " + 
+                               "<br>" + gene.totalNormalizedLength + "units "+ 
+                               "<br>" + Math.ceil((gene.exonsLength + 1) / 3.0)  + "~aa (exonsLength / 3) but seems not to be correct" +
+                               "<br>Text: This gene is responsible for bla bla bla ...." +
+                               "</p>JSON:"
+                              )
+            
             $("#genes").append("<p style='font-size:8px'>" + JSON.stringify(gene, null, 2) + "</p>")
             $("#genes").append("<div id=\'" + gene.id + "\'></div>")
+            $("#genes").append("<hr>")
 
             //Create a new Feature Viewer and add some rendering options
-            var ft = new FeatureViewer(3000, "#" + gene.id, {
+            var ft = new FeatureViewer(maxNormalizedLength, "#" + gene.id, {
                 showAxis: true,
                 showSequence: true,
                 brushActive: true,
