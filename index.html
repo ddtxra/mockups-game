@@ -194,12 +194,12 @@
                         "description": desc,
                         "color": "blue"
                     })
-                } else if (ld.type === "start_codon" || ld.type === "stop_codon") {
+                } else if (ld.type === "start_codon" || ld.type === "stop_codon" || ld.type === "snp") {
                     starsData.push({
                         "x": cursor,
                         "y": cursor + normalizedLength,
                         "description": desc,
-                        "color": "orange",
+                        "color": (ld.type == "snp") ? "red" : "orange",
                         "description": ld.type
                     })
 
@@ -234,7 +234,7 @@
     }
 
     function loadProtein() {
-        $.getJSON('processing-tsv/data.json', function (genes) {
+        $.getJSON('data/data.json', function (genes) {
             renderGenes(genes);
         })
     }
