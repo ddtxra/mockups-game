@@ -69,10 +69,34 @@ var parser = parse({delimiter: '\t'}, function (err, data) {
         currentGeneObject.levelData.push(level)
 
     }
+
+    var selectedTranscripts = [];
+    var currentGeneName;
+
+    var selectedTranscript = genes[0];
+    var currentGeneName = selectedTranscript.geneName;
+    var maxLengthCurrentTranscript = selectedTranscript.geneLength;
     
-    console.log(JSON.stringify(genes))
+    for(var i=0; i < genes.length; i++){
+        var currentGene = genes[i];
+        if(currentGene.geneName !== currentGeneName) //If a new gene, put the last gene selected 
+        {
+            selectedTranscripts.push(selectedTranscript)
+            maxLengthCurrentTranscript = selectedTranscript.geneLength;
+            selectedTranscript = currentGene;
+            var currentGeneName = currentGene.geneName;
+            
+        }else {
+            if(currentGene.geneLength > selectedTranscript.geneLength){
+                selectedTranscript = currentGene;
+            }
+        }
+
+    }
     
-    fs.writeFile('data.json', JSON.stringify(genes, null, 2), 'utf8');
+    console.log(JSON.stringify(selectedTranscripts))
+    
+    fs.writeFile('data.json', JSON.stringify(selectedTranscripts, null, 2), 'utf8');
 
    
 });
