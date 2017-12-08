@@ -10,19 +10,15 @@
         width: 1680px;
         margin: 10px;
     }
-    
     .svgHeader {
         display: none;
     }
-    
     select {
         margin: 10px;
     }
-    
     table {
         margin: 10px;
     }
-    
     table tr td {
         border-width: 1px;
         border-color: grey;
@@ -31,10 +27,21 @@
 </style>
 
 <body>
-      <div style="display:none">
-        <div><label>small-intron must be smaller than </label><input id="small-intron" type="number"></div>
-        <button>Normalize</button>
-      </div>
+      <div>
+        <h3>Normalisation parameters (play with it to find a nice fit for the game)</h3>
+        <p>Introns are the non-coding parts of the gene (represented as the holes), which could be classified in 5 different classes for the game:</p>
+        <div><label>small-intron is smaller than </label><input id="small-intron" type="number" value="5000">&nbsp;bps and normalized value is:<input id="small-intron-norm" type="number" value="1">units. With this type of intron we could say the avatar could easily jump.</div>
+        <div><label>medium-intron is smaller than </label><input id="medium-intron" type="number" value="10000">&nbsp;bps and normalized value is:<input id="medium-intron-norm" type="number" value="5">units. With this type of intron we could say there are 1, 2 splicies (rocks) that the avatar need to jump on top to traverse the holw</div>
+        <div><label>large-intron is smaller than </label><input id="large-intron" type="number" value="15000">&nbsp;bps and normalized value is:<input id="large-intron-norm" type="number" value="10">units. With this type of intron we could say that there is a spliceosome that moves</div>
+        <div><label>big-intron is smaller than </label><input id="big-intron" type="number" value="20000">&nbsp;bps and normalized value is:<input id="big-intron-norm" type="number" value="20">units.  With this type of intron we could say that there is a spliceosome that moves and it is more complicated</div>
+        <div><label>huge-intron is equal or bigger than </label><input id="huge-intron" type="number" value="20000">&nbsp;bps and normalized value is:<input id="huge-intron-norm" type="number"  value="50">units. With this type of intron there could be an SR protein before and the avatar would be propulsated (I think it is easy for the avatar)</div>
+        <p>Exons (includes stop_codon, snp, start_codon) are relatively smallers (average is 500bps) compared to the introns (10000bps) and a continous normalisation approach was adopted:</p>
+        <div><label>Division factor </label><input id="division-factor-exon" type="number" value="20">&nbsp; The length of the exons will be divided by this factor</div>
+        <div><label>Minimal unit: </label><input id="minimal-unit" type="number" value="1">&nbsp; The exons will have in minimum this unit</div>
+        <div><label>Maximal unit: </label><input id="maximal-unit" type="number" value="100">&nbsp; The exons will have in maximum this unit</div>
+        <button onclick="loadProtein()">Normalize</button>
+        <div>Max units of game are: <span id="maxUnits" style="color:green">computing...</span></div>
+    </div>
     <div>
         <h3>Notes</h3>
         <ul>
@@ -52,7 +59,6 @@
       <div id="genes" style="width:1680px;height:1050px;padding:5px"></div>
     </div>
 </body>
-
 
 
 <script>
@@ -77,15 +83,20 @@
 
     function getNormalizedLengthForNonIntron(realLength) {
 
+        var divisionFactor = parseInt($("#division-factor-exon").val())
+        var minimalUnit = parseInt($("#minimal-unit").val())
+        var maximalUnit = parseInt($("#maximal-unit").val())
+
         //Based on histogram in R
         //hist(log(exons$V6), breaks=5, col="lightgreen")
-        var continousNormalization = Math.round(realLength / 5);
-        if (continousNormalization > 100) {
-            continousNormalization = 100;
+        var continousNormalization = Math.round(realLength / divisionFactor);
+        if (continousNormalization > maximalUnit) {
+            continousNormalization = maximalUnit;
         }
-        if (continousNormalization < 1) {
-            continousNormalization = 1;
+        if (continousNormalization < minimalUnit) {
+            continousNormalization = minimalUnit;
         }
+        
 
         return { normalizedLength: continousNormalization }
 
@@ -95,29 +106,29 @@
 
         //Based on histogram in R
         //hist(log(exons$V6), breaks=5, col="lightgreen")
-        if (number < 5000)
+        if (number < parseInt($("#small-intron").val()))
             return {
                 class: "small-intron: The avatar can easily jump",
-                normalizedLength: 1
+                normalizedLength: parseInt($("#small-intron-norm").val())
             } //simple jump --> most of them end up in this category
-        if (number < 10000)
+        if (number < parseInt($("#medium-intron").val()))
             return {
                 class: "medium-intron: need an easy spliceosome, can be small 1,2 rocks that needs to jump",
-                normalizedLength: 5
+                normalizedLength: parseInt($("#medium-intron-norm").val())
             } //mutiple jumps (kind of rocks) 
-        if (number < 15000)
+        if (number < parseInt($("#large-intron").val()))
             return {
                 class: "large-intron: need a more complicated spliceosome",
-                normalizedLength: 10
+                normalizedLength: parseInt($("#large-intron-norm").val())
             } //spliceosome
-        if (number < 20000)
+        if (number < parseInt($("#big-intron").val()))
             return {
                 class: "big-intron: need a difficult spliceosome",
-                normalizedLength: 20
+                normalizedLength: parseInt($("#big-intron-norm").val())
             } //Complicated spliceosome
         return {
             class: "huge-intron: we need a SR protein before, like a catapult",
-            normalizedLength: 100
+            normalizedLength: parseInt($("#huge-intron-norm").val())
         } //SR protein (Catapult)
     };
     
@@ -143,7 +154,6 @@
             
         genes.forEach(function (gene) {
 
-        
             $("#genes").append("<p style='font-size:12px'>" + 
                                "<br>Gene name: " + gene.geneName + " (links to neXtProt and UniProt)" +
                                "<br>Transcript: <a target='_blank' href='http://www.ensembl.org/Homo_sapiens/transview?db=core;transcript=" + gene.transcript + "'>" + gene.transcript + "</a>"+
@@ -160,6 +170,9 @@
             $("#genes").append("<p style='font-size:8px'>" + JSON.stringify(gene, null, 2) + "</p>")
             $("#genes").append("<div id=\'" + gene.id + "\'></div>")
             $("#genes").append("<hr>")
+
+            $("#maxUnits").text(maxNormalizedLength)
+            
 
             //Create a new Feature Viewer and add some rendering options
             var ft = new FeatureViewer(maxNormalizedLength, "#" + gene.id, {
@@ -234,6 +247,8 @@
     }
 
     function loadProtein() {
+        $("#maxUnits").text("computing...")
+        $("#genes").empty();
         $.getJSON('data/data.json', function (genes) {
             renderGenes(genes);
         })
