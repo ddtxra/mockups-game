@@ -1,0 +1,322 @@
+[
+  {
+    "id": "TCHH-ENST00000614923-Chr1",
+    "geneName": "TCHH",
+    "transcript": "ENST00000614923",
+    "chromosome": "1",
+    "exonsCount": 4,
+    "exonsLength": 5826,
+    "geneLength": 9146,
+    "description": "This gene is responsible for curly hair.... "
+  },
+  {
+    "id": "EDAR-ENST00000258443-Chr2",
+    "geneName": "EDAR",
+    "transcript": "ENST00000258443",
+    "chromosome": "2",
+    "exonsCount": 12,
+    "exonsLength": 1342,
+    "geneLength": 94928,
+    "description": "This genes is responsible for bla bla bla..."
+  },
+  {
+    "id": "LCT-ENST00000264162-Chr2",
+    "geneName": "LCT",
+    "transcript": "ENST00000264162",
+    "chromosome": "2",
+    "exonsCount": 18,
+    "exonsLength": 5779,
+    "geneLength": 49377,
+    "description": "This genes is responsible for bla bla bla..."
+  },
+  {
+    "id": "MCM6-ENST00000264156-Chr2",
+    "geneName": "MCM6",
+    "transcript": "ENST00000264156",
+    "chromosome": "2",
+    "exonsCount": 17,
+    "exonsLength": 2462,
+    "geneLength": 36837,
+    "description": "This genes is responsible for bla bla bla..."
+  },
+  {
+    "id": "PER2-ENST00000254657-Chr2",
+    "geneName": "PER2",
+    "transcript": "ENST00000254657",
+    "chromosome": "2",
+    "exonsCount": 23,
+    "exonsLength": 3763,
+    "geneLength": 44620,
+    "description": "This genes is responsible for bla bla bla..."
+  },
+  {
+    "id": "CCR5-ENST00000292303-Chr3",
+    "geneName": "CCR5",
+    "transcript": "ENST00000292303",
+    "chromosome": "3",
+    "exonsCount": 2,
+    "exonsLength": 3301,
+    "geneLength": 5360,
+    "description": "This genes is responsible for bla bla bla..."
+  },
+  {
+    "id": "FGFR3-ENST00000613647-Chr4",
+    "geneName": "FGFR3",
+    "transcript": "ENST00000613647",
+    "chromosome": "4",
+    "exonsCount": 8,
+    "exonsLength": 1091,
+    "geneLength": 15601,
+    "description": "This genes is responsible for bla bla bla..."
+  },
+  {
+    "id": "SMARCAD1-ENST00000359052-Chr4",
+    "geneName": "SMARCAD1",
+    "transcript": "ENST00000359052",
+    "chromosome": "4",
+    "exonsCount": 23,
+    "exonsLength": 3083,
+    "geneLength": 83730,
+    "description": "This genes is responsible for bla bla bla..."
+  },
+  {
+    "id": "SLC45A2-ENST00000296589-Chr5",
+    "geneName": "SLC45A2",
+    "transcript": "ENST00000296589",
+    "chromosome": "5",
+    "exonsCount": 8,
+    "exonsLength": 1588,
+    "geneLength": 40131,
+    "description": "This genes is responsible for bla bla bla..."
+  },
+  {
+    "id": "OR2J3-ENST00000641151-Chr6",
+    "geneName": "OR2J3",
+    "transcript": "ENST00000641151",
+    "chromosome": "6",
+    "exonsCount": 2,
+    "exonsLength": 2877,
+    "geneLength": 6723,
+    "description": "This genes is responsible for bla bla bla..."
+  },
+  {
+    "id": "FOXO3-ENST00000343882-Chr6",
+    "geneName": "FOXO3",
+    "transcript": "ENST00000343882",
+    "chromosome": "6",
+    "exonsCount": 2,
+    "exonsLength": 2018,
+    "geneLength": 124950,
+    "description": "This genes is responsible for bla bla bla..."
+  },
+  {
+    "id": "BRAF-ENST00000288602-Chr7",
+    "geneName": "BRAF",
+    "transcript": "ENST00000288602",
+    "chromosome": "7",
+    "exonsCount": 19,
+    "exonsLength": 2296,
+    "geneLength": 190324,
+    "description": "This genes is responsible for bla bla bla..."
+  },
+  {
+    "id": "TAS2R38-ENST00000547270-Chr7",
+    "geneName": "TAS2R38",
+    "transcript": "ENST00000547270",
+    "chromosome": "7",
+    "exonsCount": 2,
+    "exonsLength": 1083,
+    "geneLength": 1148,
+    "description": "This genes is responsible for bla bla bla..."
+  },
+  {
+    "id": "AR-ENST00000612452-ChrX",
+    "geneName": "AR",
+    "transcript": "ENST00000612452",
+    "chromosome": "X",
+    "exonsCount": 10,
+    "exonsLength": 2209,
+    "geneLength": 186607,
+    "description": "This genes is responsible for bla bla bla..."
+  },
+  {
+    "id": "OPN1MW-ENST00000595290-ChrX",
+    "geneName": "OPN1MW",
+    "transcript": "ENST00000595290",
+    "chromosome": "X",
+    "exonsCount": 7,
+    "exonsLength": 1090,
+    "geneLength": 13524,
+    "description": "This genes is responsible for bla bla bla..."
+  },
+  {
+    "id": "ABO-ENST00000611156-Chr9",
+    "geneName": "ABO",
+    "transcript": "ENST00000611156",
+    "chromosome": "9",
+    "exonsCount": 9,
+    "exonsLength": 1057,
+    "geneLength": 20057,
+    "description": "This genes is responsible for bla bla bla..."
+  },
+  {
+    "id": "HBB-ENST00000335295-Chr11",
+    "geneName": "HBB",
+    "transcript": "ENST00000335295",
+    "chromosome": "11",
+    "exonsCount": 4,
+    "exonsLength": 439,
+    "geneLength": 1616,
+    "description": "This gene is very small, but it is responsible for sickle cell anemia ! malaria ... ... "
+  },
+  {
+    "id": "ACTN3-ENST00000502692-Chr11",
+    "geneName": "ACTN3",
+    "transcript": "ENST00000502692",
+    "chromosome": "11",
+    "exonsCount": 22,
+    "exonsLength": 2830,
+    "geneLength": 16976,
+    "description": "This genes is responsible for bla bla bla..."
+  },
+  {
+    "id": "PCDH15-ENST00000373965-Chr10",
+    "geneName": "PCDH15",
+    "transcript": "ENST00000373965",
+    "chromosome": "10",
+    "exonsCount": 35,
+    "exonsLength": 5029,
+    "geneLength": 998593,
+    "description": "This genes is responsible for bla bla bla..."
+  },
+  {
+    "id": "OPN4-ENST00000372071-Chr10",
+    "geneName": "OPN4",
+    "transcript": "ENST00000372071",
+    "chromosome": "10",
+    "exonsCount": 12,
+    "exonsLength": 1465,
+    "geneLength": 11923,
+    "description": "This genes is responsible for bla bla bla..."
+  },
+  {
+    "id": "TCF7L2-ENST00000355995-Chr10",
+    "geneName": "TCF7L2",
+    "transcript": "ENST00000355995",
+    "chromosome": "10",
+    "exonsCount": 15,
+    "exonsLength": 1856,
+    "geneLength": 217461,
+    "description": "This genes is responsible for bla bla bla..."
+  },
+  {
+    "id": "SH2B3-ENST00000341259-Chr12",
+    "geneName": "SH2B3",
+    "transcript": "ENST00000341259",
+    "chromosome": "12",
+    "exonsCount": 8,
+    "exonsLength": 1723,
+    "geneLength": 45694,
+    "description": "This genes is responsible for bla bla bla..."
+  },
+  {
+    "id": "ALDH2-ENST00000261733-Chr12",
+    "geneName": "ALDH2",
+    "transcript": "ENST00000261733",
+    "chromosome": "12",
+    "exonsCount": 14,
+    "exonsLength": 1549,
+    "geneLength": 50636,
+    "description": "This genes is responsible for bla bla bla..."
+  },
+  {
+    "id": "GJB2-ENST00000382848-Chr13",
+    "geneName": "GJB2",
+    "transcript": "ENST00000382848",
+    "chromosome": "13",
+    "exonsCount": 2,
+    "exonsLength": 700,
+    "geneLength": 5436,
+    "description": "This genes is responsible for bla bla bla..."
+  },
+  {
+    "id": "OCA2-ENST00000354638-Chr15",
+    "geneName": "OCA2",
+    "transcript": "ENST00000354638",
+    "chromosome": "15",
+    "exonsCount": 24,
+    "exonsLength": 2512,
+    "geneLength": 344534,
+    "description": "This genes is responsible for bla bla bla..."
+  },
+  {
+    "id": "HERC2-ENST00000261609-Chr15",
+    "geneName": "HERC2",
+    "transcript": "ENST00000261609",
+    "chromosome": "15",
+    "exonsCount": 92,
+    "exonsLength": 14501,
+    "geneLength": 211301,
+    "description": "This genes is responsible for bla bla bla..."
+  },
+  {
+    "id": "SLC24A5-ENST00000341459-Chr15",
+    "geneName": "SLC24A5",
+    "transcript": "ENST00000341459",
+    "chromosome": "15",
+    "exonsCount": 10,
+    "exonsLength": 1498,
+    "geneLength": 21721,
+    "description": "This genes is responsible for bla bla bla..."
+  },
+  {
+    "id": "CYP1A2-ENST00000343932-Chr15",
+    "geneName": "CYP1A2",
+    "transcript": "ENST00000343932",
+    "chromosome": "15",
+    "exonsCount": 6,
+    "exonsLength": 1547,
+    "geneLength": 7375,
+    "description": "This genes is responsible for bla bla bla..."
+  },
+  {
+    "id": "ABCC11-ENST00000356608-Chr16",
+    "geneName": "ABCC11",
+    "transcript": "ENST00000356608",
+    "chromosome": "16",
+    "exonsCount": 30,
+    "exonsLength": 4144,
+    "geneLength": 80547,
+    "description": "This genes is responsible for bla bla bla..."
+  },
+  {
+    "id": "MC1R-ENST00000555427-Chr16",
+    "geneName": "MC1R",
+    "transcript": "ENST00000555427",
+    "chromosome": "16",
+    "exonsCount": 3,
+    "exonsLength": 1144,
+    "geneLength": 7566,
+    "description": "This genes is responsible for bla bla bla..."
+  },
+  {
+    "id": "BRCA1-ENST00000357654-Chr17",
+    "geneName": "BRCA1",
+    "transcript": "ENST00000357654",
+    "chromosome": "17",
+    "exonsCount": 23,
+    "exonsLength": 5587,
+    "geneLength": 81124,
+    "description": "This genes is responsible for bla bla bla..."
+  },
+  {
+    "id": "EPOR-ENST00000222139-Chr19",
+    "geneName": "EPOR",
+    "transcript": "ENST00000222139",
+    "chromosome": "19",
+    "exonsCount": 9,
+    "exonsLength": 1522,
+    "geneLength": 7126,
+    "description": "This genes is responsible for bla bla bla..."
+  }
+]

@@ -29,30 +29,30 @@
 <body>
       <div>
         <h3>Normalisation parameters (play with it to find a nice fit for the game)</h3>
-        <p>Introns are the non-coding parts of the gene (represented as the holes), which could be classified in 5 different classes for the game:</p>
-        <div><label>small-intron is smaller than </label><input id="small-intron" type="number" value="5000">&nbsp;bps and normalized value is:<input id="small-intron-norm" type="number" value="1">units. With this type of intron we could say the avatar could easily jump.</div>
-        <div><label>medium-intron is smaller than </label><input id="medium-intron" type="number" value="10000">&nbsp;bps and normalized value is:<input id="medium-intron-norm" type="number" value="5">units. With this type of intron we could say there are 1, 2 splicies (rocks) that the avatar need to jump on top to traverse the holw</div>
-        <div><label>large-intron is smaller than </label><input id="large-intron" type="number" value="15000">&nbsp;bps and normalized value is:<input id="large-intron-norm" type="number" value="10">units. With this type of intron we could say that there is a spliceosome that moves</div>
-        <div><label>big-intron is smaller than </label><input id="big-intron" type="number" value="20000">&nbsp;bps and normalized value is:<input id="big-intron-norm" type="number" value="20">units.  With this type of intron we could say that there is a spliceosome that moves and it is more complicated</div>
-        <div><label>huge-intron is equal or bigger than </label><input id="huge-intron" type="number" value="20000">&nbsp;bps and normalized value is:<input id="huge-intron-norm" type="number"  value="50">units. With this type of intron there could be an SR protein before and the avatar would be propulsated (I think it is easy for the avatar)</div>
+        <p>Introns are the non-coding parts of the gene (represented as the holes), which we could classify in 5 different classes for the game:</p>
+        <ul>
+            <li><label>small-intron is smaller than </label><input id="small-intron" type="number" value="5000">&nbsp;bps and normalized value is:<input id="small-intron-norm" type="number" value="1">units. With this type of intron we could say the avatar could easily jump.</li>
+            <li><label>medium-intron is smaller than </label><input id="medium-intron" type="number" value="10000">&nbsp;bps and normalized value is:<input id="medium-intron-norm" type="number" value="5">units. With this type of intron we could say there are 1, 2 splicies (rocks) that the avatar need to jump on top to traverse the holw</li>
+            <li><label>large-intron is smaller than </label><input id="large-intron" type="number" value="15000">&nbsp;bps and normalized value is:<input id="large-intron-norm" type="number" value="10">units. With this type of intron we could say that there is a spliceosome that moves</li>
+            <li><label>big-intron is smaller than </label><input id="big-intron" type="number" value="20000">&nbsp;bps and normalized value is:<input id="big-intron-norm" type="number" value="20">units.  With this type of intron we could say that there is a spliceosome that moves and it is more complicated</li>
+            <li><label>huge-intron is equal or bigger than </label><input id="huge-intron" type="number" value="20000">&nbsp;bps and normalized value is:<input id="huge-intron-norm" type="number"  value="50">units. With this type of intron there could be an SR protein before and the avatar would be propulsated (I think it is easy for the avatar)</li>
+        </ul>
         <p>Exons (includes stop_codon, snp, start_codon) are relatively smallers (average is 500bps) compared to the introns (10000bps) and a continous normalisation approach was adopted:</p>
-        <div><label>Division factor </label><input id="division-factor-exon" type="number" value="20">&nbsp; The length of the exons will be divided by this factor</div>
-        <div><label>Minimal unit: </label><input id="minimal-unit" type="number" value="1">&nbsp; The exons will have in minimum this unit</div>
-        <div><label>Maximal unit: </label><input id="maximal-unit" type="number" value="100">&nbsp; The exons will have in maximum this unit</div>
-        <button onclick="loadProtein()">Normalize</button>
-        <div>Max units of game are: <span id="maxUnits" style="color:green">computing...</span></div>
+        <ul>
+            <li><label>Division factor </label><input id="division-factor-exon" type="number" value="20">&nbsp; The length of the exons will be divided by this factor</li>
+            <li><label>Minimal unit: </label><input id="minimal-unit" type="number" value="1">&nbsp; The exons will have in minimum this unit</li>
+            <li><label>Maximal unit: </label><input id="maximal-unit" type="number" value="100">&nbsp; The exons will have in maximum this unit</li>
+        </ul>
+        <button onclick="loadProtein()" style="margin: 5px; font-size: 15px">Click here to normalize</button>
+        Based on your parameters: Minimal units for the game are: <span id="minUnits" style="color:green">computing...</span>
+        Maximal units for the game are: <span id="maxUnits" style="color:green">computing...</span>
     </div>
     <div>
         <h3>Notes</h3>
         <ul>
-            <li>If there is more than one transcript for a gene, we still need to choose the transcript</li>
-            <li>Real exon length can be found in <a target="_blank" href="data/data.json">here</a></li>
-            <li>Normalization paramaters can only be adjusted in this javascript code for now. We will add some input boxes so we can play with different normalization parameters to find a better fit for the game</li>
-            <li>SNP variant is still missing</li>
             <li>Up / Down / Obstacles are not yet defined (not sure if we should provide this info or we leave it up to you)....</li>
-            <li>Intron are much bigger than exons in reality (if possible in the drawing we could show le brin enroulé pour paraitre plus grand...</li>
-            <li>There is not a hole below the start and stop codon (it should be one exon with different color) from exon to utr (untranslated region)</li>
-            <li>Wait 10 seconds to see the results below...</li>
+            <li>Intron are much bigger than exons in reality (if possible in the drawing of the blue lines could be a brin "enroule" to seem bigger...</li>
+            <li>There is not a hole below the start, snp stop codon (it is a limitation of the library in use). It should be one exon with different color: from exon to utr (untranslated region)</li>
         </ul>
     </div>
     <div id="container">
@@ -133,26 +133,35 @@
     };
     
 
-    function renderGenes(genes) {
+    function renderGenes(genesInfo, genesData) {
 
         //Normalization and get max
         var maxNormalizedLength = 0;
         var minNormalizedLength = Number.MAX_SAFE_INTEGER;
-        genes.forEach(function (gene) {
+        genesData.forEach(function (gene) {
             gene.totalNormalizedLength = 0
             gene.levelData.forEach(function (ld) {
                 normalizeLength(ld);
                 gene.totalNormalizedLength += ld.normalizedLength
             })
-            maxNormalizedLength = Math.max(maxNormalizedLength, gene.totalNormalizedLength)
-            minNormalizedLength = Math.min(maxNormalizedLength, gene.totalNormalizedLength)
+            var gi = genesInfo.filter(g => g.geneName === gene.geneName);
+            gene.description = gi[0].description;
 
+            maxNormalizedLength = Math.max(maxNormalizedLength, gene.totalNormalizedLength)
+            minNormalizedLength = Math.min(minNormalizedLength, gene.totalNormalizedLength)
         })
         
-        console.log("Max normalized length: " + maxNormalizedLength)
-        console.log("Min normalized length: " + minNormalizedLength)
-            
-        genes.forEach(function (gene) {
+        genesSorted = genesData.sort(function(a,b){
+            if (a.totalNormalizedLength < b.totalNormalizedLength) {
+                return -1;
+            }else if (b.totalNormalizedLength < a.totalNormalizedLength) {
+                return 1;
+            }
+            return 0;
+        });
+
+
+        genesSorted.forEach(function (gene) {
 
             $("#genes").append("<p style='font-size:12px'>" + 
                                "<br>Gene name: " + gene.geneName + " (links to neXtProt and UniProt)" +
@@ -161,10 +170,10 @@
                                "<br>Exons: " + gene.exonsCount + 
                                "<br>???% of protein coding (exons)" +
                                "<br>" + gene.geneLength + "bp   " + 
-                               "<br>" + gene.totalNormalizedLength + "units "+ 
                                "<br>" + Math.ceil((gene.exonsLength + 1) / 3.0)  + "~aa (exonsLength / 3) but seems not to be correct" +
-                               "<br>Text: This gene is responsible for bla bla bla ...." +
-                               "</p>JSON:"
+                               "<br>Text:" + gene.description + 
+                               "<p>" + gene.totalNormalizedLength + "units<br>"+ 
+                               "JSON:"
                               )
             
             $("#genes").append("<p style='font-size:8px'>" + JSON.stringify(gene, null, 2) + "</p>")
@@ -172,6 +181,7 @@
             $("#genes").append("<hr>")
 
             $("#maxUnits").text(maxNormalizedLength)
+            $("#minUnits").text(minNormalizedLength)
             
 
             //Create a new Feature Viewer and add some rendering options
@@ -248,9 +258,12 @@
 
     function loadProtein() {
         $("#maxUnits").text("computing...")
+        $("#minUnits").text("computing...")
         $("#genes").empty();
-        $.getJSON('data/data.json', function (genes) {
-            renderGenes(genes);
-        })
+        $.getJSON('data/genes.json', function (genesInfo) {
+            $.getJSON('data/data.json', function (genesData) {
+                renderGenes(genesInfo, genesData);
+            })
+        });
     }
 </script>
