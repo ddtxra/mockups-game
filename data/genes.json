@@ -88,7 +88,10 @@
     "exonsCount": 8,
     "exonsLength": 1588,
     "geneLength": 40131,
-    "description": "This genes is responsible for bla bla bla..."
+    "description": "This genes is responsible for bla bla bla...",
+    "debugInfo" : {
+      "img" : "http://cache.marieclaire.fr/data/photo/w700_c17/3z/maquillage-peau-mate.jpg"
+    }
   },
   {
     "id": "OR2J3-ENST00000641151-Chr6",
@@ -176,7 +179,10 @@
     "exonsCount": 9,
     "exonsLength": 1057,
     "geneLength": 20057,
-    "description": "This genes is responsible for bla bla bla..."
+    "description": "This genes is responsible for bla bla bla...",
+    "debugInfo" : {
+      "img" : "http://whatsmybloodtype.org/files/images/typeb.jpg"
+    }
   },
   {
     "id": "HBB-ENST00000335295-Chr11",
@@ -272,7 +278,10 @@
     "exonsCount": 2,
     "exonsLength": 700,
     "geneLength": 5436,
-    "description": "This genes is responsible for bla bla bla..."
+    "description": "This genes is responsible for bla bla bla...",
+    "debugInfo" : {
+      "img" : "https://st3.depositphotos.com/1432405/12768/v/950/depositphotos_127686200-stock-illustration-hearing-aid-icon-cartoon-style.jpg"
+    }
   },
   {
     "id": "OCA2-ENST00000354638-Chr15",
@@ -302,7 +311,10 @@
     "exonsCount": 10,
     "exonsLength": 1498,
     "geneLength": 21721,
-    "description": "This genes is responsible for bla bla bla..."
+    "description": "This genes is responsible for bla bla bla...",
+    "debugInfo" : {
+      "img" : "http://i.f1g.fr/media/ext/1900x1900/madame.lefigaro.fr/sites/default/files/img/2016/01/1624jpg.jpg"
+    }
   },
   {
     "id": "CYP1A2-ENST00000343932-Chr15",

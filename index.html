@@ -33,7 +33,7 @@
 </style>
 
 <body>
-      <div style="margin: 10px;">
+      <div style="margin: 10px; font-size:12px">
         <h3>Normalisation parameters (play with it to find a nice fit for the game)</h3>
         <p>Introns are the non-coding parts of the gene (represented as the holes), which we could classify in 5 different classes for the game:</p>
         <ul>
@@ -50,9 +50,16 @@
             <li><label>Maximal unit: </label><input style="font-size: 16px" id="maximal-unit" type="number" value="100">&nbsp; The exons will have in maximum this unit</li>
         </ul>
         <button onclick="loadProtein()" style="margin: 5px; font-size: 15px">Click here to normalize</button>
-        Based on your parameters: Minimal units for the game are: <span id="minUnits" style="color:green">computing...</span>
-        Maximal units for the game are: <span id="maxUnits" style="color:green">computing...</span>
+        <br>
+    </div>
+    <div style="margin: 10px;">
+        Based on your parameters: 
+        Minimal units for a gene are: <span id="minUnits" style="color:green">computing...</span>
+        Maximal units for a gene are: <span id="maxUnits" style="color:green">computing...</span>
+        <br>Exons count with minimal unit: <span id="minExonsCount" style="color:green">computing...</span>
+        Exons count with maximal unit: <span id="maxExonsCount" style="color:green">computing...</span> (minimize this number)
         <br>Introns types distribution: <span id="intronsDist" style="color:green">computing...</span>
+        
     </div>
     <div style="margin: 10px;">
         <h3>Notes</h3>
@@ -69,6 +76,9 @@
 
 
 <script>
+
+    var maximalExon, minimalExon = 0;
+
     loadProtein()
 
     function getBaseLog(x, y) {
@@ -100,9 +110,11 @@
         var continousNormalization = Math.round(realLength / divisionFactor);
         if (continousNormalization > maximalUnit) {
             continousNormalization = maximalUnit;
+            maximalExon++;
         }
         if (continousNormalization < minimalUnit) {
             continousNormalization = minimalUnit;
+            minimalExon++;
         }
         
 
@@ -156,6 +168,8 @@
     function renderGenes(genesInfo, genesData) {
 
 
+        maximalExon = 0;
+        minimalExon = 0;
         //Normalization and get max
         var maxNormalizedLength = 0;
         var minNormalizedLength = Number.MAX_SAFE_INTEGER;
@@ -202,6 +216,8 @@
 
         $("#maxUnits").text(maxNormalizedLength)
         $("#minUnits").text(minNormalizedLength)
+        $("#maxExonsCount").text(maximalExon)
+        $("#minExonsCount").text(minimalExon)
         $("#intronsDist").text("");
         $("#intronsDist").append("small-introns:" + totalClassCount["small-intron"] + " ")
         $("#intronsDist").append("medium-introns:" + totalClassCount["medium-intron"] + " ")
@@ -215,8 +231,8 @@
             var html = "";
             html += "<div class='geneContainer'>" +
                     "<div class='pull-right'><img width='50px' src='http://www.chromosomewalk.ch/wp-content/uploads/chromosome_" + gene.chromosome + ".png'></img></div>" +
-                    "<p><b>Gene name:</b> " + gene.geneName  +
-                    "&nbsp;&nbsp;<b>Transcript</b>: <a target='_blank' href='http://www.ensembl.org/Homo_sapiens/transview?db=core;transcript=" + gene.transcript + "'>" + gene.transcript + "</a>"+
+                    "<h3>Gene name: " + gene.geneName  + "</h3>" + 
+                    "<b>Transcript</b>: <a target='_blank' href='http://www.ensembl.org/Homo_sapiens/transview?db=core;transcript=" + gene.transcript + "'>" + gene.transcript + "</a>"+
                     "&nbsp;&nbsp;<b>Chromosome</b>: " + gene.chromosome + 
                     "<br><b>Gene real length:</b>" + gene.geneLength + " bp (base pairs = A,C,G,T)  " + 
                     "&nbsp;&nbsp;<b>Protein real length:</b> " + Math.ceil((gene.exonsLength + 1) / 3.0)  + "aa (amino acids). Computed using (exonsLength / 3) but seems not to be correct all the time" +
@@ -235,13 +251,18 @@
             html += "<div id=\'" + gene.id + "\'></div>";
             html += "<b>Mutation Type</b>: (Missense, Insertion, Deletion, Frameshift, STOP, Intergenic, Others...)<br>";
             html += "<b>Description</b>:<br>" + gene.description ;
-            html += "<img width='250px' src='" + gene["3dImage"] + "'></img>";
+            if(gene["3dImage"])
+                html += "<img width='250px' src='" + gene["3dImage"] + "'></img>";
             
             html += "<br><b>Protein Resources Databases:</b><br>" + 
                 "<ul>" + getProteinLink(gene, "uniprot") + getProteinLink(gene, "nextprot") +
                 "</ul>";
+            html += "<br><b>Links to publication, chromosome walk, swissdrug?, ensembl? dbsnpedia? </b><br>"
 
-            html += "<img width='150px' src='" + (gene.debugInfo ? gene.debugInfo.img : "" ) + "'></img>";
+            if(gene.debugInfo) {
+                html += "<br><b>Debug Info Image (To help understanding but not to include in the game)</b><br>";
+                html += "<img height='50px' src='" + gene.debugInfo.img + "'></img>";
+            }
 
             html += "</div>";
             html += "<hr>";
@@ -324,6 +345,8 @@
         $("#maxUnits").text("computing...")
         $("#minUnits").text("computing...")
         $("#intronsDist").text("computing...")
+        $("#maxExonsCount").text("computing...")
+        $("#minExonsCount").text("computing...")
         
         $("#genes").empty();
         $.getJSON('data/genes.json', function (genesInfo) {
