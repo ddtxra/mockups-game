@@ -128,7 +128,10 @@
     "exonsCount": 2,
     "exonsLength": 1083,
     "geneLength": 1148,
-    "description": "This genes is responsible for bla bla bla..."
+    "description": "... amertume .... ",
+    "debugInfo" : {
+      "img" : "http://downloadclipart.org/do-upload/clipart/2016-01/Cartoon_Broccoli_Clip_Art.png"
+    }
   },
   {
     "id": "AR-ENST00000612452-ChrX",
@@ -148,7 +151,22 @@
     "exonsCount": 7,
     "exonsLength": 1090,
     "geneLength": 13524,
-    "description": "This genes is responsible for bla bla bla..."
+    "description": "Daltonien: yeux (un oeil jaune et un oeil bleu)",
+    "debugInfo" : {
+      "img" : "http://daltonien.free.fr/daltonien/IMG/jpg/15.jpg"
+    },
+    "externalLinks" : {
+      "nextprot" : {
+        "url" : "https://www.nextprot.org/entry/NX_P68871",
+        "img" : "data/assets/nextprot.png",
+        "accession" : "NX_P68871"
+      },
+      "uniprot" : {
+        "url" : "http://www.uniprot.org/uniprot/P68871",
+        "img" : "data/assets/uniprot.jpg",
+        "accession" : "P68871"
+      }
+    }
   },
   {
     "id": "ABO-ENST00000611156-Chr9",
@@ -168,7 +186,10 @@
     "exonsCount": 4,
     "exonsLength": 439,
     "geneLength": 1616,
-    "description": "This gene is very small, but it is responsible for sickle cell anemia ! malaria ... ... This gene is very small, but it is responsible for sickle cell anemia ! malaria ... ... ",
+    "description": "This gene is very small, but it is responsible for sickle cell anemia ! malaria ... ... ",
+    "debugInfo" : {
+      "img" : "http://kidshealth.org/EN/images/illustrations/sickleCell-400x214-rd1-enIL.jpg"
+    },
     "3dImage" : "data/assets/proteins/HBB3D.png",
     "externalLinks" : {
       "nextprot" : {
