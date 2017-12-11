@@ -1,15 +1,14 @@
 <script src="feature-viewer.nextprot.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 <style type="text/css">
-    #container {
-        overflow-y: scroll;
-        max-height: 1050px;
-        border-width: 1px;
-        border-color: grey;
-        border-style: solid;
-        width: 1680px;
-        margin: 10px;
-    }
     .svgHeader {
         display: none;
     }
@@ -19,6 +18,13 @@
     table {
         margin: 10px;
     }
+    .geneContainer {
+        margin: 10px;
+        padding: 10px;
+        border-width: 1px;
+        border-color: grey;
+        border-style: solid;
+    }
     table tr td {
         border-width: 1px;
         border-color: grey;
@@ -27,7 +33,7 @@
 </style>
 
 <body>
-      <div>
+      <div style="margin: 10px;">
         <h3>Normalisation parameters (play with it to find a nice fit for the game)</h3>
         <p>Introns are the non-coding parts of the gene (represented as the holes), which we could classify in 5 different classes for the game:</p>
         <ul>
@@ -40,14 +46,14 @@
         <p>Exons (includes stop_codon, snp, start_codon) are relatively smallers (average is 500bps) compared to the introns (10000bps) and a continous normalisation approach was adopted:</p>
         <ul>
             <li><label>Division factor </label><input id="division-factor-exon" type="number" value="20">&nbsp; The length of the exons will be divided by this factor</li>
-            <li><label>Minimal unit: </label><input id="minimal-unit" type="number" value="1">&nbsp; The exons will have in minimum this unit</li>
-            <li><label>Maximal unit: </label><input id="maximal-unit" type="number" value="100">&nbsp; The exons will have in maximum this unit</li>
+            <li><label>Minimal unit: </label><input style="font-size: 16px" id="minimal-unit" type="number" value="1">&nbsp; The exons will have in minimum this unit</li>
+            <li><label>Maximal unit: </label><input style="font-size: 16px" id="maximal-unit" type="number" value="100">&nbsp; The exons will have in maximum this unit</li>
         </ul>
         <button onclick="loadProtein()" style="margin: 5px; font-size: 15px">Click here to normalize</button>
         Based on your parameters: Minimal units for the game are: <span id="minUnits" style="color:green">computing...</span>
         Maximal units for the game are: <span id="maxUnits" style="color:green">computing...</span>
     </div>
-    <div>
+    <div style="margin: 10px;">
         <h3>Notes</h3>
         <ul>
             <li>Up / Down / Obstacles are not yet defined (not sure if we should provide this info or we leave it up to you)....</li>
@@ -56,7 +62,7 @@
         </ul>
     </div>
     <div id="container">
-      <div id="genes" style="width:1680px;height:1050px;padding:5px"></div>
+      <div id="genes"></div>
     </div>
 </body>
 
@@ -101,6 +107,18 @@
         return { normalizedLength: continousNormalization }
 
     };
+
+    function getProteinLink (gene, source){
+
+                if(gene.externalLinks && gene.externalLinks[source]){
+                    var externalLink = gene.externalLinks[source];
+                   return  "<li><a target='_blank' href='"+ externalLink["url"] + "'>"+
+                                 "<img height='20px' src='" + externalLink["img"] + "'</img>"+
+                                 "</a> "+ externalLink["accession"]  + " </li>";
+                }else return "";
+
+    }
+
 
     function getNormalizedLengthForIntrons(number) {
 
@@ -167,39 +185,34 @@
         genesSorted.forEach(function (gene) {
 
 
-            $("#genes").append("<p style='font-size:12px'>" + 
-                               "<br>Gene name: " + gene.geneName  +
-                               "<br>Transcript: <a target='_blank' href='http://www.ensembl.org/Homo_sapiens/transview?db=core;transcript=" + gene.transcript + "'>" + gene.transcript + "</a>"+
-                               "<br>Chromosome: " + gene.chromosome + 
-                               "<br>Exons: " + gene.exonsCount + 
-                               "<br>???% of protein coding (exons)" +
-                               "<br>" + gene.geneLength + "bp (base pairs)  " + 
-                               "<br>" + Math.ceil((gene.exonsLength + 1) / 3.0)  + "aa (amino acids). Computed using (exonsLength / 3) but seems not to be correct all the time" +
-                               "<br>Text:" + gene.description + 
-                               "<p>" + gene.totalNormalizedLength + "units<br>"+ 
-                               "JSON:"
-                              )
-            
-            $("#genes").append("<p style='font-size:8px'>" + JSON.stringify(gene, null, 2) + "</p>")
-            $("#genes").append("<div id=\'" + gene.id + "\'></div>")
+            var html = "";
+            html += "<div class='geneContainer'>";
+            html += "<p>Gene name: " + gene.geneName  +
+                    "<br>Transcript: <a target='_blank' href='http://www.ensembl.org/Homo_sapiens/transview?db=core;transcript=" + gene.transcript + "'>" + gene.transcript + "</a>"+
+                    "<br>Variant: rs000" + 
+                    "<br>Chromosome: " + gene.chromosome + 
+                    "<br>Exons: " + gene.exonsCount + 
+                    "<br>???% of protein coding (exons)" +
+                    "<br>" + gene.geneLength + "bp (base pairs)  " + 
+                    "<br>" + Math.ceil((gene.exonsLength + 1) / 3.0)  + "aa (amino acids). Computed using (exonsLength / 3) but seems not to be correct all the time" +
+                    "<p>" + gene.totalNormalizedLength + "units<br>";
 
-            function getProteinLink (gene, source){
-
-                if(gene.externalLinks && gene.externalLinks[source]){
-                    var externalLink = gene.externalLinks[source];
-                   return  "<li><a target='_blank' href='"+ externalLink["url"] + "'>"+
-                                 "<img height='20px' src='" + externalLink["img"] + "'</img>"+
-                                 "</a> "+ externalLink["accession"]  + " </li>";
-                }else return "";
-
-            }
-
-            $("#genes").append("<p>Protein links:" + 
+            html += "<button data-toggle='collapse' data-target='#json" + gene.id + "'>View JSON in pretty format</button>";
+            html += "<div id='json" + gene.id + "' class='collapse'><pre><code>" + JSON.stringify(gene, null, 2) + "</code></pre></div>";
+            html += "<span style='font-size:6px'>" + JSON.stringify(gene, null, 2) + "</span>";
+            html += "<div id=\'" + gene.id + "\'></div>";
+            html += "<b>Mutation Type</b>: (Missense, Insertion, Deletion, Frameshift, STOP, Intergenic, Others...)<br>";
+            html += "<b>Description</b>:<br>" + gene.description ;
+            html += "<img src='" + gene["3dImage"] + "'></img>";
+            html += "<br><b>Protein Resources Databases:</b><br>" + 
                 "<ul>" + getProteinLink(gene, "uniprot") + getProteinLink(gene, "nextprot") +
-                "</ul>");
+                "</ul>";
 
 
-            $("#genes").append("<hr>")
+            html += "</div>";
+            html += "<hr>";
+
+            $("#genes").append(html);
 
             //Create a new Feature Viewer and add some rendering options
             var ft = new FeatureViewer(maxNormalizedLength, "#" + gene.id, {

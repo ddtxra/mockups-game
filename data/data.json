@@ -195,7 +195,7 @@
     "transcript": "ENST00000264162",
     "chromosome": "2",
     "exonsCount": 18,
-    "exonsLength": 5779,
+    "exonsLength": 5778,
     "geneLength": 49377,
     "levelData": [
       {
@@ -224,11 +224,7 @@
       },
       {
         "type": "exon",
-        "realLength": 84
-      },
-      {
-        "type": "intron",
-        "realLength": 0
+        "realLength": 83
       },
       {
         "type": "snp",
@@ -236,7 +232,7 @@
       },
       {
         "type": "intron",
-        "realLength": 5590
+        "realLength": 5591
       },
       {
         "type": "exon",
@@ -752,8 +748,8 @@
     "transcript": "ENST00000292303",
     "chromosome": "3",
     "exonsCount": 2,
-    "exonsLength": 3301,
-    "geneLength": 5360,
+    "exonsLength": 1054,
+    "geneLength": 5359,
     "levelData": [
       {
         "type": "utr",
@@ -781,11 +777,15 @@
       },
       {
         "type": "exon",
-        "realLength": 2751
+        "realLength": 504
       },
       {
         "type": "stop_codon",
         "realLength": 3
+      },
+      {
+        "type": "utr",
+        "realLength": 2246
       }
     ]
   },
@@ -1288,8 +1288,8 @@
     "transcript": "ENST00000641151",
     "chromosome": "6",
     "exonsCount": 2,
-    "exonsLength": 2877,
-    "geneLength": 6723,
+    "exonsLength": 931,
+    "geneLength": 6722,
     "levelData": [
       {
         "type": "utr",
@@ -1333,11 +1333,15 @@
       },
       {
         "type": "exon",
-        "realLength": 2543
+        "realLength": 597
       },
       {
         "type": "stop_codon",
         "realLength": 3
+      },
+      {
+        "type": "utr",
+        "realLength": 1945
       }
     ]
   },
@@ -1593,16 +1597,20 @@
     "transcript": "ENST00000547270",
     "chromosome": "7",
     "exonsCount": 2,
-    "exonsLength": 1083,
-    "geneLength": 1148,
+    "exonsLength": 997,
+    "geneLength": 1147,
     "levelData": [
+      {
+        "type": "utr",
+        "realLength": 85
+      },
       {
         "type": "start_codon",
         "realLength": 3
       },
       {
         "type": "exon",
-        "realLength": 228
+        "realLength": 142
       },
       {
         "type": "snp",
