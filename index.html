@@ -195,7 +195,6 @@
                 }
             })
 
-            console.log(classCount);
             gene.classCount = classCount;
 
             var gi = genesInfo.filter(g => g.geneName === gene.geneName);
@@ -228,10 +227,16 @@
         genesSorted.forEach(function (gene) {
 
 
+
+            var sv = ""; 
+            if(gene.superVariant) {
+                sv = "<span style='background-color:orange'>super variant</span>";
+            }
+
             var html = "";
             html += "<div class='geneContainer'>" +
                     "<div class='pull-right'><img width='50px' src='http://www.chromosomewalk.ch/wp-content/uploads/chromosome_" + gene.chromosome + ".png'></img></div>" +
-                    "<h3>Gene name: " + gene.geneName  + "</h3>" + 
+                    "<h3>Gene name: " + gene.geneName  + "&nbsp;" + sv + "</h3>" + 
                     "<b>Transcript</b>: <a target='_blank' href='http://www.ensembl.org/Homo_sapiens/transview?db=core;transcript=" + gene.transcript + "'>" + gene.transcript + "</a>"+
                     "&nbsp;&nbsp;<b>Chromosome</b>: " + gene.chromosome + 
                     "<br><b>Gene real length:</b>" + gene.geneLength + " bp (base pairs = A,C,G,T)  " + 

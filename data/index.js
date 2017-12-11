@@ -5,13 +5,7 @@ var inputFile='gene_coordinates.txt';
 var parser = parse({delimiter: '\t'}, function (err, data) {
 
 
-    var rejected = [//"ENST00000368804", "ENST00000445772" ,
-                    //BRCA1
-                   //"ENST00000352993", "ENST00000468300", "ENST00000586385", "ENST00000591534", "ENST00000591849", "ENST00000493795", "ENST00000471181", "ENST00000491747", "ENST00000354071", "ENST00000492859",
-                   //EPOR
-                   //"ENST00000592375", "ENST00000588859", "ENST00000591958", "ENST00000586890"
-]
-    
+    var rejected = []
     ////////////////// FLAT FILE //////////////////////////////////////////////////////////
     var blocks = []
     data.forEach(function(line) {
@@ -93,6 +87,8 @@ var parser = parse({delimiter: '\t'}, function (err, data) {
         }
 
     }
+
+    selectedTranscripts.push(selectedTranscript)
     
     console.log(JSON.stringify(selectedTranscripts))
     

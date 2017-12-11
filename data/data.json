@@ -4846,5 +4846,68 @@
         "realLength": 780
       }
     ]
+  },
+  {
+    "id": "APOE-ENST00000252486-Chr19",
+    "geneName": "APOE",
+    "transcript": "ENST00000252486",
+    "chromosome": "19",
+    "exonsCount": 4,
+    "exonsLength": 949,
+    "geneLength": 3650,
+    "levelData": [
+      {
+        "type": "utr",
+        "realLength": 88
+      },
+      {
+        "type": "intron",
+        "realLength": 762
+      },
+      {
+        "type": "utr",
+        "realLength": 24
+      },
+      {
+        "type": "start_codon",
+        "realLength": 3
+      },
+      {
+        "type": "exon",
+        "realLength": 41
+      },
+      {
+        "type": "intron",
+        "realLength": 1094
+      },
+      {
+        "type": "exon",
+        "realLength": 193
+      },
+      {
+        "type": "intron",
+        "realLength": 582
+      },
+      {
+        "type": "exon",
+        "realLength": 151
+      },
+      {
+        "type": "snp",
+        "realLength": 1
+      },
+      {
+        "type": "exon",
+        "realLength": 564
+      },
+      {
+        "type": "stop_codon",
+        "realLength": 3
+      },
+      {
+        "type": "utr",
+        "realLength": 144
+      }
+    ]
   }
 ]

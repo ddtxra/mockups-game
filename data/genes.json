@@ -212,23 +212,25 @@
   },
   {
     "id": "ACTN3-ENST00000502692-Chr11",
+    "superVariant" : true,
     "geneName": "ACTN3",
     "transcript": "ENST00000502692",
     "chromosome": "11",
     "exonsCount": 22,
     "exonsLength": 2830,
     "geneLength": 16976,
-    "description": "This genes is responsible for bla bla bla..."
+    "description": " muscle? "
   },
   {
     "id": "PCDH15-ENST00000373965-Chr10",
+    "superVariant": true,
     "geneName": "PCDH15",
     "transcript": "ENST00000373965",
     "chromosome": "10",
     "exonsCount": 35,
     "exonsLength": 5029,
     "geneLength": 998593,
-    "description": "This genes is responsible for bla bla bla..."
+    "description": "Usher syndrome un gars avec lunette noir et appareil auditif..."
   },
   {
     "id": "OPN4-ENST00000372071-Chr10",
@@ -262,23 +264,26 @@
   },
   {
     "id": "ALDH2-ENST00000261733-Chr12",
+    "superVariant" : true,
     "geneName": "ALDH2",
     "transcript": "ENST00000261733",
+    "3dImage" : "data/assets/proteins/ALDH23D.png",
     "chromosome": "12",
     "exonsCount": 14,
     "exonsLength": 1549,
     "geneLength": 50636,
-    "description": "This genes is responsible for bla bla bla..."
+    "description": "Avec une choppe de bière a la main..."
   },
   {
     "id": "GJB2-ENST00000382848-Chr13",
+    "superVariant" : true,
     "geneName": "GJB2",
     "transcript": "ENST00000382848",
     "chromosome": "13",
     "exonsCount": 2,
     "exonsLength": 700,
     "geneLength": 5436,
-    "description": "This genes is responsible for bla bla bla...",
+    "description": "Il gagne un appareil auditif",
     "debugInfo" : {
       "img" : "https://st3.depositphotos.com/1432405/12768/v/950/depositphotos_127686200-stock-illustration-hearing-aid-icon-cartoon-style.jpg"
     }
@@ -358,12 +363,25 @@
   },
   {
     "id": "EPOR-ENST00000222139-Chr19",
+    "superVariant" : true,
     "geneName": "EPOR",
     "transcript": "ENST00000222139",
     "chromosome": "19",
     "exonsCount": 9,
     "exonsLength": 1522,
     "geneLength": 7126,
-    "description": "This genes is responsible for bla bla bla..."
+    "description": "beaucoup de globule rouge"
+  },
+  {
+    "id": "APOE-ENST00000252486-Chr19",
+    "superVariant" : true,
+    "geneName": "APOE",
+    "transcript": "ENST00000252486",
+    "chromosome": "19",
+    "exonsCount": 4,
+    "exonsLength": 949,
+    "geneLength": 3650,
+    "description": "vieux monsieur qui revient en arrièere (Alzheimer)"    
   }
+
 ]
