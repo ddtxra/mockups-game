@@ -8,6 +8,7 @@
     "exonsLength": 5826,
     "geneLength": 9146,
     "description": "This gene is responsible for curly hair.... "
+
   },
   {
     "id": "EDAR-ENST00000258443-Chr2",
@@ -167,7 +168,20 @@
     "exonsCount": 4,
     "exonsLength": 439,
     "geneLength": 1616,
-    "description": "This gene is very small, but it is responsible for sickle cell anemia ! malaria ... ... "
+    "description": "This gene is very small, but it is responsible for sickle cell anemia ! malaria ... ... This gene is very small, but it is responsible for sickle cell anemia ! malaria ... ... ",
+    "3dImage" : "data/assets/proteins/HBB3D.png",
+    "externalLinks" : {
+      "nextprot" : {
+        "url" : "https://www.nextprot.org/entry/NX_P68871",
+        "img" : "data/assets/nextprot.png",
+        "accession" : "NX_P68871"
+      },
+      "uniprot" : {
+        "url" : "http://www.uniprot.org/uniprot/P68871",
+        "img" : "data/assets/uniprot.jpg",
+        "accession" : "P68871"
+      }
+    }
   },
   {
     "id": "ACTN3-ENST00000502692-Chr11",
