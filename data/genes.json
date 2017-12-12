@@ -7,8 +7,22 @@
     "exonsCount": 4,
     "exonsLength": 5826,
     "geneLength": 9146,
-    "description": "This gene is responsible for curly hair.... "
-
+    "description": "This gene is responsible for curly hair.... ",
+    "debugInfo" : {
+      "img" : "https://upload.wikimedia.org/wikipedia/commons/e/ef/Protein_BCL2L1_PDB_1af3.png"
+    },
+    "externalLinks" : {
+      "nextprot" : {
+        "url" : "https://www.nextprot.org/entry/NX_Q07283",
+        "img" : "data/assets/nextprot.png",
+        "accession" : "NX_Q07283"
+      },
+      "uniprot" : {
+        "url" : "http://www.uniprot.org/uniprot/Q07283",
+        "img" : "data/assets/uniprot.jpg",
+        "accession" : "Q07283"
+      }
+    }
   },
   {
     "id": "EDAR-ENST00000258443-Chr2",
