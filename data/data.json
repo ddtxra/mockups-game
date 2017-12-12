@@ -3016,6 +3016,157 @@
     ]
   },
   {
+    "id": "AKT1-ENST00000349310-Chr14",
+    "geneName": "AKT1",
+    "transcript": "ENST00000349310",
+    "chromosome": "14",
+    "exonsCount": 13,
+    "exonsLength": 1439,
+    "geneLength": 26435,
+    "levelData": [
+      {
+        "type": "utr",
+        "realLength": 268
+      },
+      {
+        "type": "intron",
+        "realLength": 2275
+      },
+      {
+        "type": "utr",
+        "realLength": 84
+      },
+      {
+        "type": "intron",
+        "realLength": 406
+      },
+      {
+        "type": "utr",
+        "realLength": 80
+      },
+      {
+        "type": "start_codon",
+        "realLength": 3
+      },
+      {
+        "type": "exon",
+        "realLength": 44
+      },
+      {
+        "type": "intron",
+        "realLength": 12383
+      },
+      {
+        "type": "exon",
+        "realLength": 129
+      },
+      {
+        "type": "intron",
+        "realLength": 3319
+      },
+      {
+        "type": "exon",
+        "realLength": 112
+      },
+      {
+        "type": "intron",
+        "realLength": 861
+      },
+      {
+        "type": "exon",
+        "realLength": 148
+      },
+      {
+        "type": "intron",
+        "realLength": 446
+      },
+      {
+        "type": "exon",
+        "realLength": 132
+      },
+      {
+        "type": "intron",
+        "realLength": 74
+      },
+      {
+        "type": "exon",
+        "realLength": 66
+      },
+      {
+        "type": "intron",
+        "realLength": 959
+      },
+      {
+        "type": "exon",
+        "realLength": 69
+      },
+      {
+        "type": "intron",
+        "realLength": 333
+      },
+      {
+        "type": "exon",
+        "realLength": 126
+      },
+      {
+        "type": "intron",
+        "realLength": 77
+      },
+      {
+        "type": "exon",
+        "realLength": 129
+      },
+      {
+        "type": "intron",
+        "realLength": 160
+      },
+      {
+        "type": "exon",
+        "realLength": 215
+      },
+      {
+        "type": "intron",
+        "realLength": 23
+      },
+      {
+        "type": "snp",
+        "realLength": 1
+      },
+      {
+        "type": "intron",
+        "realLength": 403
+      },
+      {
+        "type": "exon",
+        "realLength": 88
+      },
+      {
+        "type": "intron",
+        "realLength": 1519
+      },
+      {
+        "type": "exon",
+        "realLength": 103
+      },
+      {
+        "type": "intron",
+        "realLength": 326
+      },
+      {
+        "type": "exon",
+        "realLength": 78
+      },
+      {
+        "type": "stop_codon",
+        "realLength": 3
+      },
+      {
+        "type": "utr",
+        "realLength": 993
+      }
+    ]
+  },
+  {
     "id": "OCA2-ENST00000354638-Chr15",
     "geneName": "OCA2",
     "transcript": "ENST00000354638",
