@@ -9,8 +9,9 @@
     "geneLength": 9146,
     "description": "This gene is responsible for curly hair.... ",
     "debugInfo" : {
-      "img" : "https://upload.wikimedia.org/wikipedia/commons/e/ef/Protein_BCL2L1_PDB_1af3.png"
+      "img" : "http://mercredie.com/wp-content/uploads/2014/08/mercredie-blog-beaute-cheveux-frises-pre-wash-post-wash-conseils-cheveux-naturels-crepus-frises-boucles.jpg"
     },
+    "3dImage" : "data/assets/proteins/unkown3D.png",
     "externalLinks" : {
       "nextprot" : {
         "url" : "https://www.nextprot.org/entry/NX_Q07283",
