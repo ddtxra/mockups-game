@@ -264,6 +264,7 @@
         $("#intronsDist").append("large-introns:" + totalClassCount["large-intron"] + " ")
         $("#intronsDist").append("huge-introns:" + totalClassCount["huge-intron"] + " ")
 
+        var g = 1;
         genesSorted.forEach(function (gene) {
 
 
@@ -273,11 +274,17 @@
                 sv = "<span style='background-color:orange'>super variant</span>";
             }
 
-            var html = "";
+            html = ""
             html += "<div class='geneContainer'>" +
                     "<div class='pull-right'></div>" +
-                    "<h3>Gene name: " + gene.geneName  + "&nbsp;" + sv + "</h3>" + 
-                    "<img height='50px' src='data/assets/chromosomes/pair/chromosome_" + gene.chromosome + ".png'></img>" +  
+                    "<h3>" + g++ + " - Gene name: " + gene.geneName  + " " + "&nbsp;" + sv;
+
+            if(gene.debugInfo) {
+                html += "&nbsp;<img height='30px' src='" + gene.debugInfo.img + "'></img>";
+            }
+            html +=  "</h3>"
+            
+            html += "<img height='50px' src='data/assets/chromosomes/pair/chromosome_" + gene.chromosome + ".png'></img>" +  
                     "<img height='50px' src='data/assets/chromosomes/single/chromosome" + gene.chromosome + ".png'></img>" +
                     "&nbsp;&nbsp;<b>Chromosome</b>: " + gene.chromosome + " position in chromosome: ???" + 
                     "<b>&nbsp;Transcript</b>: <a target='_blank' href='http://www.ensembl.org/Homo_sapiens/transview?db=core;transcript=" + gene.transcript + "'>" + gene.transcript + "</a>"+
@@ -296,6 +303,9 @@
             html += "<div id=\'" + gene.id + "\'></div>";
             html += "<br><b>Protein length:</b> (" +gene.exonsLength  +"/3)=" + Math.ceil((gene.exonsLength + 1) / 3.0)  + "aa (amino acids)....  The translation of the mRNA gene by the ribosome (animation) will render a protein of this length"
             html += "<br><b>Description</b>:<br>" + gene.description ;
+            if(gene.descriptionImg){
+                html += "<br><img width='250px' src='" + gene.descriptionImg + "'></img>";
+            }
             if(gene["3dImage"]){
                 html += "<br><b>Protein Image (careful to have no copyright)</b>:<br>"
                 html += "<br><img width='250px' src='" + gene["3dImage"] + "'></img>";
