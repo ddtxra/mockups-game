@@ -153,7 +153,7 @@
         }else if(source === "proteinSpotlight" &&  gene.externalLinks && gene.externalLinks.proteinSpotlight) {
             image = "data/assets/proteinSpotlight.png"
             value = "A story in Protein SpotLight";
-            url = "http://web.expasy.org/spotlight/back_issues/" + value
+            url = "http://web.expasy.org/spotlight/back_issues/" + gene.externalLinks.proteinSpotlight;
         }
 
         if(value) {
