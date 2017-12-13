@@ -4,9 +4,6 @@
     "geneName": "TCHH",
     "transcript": "ENST00000614923",
     "chromosome": "1",
-    "exonsCount": 4,
-    "exonsLength": 5826,
-    "geneLength": 9146,
     "description": "This gene is responsible for curly hair.... ",
     "debugInfo" : {
       "img" : "http://mercredie.com/wp-content/uploads/2014/08/mercredie-blog-beaute-cheveux-frises-pre-wash-post-wash-conseils-cheveux-naturels-crepus-frises-boucles.jpg"
@@ -21,9 +18,6 @@
     "geneName": "EDAR",
     "transcript": "ENST00000258443",
     "chromosome": "2",
-    "exonsCount": 12,
-    "exonsLength": 1342,
-    "geneLength": 94928,
     "description": "This genes is responsible for bla bla bla..."
   },
   {
@@ -31,9 +25,6 @@
     "geneName": "LCT",
     "transcript": "ENST00000264162",
     "chromosome": "2",
-    "exonsCount": 18,
-    "exonsLength": 5779,
-    "geneLength": 49377,
     "description": "This genes is responsible for bla bla bla..."
   },
   {
@@ -41,9 +32,6 @@
     "geneName": "MCM6",
     "transcript": "ENST00000264156",
     "chromosome": "2",
-    "exonsCount": 17,
-    "exonsLength": 2462,
-    "geneLength": 36837,
     "description": "This genes is responsible for bla bla bla..."
   },
   {
@@ -51,9 +39,6 @@
     "geneName": "PER2",
     "transcript": "ENST00000254657",
     "chromosome": "2",
-    "exonsCount": 23,
-    "exonsLength": 3763,
-    "geneLength": 44620,
     "description": "This genes is responsible for bla bla bla..."
   },
   {
@@ -61,9 +46,6 @@
     "geneName": "CCR5",
     "transcript": "ENST00000292303",
     "chromosome": "3",
-    "exonsCount": 2,
-    "exonsLength": 3301,
-    "geneLength": 5360,
     "description": "This genes is responsible for bla bla bla..."
   },
   {
@@ -71,9 +53,6 @@
     "geneName": "FGFR3",
     "transcript": "ENST00000613647",
     "chromosome": "4",
-    "exonsCount": 8,
-    "exonsLength": 1091,
-    "geneLength": 15601,
     "description": "This genes is responsible for bla bla bla..."
   },
   {
@@ -81,9 +60,6 @@
     "geneName": "SMARCAD1",
     "transcript": "ENST00000359052",
     "chromosome": "4",
-    "exonsCount": 23,
-    "exonsLength": 3083,
-    "geneLength": 83730,
     "description": "This genes is responsible for bla bla bla..."
   },
   {
@@ -91,9 +67,6 @@
     "geneName": "SLC45A2",
     "transcript": "ENST00000296589",
     "chromosome": "5",
-    "exonsCount": 8,
-    "exonsLength": 1588,
-    "geneLength": 40131,
     "description": "This genes is responsible for bla bla bla...",
     "debugInfo" : {
       "img" : "http://cache.marieclaire.fr/data/photo/w700_c17/3z/maquillage-peau-mate.jpg"
@@ -104,9 +77,6 @@
     "geneName": "OR2J3",
     "transcript": "ENST00000641151",
     "chromosome": "6",
-    "exonsCount": 2,
-    "exonsLength": 2877,
-    "geneLength": 6723,
     "description": "Gène impliqué dans la perception de l’odeur de l’herbe coupée.",
     "debugInfo" : {
       "img" : "https://thumbs.dreamstime.com/z/ciseaux-pour-couper-l-herbe-32134544.jpg"
@@ -121,9 +91,6 @@
     "geneName": "FOXO3",
     "transcript": "ENST00000343882",
     "chromosome": "6",
-    "exonsCount": 2,
-    "exonsLength": 2018,
-    "geneLength": 124950,
     "description": "This genes is responsible for bla bla bla..."
   },
   {
@@ -131,9 +98,6 @@
     "geneName": "BRAF",
     "transcript": "ENST00000288602",
     "chromosome": "7",
-    "exonsCount": 19,
-    "exonsLength": 2296,
-    "geneLength": 190324,
     "description": "This genes is responsible for bla bla bla..."
   },
   {
@@ -141,9 +105,6 @@
     "geneName": "TAS2R38",
     "transcript": "ENST00000547270",
     "chromosome": "7",
-    "exonsCount": 2,
-    "exonsLength": 1083,
-    "geneLength": 1148,
     "description": "TAS2R38 is a bitter taste receptor...",
     "debugInfo" : {
       "img" : "http://downloadclipart.org/do-upload/clipart/2016-01/Cartoon_Broccoli_Clip_Art.png"
@@ -154,9 +115,6 @@
     "geneName": "AR",
     "transcript": "ENST00000612452",
     "chromosome": "X",
-    "exonsCount": 10,
-    "exonsLength": 2209,
-    "geneLength": 186607,
     "description": "This genes is responsible for bla bla bla..."
   },
   {
@@ -165,9 +123,6 @@
     "superVariant": true,
     "transcript": "ENST00000595290",
     "chromosome": "X",
-    "exonsCount": 7,
-    "exonsLength": 1090,
-    "geneLength": 13524,
     "description": "Daltonien: yeux (un oeil jaune et un oeil bleu)",
     "debugInfo" : {
       "img" : "http://daltonien.free.fr/daltonien/IMG/jpg/15.jpg"
@@ -181,9 +136,6 @@
     "geneName": "ABO",
     "transcript": "ENST00000611156",
     "chromosome": "9",
-    "exonsCount": 9,
-    "exonsLength": 1057,
-    "geneLength": 20057,
     "description": "This genes is responsible for bla bla bla...",
     "debugInfo" : {
       "img" : "http://whatsmybloodtype.org/files/images/typeb.jpg"
@@ -194,9 +146,6 @@
     "geneName": "HBB",
     "transcript": "ENST00000335295",
     "chromosome": "11",
-    "exonsCount": 4,
-    "exonsLength": 439,
-    "geneLength": 1616,
     "description": "Gène codant pour l’hémoglobine, la protéine qui transporte l’oxygène dans notre sang. Une variation dans cette proteine peut produire sickle cell ...",
     "debugInfo" : {
       "img" : "http://kidshealth.org/EN/images/illustrations/sickleCell-400x214-rd1-enIL.jpg"
@@ -212,9 +161,6 @@
     "geneName": "ACTN3",
     "transcript": "ENST00000502692",
     "chromosome": "11",
-    "exonsCount": 22,
-    "exonsLength": 2830,
-    "geneLength": 16976,
     "description": " muscle? "
   },
   {
@@ -223,9 +169,6 @@
     "geneName": "PCDH15",
     "transcript": "ENST00000373965",
     "chromosome": "10",
-    "exonsCount": 35,
-    "exonsLength": 5029,
-    "geneLength": 998593,
     "description": "Usher syndrome un gars avec lunette noir et appareil auditif..."
   },
   {
@@ -233,9 +176,6 @@
     "geneName": "OPN4",
     "transcript": "ENST00000372071",
     "chromosome": "10",
-    "exonsCount": 12,
-    "exonsLength": 1465,
-    "geneLength": 11923,
     "description": "This genes is responsible for bla bla bla..."
   },
   {
@@ -243,9 +183,6 @@
     "geneName": "TCF7L2",
     "transcript": "ENST00000355995",
     "chromosome": "10",
-    "exonsCount": 15,
-    "exonsLength": 1856,
-    "geneLength": 217461,
     "description": "This genes is responsible for bla bla bla..."
   },
   {
@@ -253,9 +190,6 @@
     "geneName": "SH2B3",
     "transcript": "ENST00000341259",
     "chromosome": "12",
-    "exonsCount": 8,
-    "exonsLength": 1723,
-    "geneLength": 45694,
     "description": "This genes is responsible for bla bla bla..."
   },
   {
@@ -265,9 +199,6 @@
     "transcript": "ENST00000261733",
     "3dImage" : "data/assets/proteins/ALDH23D.png",
     "chromosome": "12",
-    "exonsCount": 14,
-    "exonsLength": 1549,
-    "geneLength": 50636,
     "description": "Avec une choppe de bière a la main..."
   },
   {
@@ -276,9 +207,6 @@
     "geneName": "GJB2",
     "transcript": "ENST00000382848",
     "chromosome": "13",
-    "exonsCount": 2,
-    "exonsLength": 700,
-    "geneLength": 5436,
     "description": "Il gagne un appareil auditif",
     "debugInfo" : {
       "img" : "https://st3.depositphotos.com/1432405/12768/v/950/depositphotos_127686200-stock-illustration-hearing-aid-icon-cartoon-style.jpg"
@@ -289,9 +217,6 @@
     "geneName": "OCA2",
     "transcript": "ENST00000354638",
     "chromosome": "15",
-    "exonsCount": 24,
-    "exonsLength": 2512,
-    "geneLength": 344534,
     "description": "This genes is responsible for bla bla bla..."
   },
   {
@@ -299,9 +224,6 @@
     "geneName": "HERC2",
     "transcript": "ENST00000261609",
     "chromosome": "15",
-    "exonsCount": 92,
-    "exonsLength": 14501,
-    "geneLength": 211301,
     "description": "This gene is responsible for blue eyes!"
   },
   {
@@ -309,9 +231,6 @@
     "geneName": "SLC24A5",
     "transcript": "ENST00000341459",
     "chromosome": "15",
-    "exonsCount": 10,
-    "exonsLength": 1498,
-    "geneLength": 21721,
     "description": "This genes is responsible for bla bla bla...",
     "debugInfo" : {
       "img" : "http://i.f1g.fr/media/ext/1900x1900/madame.lefigaro.fr/sites/default/files/img/2016/01/1624jpg.jpg"
@@ -322,9 +241,6 @@
     "geneName": "CYP1A2",
     "transcript": "ENST00000343932",
     "chromosome": "15",
-    "exonsCount": 6,
-    "exonsLength": 1547,
-    "geneLength": 7375,
     "description": "This genes is responsible for bla bla bla..."
   },
   {
@@ -332,9 +248,6 @@
     "geneName": "ABCC11",
     "transcript": "ENST00000356608",
     "chromosome": "16",
-    "exonsCount": 30,
-    "exonsLength": 4144,
-    "geneLength": 80547,
     "description": "This genes is responsible for bla bla bla..."
   },
   {
@@ -342,9 +255,6 @@
     "geneName": "MC1R",
     "transcript": "ENST00000555427",
     "chromosome": "16",
-    "exonsCount": 3,
-    "exonsLength": 1144,
-    "geneLength": 7566,
     "description": "This genes is responsible for bla bla bla..."
   },
   {
@@ -352,9 +262,6 @@
     "geneName": "BRCA1",
     "transcript": "ENST00000357654",
     "chromosome": "17",
-    "exonsCount": 23,
-    "exonsLength": 5587,
-    "geneLength": 81124,
     "description": "This genes is responsible for bla bla bla..."
   },
   {
@@ -363,9 +270,6 @@
     "geneName": "EPOR",
     "transcript": "ENST00000222139",
     "chromosome": "19",
-    "exonsCount": 9,
-    "exonsLength": 1522,
-    "geneLength": 7126,
     "description": "beaucoup de globule rouge",
     "debugInfo" : {
       "avatarChange" : "L'avatar doit gagner un coeur avec des super forces et globules rouges autour",
@@ -381,9 +285,6 @@
     "geneName": "APOE",
     "transcript": "ENST00000252486",
     "chromosome": "19",
-    "exonsCount": 4,
-    "exonsLength": 949,
-    "geneLength": 3650,
     "description": "vieux monsieur qui revient en arrièere (Alzheimer)"    
   }
 

@@ -56,6 +56,10 @@ var parser = parse({delimiter: '\t'}, function (err, data) {
         }
         currentGeneObject.geneLength += block.realLength;
 
+        if(currentTranscript === "ENST00000292303") {
+            console.log(block)
+            console.log(currentGeneObject.exonsLength)
+        }
         var level = {
             type: block.type,
             realLength: block.realLength,
@@ -90,7 +94,7 @@ var parser = parse({delimiter: '\t'}, function (err, data) {
 
     selectedTranscripts.push(selectedTranscript)
     
-    console.log(JSON.stringify(selectedTranscripts))
+    //console.log(JSON.stringify(selectedTranscripts))
     
     fs.writeFile('data.json', JSON.stringify(selectedTranscripts, null, 2), 'utf8');
 

@@ -291,7 +291,7 @@
 //            html += "<div id='json" + gene.id + "' class='collapse'><pre><code>" + JSON.stringify(gene, null, 2) + "</code></pre></div>";
             html += "<br><span style='font-size:6px'>" + JSON.stringify(gene, null, 2) + "</span>";
             html += "<div id=\'" + gene.id + "\'></div>";
-            html += "<br><b>The translation of the mRNA gene will render a protein length of:</b> (" +gene.exonsLength + 1 +"/3)=" + Math.ceil((gene.exonsLength + 1) / 3.0)  + "aa (amino acids)."
+            html += "<br><b>Protein length:</b> (" +gene.exonsLength  +"/3)=" + Math.ceil((gene.exonsLength) / 3.0)  + "aa (amino acids)....  The translation of the mRNA gene by the ribosome (animation) will render a protein of this length"
             html += "<br><b>Description</b>:<br>" + gene.description ;
             if(gene["3dImage"]){
                 html += "<br><b>Protein Image (careful to have no copyright)</b>:<br>"
