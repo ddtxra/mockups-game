@@ -164,6 +164,7 @@
   {
     "id": "OPN1MW-ENST00000595290-ChrX",
     "geneName": "OPN1MW",
+    "superVariant": true,
     "transcript": "ENST00000595290",
     "chromosome": "X",
     "exonsCount": 7,
@@ -389,7 +390,6 @@
   },
   {
     "id": "APOE-ENST00000252486-Chr19",
-    "superVariant" : true,
     "geneName": "APOE",
     "transcript": "ENST00000252486",
     "chromosome": "19",
