@@ -13,16 +13,7 @@
     },
     "3dImage" : "data/assets/proteins/unknown3D.png",
     "externalLinks" : {
-      "nextprot" : {
-        "url" : "https://www.nextprot.org/entry/NX_Q07283",
-        "img" : "data/assets/nextprot.png",
-        "accession" : "NX_Q07283"
-      },
-      "uniprot" : {
-        "url" : "http://www.uniprot.org/uniprot/Q07283",
-        "img" : "data/assets/uniprot.jpg",
-        "accession" : "Q07283"
-      }
+      "uniprot" : "Q07283"
     }
   },
   {
@@ -116,7 +107,14 @@
     "exonsCount": 2,
     "exonsLength": 2877,
     "geneLength": 6723,
-    "description": "This genes is responsible for bla bla bla..."
+    "description": "Gène impliqué dans la perception de l’odeur de l’herbe coupée.",
+    "debugInfo" : {
+      "img" : "https://thumbs.dreamstime.com/z/ciseaux-pour-couper-l-herbe-32134544.jpg"
+    },
+    "externalLinks" : {
+      "uniprot" : "O76001",
+      "proteinSpotlight" : "150"
+    }
   },
   {
     "id": "FOXO3-ENST00000343882-Chr6",
@@ -175,16 +173,7 @@
       "img" : "http://daltonien.free.fr/daltonien/IMG/jpg/15.jpg"
     },
     "externalLinks" : {
-      "nextprot" : {
-        "url" : "https://www.nextprot.org/entry/NX_P68871",
-        "img" : "data/assets/nextprot.png",
-        "accession" : "NX_P68871"
-      },
-      "uniprot" : {
-        "url" : "http://www.uniprot.org/uniprot/P68871",
-        "img" : "data/assets/uniprot.jpg",
-        "accession" : "P68871"
-      }
+      "uniprot" : "P68871"
     }
   },
   {
@@ -208,22 +197,13 @@
     "exonsCount": 4,
     "exonsLength": 439,
     "geneLength": 1616,
-    "description": "This gene is very small, but it is responsible for sickle cell anemia ! malaria ... ... ",
+    "description": "Gène codant pour l’hémoglobine, la protéine qui transporte l’oxygène dans notre sang. Une variation dans cette proteine peut produire sickle cell ...",
     "debugInfo" : {
       "img" : "http://kidshealth.org/EN/images/illustrations/sickleCell-400x214-rd1-enIL.jpg"
     },
     "3dImage" : "data/assets/proteins/HBB3D.png",
     "externalLinks" : {
-      "nextprot" : {
-        "url" : "https://www.nextprot.org/entry/NX_P68871",
-        "img" : "data/assets/nextprot.png",
-        "accession" : "NX_P68871"
-      },
-      "uniprot" : {
-        "url" : "http://www.uniprot.org/uniprot/P68871",
-        "img" : "data/assets/uniprot.jpg",
-        "accession" : "P68871"
-      }
+      "uniprot" : "P68871"
     }
   },
   {
@@ -386,7 +366,15 @@
     "exonsCount": 9,
     "exonsLength": 1522,
     "geneLength": 7126,
-    "description": "beaucoup de globule rouge"
+    "description": "beaucoup de globule rouge",
+    "debugInfo" : {
+      "avatarChange" : "L'avatar doit gagner un coeur avec des super forces et globules rouges autour",
+      "img" : "https://thumbs.dreamstime.com/z/super-heart-23167583.jpg"
+    },
+    "3dImage" : "data/assets/proteins/unknown3D.png",
+    "externalLinks" : {
+      "uniprot" :"P19235"
+    }
   },
   {
     "id": "APOE-ENST00000252486-Chr19",

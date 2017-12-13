@@ -35,22 +35,25 @@
 <body>
       <div style="margin: 10px; font-size:12px">
         <h3>Normalisation parameters (play with it to find a nice fit for the game)</h3>
-        <p>Introns are the non-coding parts of the gene (represented as the holes), which we could classify in 5 different classes for the game:</p>
-        <ul>
-            <li><label>small-intron is smaller than </label><input id="small-intron" type="number" value="5000">&nbsp;bps and normalized value is:<input id="small-intron-norm" type="number" value="1">units. With this type of intron we could say the avatar could easily jump.</li>
-            <li><label>medium-intron is smaller than </label><input id="medium-intron" type="number" value="10000">&nbsp;bps and normalized value is:<input id="medium-intron-norm" type="number" value="5">units. With this type of intron we could say there are 1, 2 splicies (rocks) that the avatar need to jump on top to traverse the holw</li>
-            <li><label>large-intron is smaller than </label><input id="large-intron" type="number" value="15000">&nbsp;bps and normalized value is:<input id="large-intron-norm" type="number" value="10">units. With this type of intron we could say that there is a spliceosome that moves</li>
-            <li><label>big-intron is smaller than </label><input id="big-intron" type="number" value="20000">&nbsp;bps and normalized value is:<input id="big-intron-norm" type="number" value="20">units.  With this type of intron we could say that there is a spliceosome that moves and it is more complicated</li>
-            <li><label>huge-intron is equal or bigger than </label><input id="huge-intron" type="number" value="20000">&nbsp;bps and normalized value is:<input id="huge-intron-norm" type="number"  value="50">units. With this type of intron there could be an SR protein before and the avatar would be propulsated (I think it is easy for the avatar)</li>
-        </ul>
-        <p>Exons (includes stop_codon, snp, start_codon) are relatively smallers (average is 500bps) compared to the introns (10000bps) and a continous normalisation approach was adopted:</p>
-        <ul>
-            <li><label>Division factor </label><input id="division-factor-exon" type="number" value="20">&nbsp; The length of the exons will be divided by this factor</li>
-            <li><label>Minimal unit: </label><input style="font-size: 16px" id="minimal-unit" type="number" value="1">&nbsp; The exons will have in minimum this unit</li>
-            <li><label>Maximal unit: </label><input style="font-size: 16px" id="maximal-unit" type="number" value="100">&nbsp; The exons will have in maximum this unit</li>
-        </ul>
-        <button onclick="loadProtein()" style="margin: 5px; font-size: 15px">Click here to normalize</button>
-        <br>
+        <br><button data-toggle='collapse' data-target="#normParams">Change normalization parameters</button>
+        <div id="normParams" class='collapse'>
+            <p>Introns are the non-coding parts of the gene (represented as the holes), which we could classify in 5 different classes for the game:</p>
+            <ul>
+                <li><label>small-intron is smaller than </label><input id="small-intron" type="number" value="5000">&nbsp;bps and normalized value is:<input id="small-intron-norm" type="number" value="1">units. With this type of intron we could say the avatar could easily jump.</li>
+                <li><label>medium-intron is smaller than </label><input id="medium-intron" type="number" value="10000">&nbsp;bps and normalized value is:<input id="medium-intron-norm" type="number" value="5">units. With this type of intron we could say there are 1, 2 splicies (rocks) that the avatar need to jump on top to traverse the holw</li>
+                <li><label>large-intron is smaller than </label><input id="large-intron" type="number" value="15000">&nbsp;bps and normalized value is:<input id="large-intron-norm" type="number" value="10">units. With this type of intron we could say that there is a spliceosome that moves</li>
+                <li><label>big-intron is smaller than </label><input id="big-intron" type="number" value="20000">&nbsp;bps and normalized value is:<input id="big-intron-norm" type="number" value="20">units.  With this type of intron we could say that there is a spliceosome that moves and it is more complicated</li>
+                <li><label>huge-intron is equal or bigger than </label><input id="huge-intron" type="number" value="20000">&nbsp;bps and normalized value is:<input id="huge-intron-norm" type="number"  value="50">units. With this type of intron there could be an SR protein before and the avatar would be propulsated (I think it is easy for the avatar)</li>
+            </ul>
+            <p>Exons (includes stop_codon, snp, start_codon) are relatively smallers (average is 500bps) compared to the introns (10000bps) and a continous normalisation approach was adopted:</p>
+            <ul>
+                <li><label>Division factor </label><input id="division-factor-exon" type="number" value="20">&nbsp; The length of the exons will be divided by this factor</li>
+                <li><label>Minimal unit: </label><input style="font-size: 16px" id="minimal-unit" type="number" value="1">&nbsp; The exons will have in minimum this unit</li>
+                <li><label>Maximal unit: </label><input style="font-size: 16px" id="maximal-unit" type="number" value="100">&nbsp; The exons will have in maximum this unit</li>
+            </ul>
+            <button onclick="loadProtein()" style="margin: 5px; font-size: 15px">Click here to normalize</button>
+            <br>
+        </div>
     </div>
     <div style="margin: 10px;">
         Based on your parameters: 
@@ -64,13 +67,15 @@
     <div style="margin: 10px;">
         <h3>Notes</h3>
         <ul>
-            <li>Up / Down / Obstacles are not yet defined (not sure if we should provide this info or we leave it up to you)....</li>
-            <li>Intron are much bigger than exons in reality (if possible in the drawing of the blue lines could be a brin "enroule" to seem bigger...</li>
-            <li>There is not a hole below the start, snp stop codon (it is a limitation of the library in use). It should be one exon with different color: from exon to utr (untranslated region)</li>
+            <li>Up / Down / Obstacles are not defined in this JSON, as agreed we leave that up to you to make sure the game is fun.</li>
+            <li>Intron are much bigger than exons in reality (if possible in the drawing of the blue lines could be a brin "enroule" to seem bigger and maybe thiner, to discuss...)</li>
+            <a target="_blank" href="data/assets/mockup.png"><img height="50px" src="data/assets/mockup.png"/></a>
+            <li>There is not a hole below the start, snp stop codon (it is a limitation of the library in use for the schema). It should be a walkable exon with different color: from exon to utr (untranslated region)</li>
         </ul>
     </div>
-    <div id="container">
-      <div id="genes"></div>
+    <div id="container" style="margin: 10px;">
+    <h3>Genes and corresponding JSON</h3>
+        <div id="genes"></div>
     </div>
 </body>
 
@@ -124,12 +129,33 @@
 
     function getProteinLink (gene, source){
 
-                if(gene.externalLinks && gene.externalLinks[source]){
-                    var externalLink = gene.externalLinks[source];
-                   return  "<li><a target='_blank' href='"+ externalLink["url"] + "'>"+
-                                 "<img height='20px' src='" + externalLink["img"] + "'</img>"+
-                                 "</a> "+ externalLink["accession"]  + " </li>";
-                }else return "";
+        var html, value, url, image;
+
+        if(source === "chromosomeWalk") {
+                image = "data/assets/chromosomeWalk.gif"
+                value = "Chromosome " + gene.chromosome
+                url = "http://www.chromosomewalk.ch/chromosome/chromosome-" +  gene.chromosome 
+        }
+        else if(source === "uniprot" && gene.externalLinks && gene.externalLinks.uniprot) {
+            image = "data/assets/uniprot.jpg"
+            value = gene.externalLinks.uniprot;
+            url = "http://www.uniprot.org/uniprot/" + value
+        
+        }else if(source === "nextprot" &&  gene.externalLinks && gene.externalLinks.uniprot) {
+            image = "data/assets/nextprot.png"
+            value = gene.externalLinks.uniprot;
+            url = "https://www.nextprot.org/entry/NX_" + value
+        }else if(source === "proteinSpotlight" &&  gene.externalLinks && gene.externalLinks.proteinSpotlight) {
+            image = "data/assets/proteinSpotlight.png"
+            value = "A story in Protein SpotLight";
+            url = "http://web.expasy.org/spotlight/back_issues/" + value
+        }
+
+        if(value) {
+            return "<li><a target='_blank' href='"+ url + "'>"+
+                "<img height='20px' src='" + image + "'</img>"+
+                " "+ value  + " </a></li>";
+        }else return ""
 
     }
 
@@ -235,13 +261,15 @@
 
             var html = "";
             html += "<div class='geneContainer'>" +
-                    "<div class='pull-right'><img width='50px' src='http://www.chromosomewalk.ch/wp-content/uploads/chromosome_" + gene.chromosome + ".png'></img></div>" +
+                    "<div class='pull-right'></div>" +
                     "<h3>Gene name: " + gene.geneName  + "&nbsp;" + sv + "</h3>" + 
-                    "<b>Transcript</b>: <a target='_blank' href='http://www.ensembl.org/Homo_sapiens/transview?db=core;transcript=" + gene.transcript + "'>" + gene.transcript + "</a>"+
+                    "<img height='50px' src='data/assets/chromosomes/pair/chromosome_" + gene.chromosome + ".png'></img>" +  
+                    "<img height='50px' src='data/assets/chromosomes/single/chromosome" + gene.chromosome + ".png'></img>" +
                     "&nbsp;&nbsp;<b>Chromosome</b>: " + gene.chromosome + 
+                    "<b>&nbsp;Transcript</b>: <a target='_blank' href='http://www.ensembl.org/Homo_sapiens/transview?db=core;transcript=" + gene.transcript + "'>" + gene.transcript + "</a>"+
                     "<br><b>Gene real length:</b>" + gene.geneLength + " bp (base pairs = A,C,G,T)  " + 
-                    "&nbsp;&nbsp;<b>Protein real length:</b> " + Math.ceil((gene.exonsLength + 1) / 3.0)  + "aa (amino acids). Computed using (exonsLength / 3) but seems not to be correct all the time" +
-                    "<br><b>Normalized Length:</b>"+ gene.totalNormalizedLength + " units (walkable: " + gene.totalNormalizedWalkableLength + " units) composed by <b>exons:</b> " + gene.classCount.exon + 
+                    "&nbsp;&nbsp;<b>Protein real length:</b> " + Math.ceil((gene.exonsLength + 1) / 3.0)  + "aa (amino acids). Computed using: exonsLength / 3. Seems not to be correct all the time" +
+                    "<br><b>Normalized Length: </b>"+ gene.totalNormalizedLength + " units (walkable: " + gene.totalNormalizedWalkableLength + " units -> after removing introns) composed by <b>exons:</b> " + gene.classCount.exon + 
                     "&nbsp;&nbsp;<b>small-introns:</b> " + (gene.classCount["small-intron"] ? gene.classCount["small-intron"] : "0")  + 
                     "&nbsp;&nbsp;<b>medium-introns:</b> " + (gene.classCount["medium-intron"] ? gene.classCount["medium-intron"] : "0")  + 
                     "&nbsp;&nbsp;<b>large-introns:</b> " + (gene.classCount["large-intron"] ? gene.classCount["large-intron"] : "0")  + 
@@ -257,16 +285,22 @@
             html += "<b>Mutation Type</b>: (Missense, Insertion, Deletion, Frameshift, STOP, Intergenic, Others...)<br>";
             html += "<b>Description</b>:<br>" + gene.description ;
             if(gene["3dImage"])
-                html += "<img width='250px' src='" + gene["3dImage"] + "'></img>";
+                html += "<br><img width='250px' src='" + gene["3dImage"] + "'></img>";
             
-            html += "<br><b>Protein Resources Databases:</b><br>" + 
-                "<ul>" + getProteinLink(gene, "uniprot") + getProteinLink(gene, "nextprot") +
-                "</ul>";
+            html += "<br><b>Protein Resources Databases (links to external websites):</b><br>" + 
+                "<ul>" + getProteinLink(gene, "uniprot") 
+                       + getProteinLink(gene, "nextprot") 
+                       + getProteinLink(gene, "chromosomeWalk") 
+                       + getProteinLink(gene, "proteinSpotlight")
+                + "</ul>";
             html += "<br><b>Links to publication, chromosome walk, swissdrug?, ensembl? dbsnpedia? </b><br>"
 
             if(gene.debugInfo) {
                 html += "<br><b>Debug Info Image (To help understanding but not to include in the game)</b><br>";
-                html += "<img height='50px' src='" + gene.debugInfo.img + "'></img>";
+                html += "Image to help understanding the impact of this mutation: <br> <img height='50px' src='" + gene.debugInfo.img + "'></img>";
+                if(gene.debugInfo.superVariantDescription){
+                    html += ("<br>Super Variant Description: " + gene.debugInfo.superVariantDescription)
+                }
             }
 
             html += "</div>";
