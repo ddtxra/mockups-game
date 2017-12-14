@@ -194,7 +194,10 @@
     "geneName": "OPN4",
     "transcript": "ENST00000372071",
     "chromosome": "10",
-    "description": "This genes is responsible for bla bla bla..."
+    "description": "This genes is responsible for bla bla bla...",
+    "debugInfo" : {
+      "img" : "http://moziru.com/images/gloomy-clipart-child-depression-4.jpg"
+    }
   },
   {
     "id": "TCF7L2-ENST00000355995-Chr10",
