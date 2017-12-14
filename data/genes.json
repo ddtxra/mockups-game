@@ -194,7 +194,7 @@
     "geneName": "OPN4",
     "transcript": "ENST00000372071",
     "chromosome": "10",
-    "description": "This genes is responsible for bla bla bla...",
+    "description": "depression",
     "debugInfo" : {
       "img" : "http://moziru.com/images/gloomy-clipart-child-depression-4.jpg"
     }
@@ -260,7 +260,7 @@
     "geneName": "SLC24A5",
     "transcript": "ENST00000341459",
     "chromosome": "15",
-    "description": "This genes is responsible for bla bla bla...",
+    "description": "This genes is responsible for light skin",
     "debugInfo" : {
       "img" : "http://i.f1g.fr/media/ext/1900x1900/madame.lefigaro.fr/sites/default/files/img/2016/01/1624jpg.jpg"
     }
@@ -270,7 +270,10 @@
     "geneName": "CYP1A2",
     "transcript": "ENST00000343932",
     "chromosome": "15",
-    "description": "This genes is responsible for bla bla bla..."
+    "description": "cafe",
+    "debugInfo" : {
+      "img" : "https://static6.depositphotos.com/1001911/636/v/950/depositphotos_6360484-stock-illustration-coffee-cup-cartoon.jpg"
+    }
   },
   {
     "id": "ABCC11-ENST00000356608-Chr16",
