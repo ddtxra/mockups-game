@@ -1,5 +1,29 @@
 [
     {
+        "id": "HBB-ENST00000335295-Chr11",
+        "geneName": "HBB",
+        "transcript": "ENST00000335295",
+        "chromosome": "11",
+        "description": "Gène codant pour l’hémoglobine, la protéine qui transporte l’oxygène dans notre sang. Une variation dans cette proteine peut produire sickle cell ...",
+        "mutationInfo": {
+            "rsName": "rs334",
+            "sex": ["H", "F"],
+            "origin": ["non-asian", "asian"],
+            "type": "missense",
+            "nucleotide": "A->T",
+            "alleles": "homozygous"
+        },
+        "debugInfo": {
+            "img": "http://kidshealth.org/EN/images/illustrations/sickleCell-400x214-rd1-enIL.jpg"
+        },
+        "3dImage": "data/assets/proteins/HBB3D.png",
+        "externalLinks": {
+            "uniprot": "P68871",
+            "pubmed": "20552021",
+            "chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-11/?g=un-taxi-pour-loxygene"
+        }
+  },
+    {
         "id": "TCHH-ENST00000614923-Chr1",
         "geneName": "TCHH",
         "transcript": "ENST00000614923",
@@ -77,7 +101,10 @@
         "geneName": "SMARCAD1",
         "transcript": "ENST00000359052",
         "chromosome": "4",
-        "description": "This genes is responsible for bla bla bla..."
+        "description": "No finger print",
+        "debugInfo": {
+            "img": "https://images-na.ssl-images-amazon.com/images/I/41C2ADL0wML.jpg"
+        }
   },
     {
         "id": "SLC45A2-ENST00000296589-Chr5",
@@ -159,26 +186,16 @@
         }
   },
     {
-        "id": "HBB-ENST00000335295-Chr11",
-        "geneName": "HBB",
-        "transcript": "ENST00000335295",
-        "chromosome": "11",
-        "description": "Gène codant pour l’hémoglobine, la protéine qui transporte l’oxygène dans notre sang. Une variation dans cette proteine peut produire sickle cell ...",
-        "debugInfo": {
-            "img": "http://kidshealth.org/EN/images/illustrations/sickleCell-400x214-rd1-enIL.jpg"
-        },
-        "3dImage": "data/assets/proteins/HBB3D.png",
-        "externalLinks": {
-            "uniprot": "P68871"
-        }
-  },
-    {
         "id": "ACTN3-ENST00000502692-Chr11",
         "superVariant": true,
         "geneName": "ACTN3",
         "transcript": "ENST00000502692",
         "chromosome": "11",
-        "description": " muscle? "
+        "description": " muscle? ",
+        "debugInfo": {
+            "avatarChange": "short de course / basket ,,,,",
+            "img": "https://image.shutterstock.com/z/stock-vector-cartoon-character-strong-and-tall-muscular-male-is-sprinter-rapidly-running-along-the-stadium-track-659167981.jpg"
+        }
   },
     {
         "id": "PCDH15-ENST00000373965-Chr10",
@@ -187,7 +204,10 @@
         "transcript": "ENST00000373965",
         "chromosome": "10",
         "description": "Usher syndrome un gars avec lunette noir et appareil auditif...",
-        "descriptionImg": "http://www.ushersyndroom.nl/wp-content/uploads/2016/12/The-Ushers-infographic-EN-Foundation-Usher-syndrome-DEF.001-kopie.jpg"
+        "descriptionImg": "http://www.ushersyndroom.nl/wp-content/uploads/2016/12/The-Ushers-infographic-EN-Foundation-Usher-syndrome-DEF.001-kopie.jpg",
+        "debugInfo": {
+            "img": "http://www.ushersyndroom.nl/wp-content/uploads/2016/10/Dream-stopUSH-bovenstuk.jpg"
+        }
   },
     {
         "id": "OPN4-ENST00000372071-Chr10",
@@ -204,14 +224,20 @@
         "geneName": "TCF7L2",
         "transcript": "ENST00000355995",
         "chromosome": "10",
-        "description": "This genes is responsible for bla bla bla..."
+        "description": "This genes is responsible for bla bla bla...",
+        "debugInfo": {
+            "img": "https://thumbs.dreamstime.com/z/syringe-bottle-insulin-medicines-treatment-diabetes-diabetes-single-icon-cartoon-style-vector-symbol-87971845.jpg"
+        }
   },
     {
         "id": "SH2B3-ENST00000341259-Chr12",
         "geneName": "SH2B3",
         "transcript": "ENST00000341259",
         "chromosome": "12",
-        "description": "This genes is responsible for bla bla bla..."
+        "description": "This genes is responsible for bla bla bla...",
+        "debugInfo": {
+            "img": "https://jimvysechickenchat.files.wordpress.com/2014/07/no-bread-300x203.jpg?w=584"
+        }
   },
     {
         "id": "ALDH2-ENST00000261733-Chr12",
@@ -220,7 +246,10 @@
         "transcript": "ENST00000261733",
         "3dImage": "data/assets/proteins/ALDH23D.png",
         "chromosome": "12",
-        "description": "Avec une choppe de bière a la main..."
+        "description": "Avec une choppe de bière a la main...",
+        "debugInfo": {
+            "img": "https://i.pinimg.com/originals/f9/e2/d6/f9e2d6da65c1c787e72d376e7a7d16f7.jpg"
+        }
   },
     {
         "id": "GJB2-ENST00000382848-Chr13",
@@ -317,13 +346,13 @@
         "transcript": "ENST00000222139",
         "chromosome": "19",
         "description": "beaucoup de globule rouge",
-        "debugInfo": {
-            "avatarChange": "L'avatar doit gagner un coeur avec des super forces et globules rouges autour",
-            "img": "https://thumbs.dreamstime.com/z/super-heart-23167583.jpg"
-        },
         "3dImage": "data/assets/proteins/unknown3D.png",
         "externalLinks": {
             "uniprot": "P19235"
+        },
+        "debugInfo": {
+            "avatarChange": "L'avatar doit gagner un coeur avec des super forces et globules rouges autour",
+            "img": "https://thumbs.dreamstime.com/z/super-heart-23167583.jpg"
         }
   },
     {

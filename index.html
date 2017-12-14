@@ -135,11 +135,26 @@
     function getProteinLink (gene, source){
 
         var html, value, url, image;
-
         if(source === "chromosomeWalk") {
                 image = "data/assets/chromosomeWalk.gif"
-                value = "Chromosome " + gene.chromosome
-                url = "http://www.chromosomewalk.ch/chromosome/chromosome-" +  gene.chromosome 
+                var chr = gene.chromosome;
+                if (gene.externalLinks && gene.externalLinks.chromosomeWalk) {
+                    value = "Walk with the gene " + gene.geneName
+                    url = gene.externalLinks.chromosomeWalk
+                }else {
+                    value = "Walk with the chromosome " + gene.chromosome
+                    url = "http://www.chromosomewalk.ch/chromosome/chromosome-" +  gene.chromosome 
+                }
+        }
+        else if(source === "pubmed" &&  gene.mutationInfo && gene.externalLinks.pubmed) {
+                image = "data/assets/pubmed.png"
+                value = "PubMed " + gene.externalLinks.pubmed
+                url = "https://www.ncbi.nlm.nih.gov/pubmed/" + gene.externalLinks.pubmed;
+        }
+        else if(source === "snpedia" &&  gene.mutationInfo && gene.mutationInfo.rsName) {
+                image = "data/assets/snpedia.png"
+                value = "Snpedia " + gene.mutationInfo.rsName
+                url = "https://www.snpedia.com/index.php/" + gene.mutationInfo.rsName;
         }
         else if(source === "uniprot" && gene.externalLinks && gene.externalLinks.uniprot) {
             image = "data/assets/uniprot.jpg"
@@ -318,15 +333,20 @@
             html += "<li>type</b>: ??? (Missense, Insertion, Deletion, Frameshift, STOP, Intergenic, Others...)</li>";
             html += "<li>base change</b>: ??? ex: C -> G</li>";
             html += "</ul>"
-            html += "<br><b>Publication Study</b>: ??? (PubMed)<br>";
-            
-            
+            html += "<br><b>Chromosome Walk</b>:<br>";
+            html += ((getProteinLink(gene, "chromosomeWalk") !=="") ? getProteinLink(gene, "chromosomeWalk") : "???")
+
             html += "<br><b>Protein Resources Databases (links to external SIB resources):</b><br>" + 
                 "<ul>" + getProteinLink(gene, "uniprot") 
                        + getProteinLink(gene, "nextprot") 
-                       + getProteinLink(gene, "chromosomeWalk") 
                        + getProteinLink(gene, "proteinSpotlight")
                 + "</ul>";
+
+            html += "<br><b>Publication Study (ies?)</b>:<br>";
+            html += ((getProteinLink(gene, "pubmed") !=="") ? getProteinLink(gene, "pubmed") : "???")
+            html += ((getProteinLink(gene, "snpedia") !=="") ? getProteinLink(gene, "snpedia") : "???")
+            
+            
             html += "<br><b>Links to swissdrug?, ensembl? dbsnpedia? </b><br>"
 
             if(gene.debugInfo) {
