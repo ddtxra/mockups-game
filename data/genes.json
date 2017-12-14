@@ -26,7 +26,6 @@
   {
     "id": "LCT-ENST00000264162-Chr2",
     "geneName": "LCT",
-    "transcript": "ENST00000264162",
     "chromosome": "2",
     "description": "This genes is responsible for bla bla bla...",
     "debugInfo" : {
@@ -278,6 +277,10 @@
     "description": "Cire d'oreil et odeur. Interet pour les pharmacies",
     "debugInfo" : {
       "img" : "http://sweetclipart.com/multisite/sweetclipart/files/perfume_clip_art.png"
+    },
+    "externalLinks" : {
+      "uniprot" :"Q96J66",
+      "chromosomeWalk" : "http://www.chromosomewalk.ch/chromosome/chromosome-16/?g=cire-doreille"
     }
   },
   {
