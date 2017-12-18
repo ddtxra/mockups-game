@@ -316,42 +316,60 @@
 //            html += "<div id='json" + gene.id + "' class='collapse'><pre><code>" + JSON.stringify(gene, null, 2) + "</code></pre></div>";
             html += "<br><span style='font-size:6px'>" + JSON.stringify(gene, null, 2) + "</span>";
             html += "<div id=\'" + gene.id + "\'></div>";
-            html += "<br><b>Protein length:</b> (" +gene.exonsLength  +"/3)=" + Math.ceil((gene.exonsLength + 1) / 3.0)  + "aa (amino acids)....  The translation of the mRNA gene by the ribosome (animation) will render a protein of this length"
-            html += "<br><b>Description</b>:<br>" + gene.description ;
+            html += "Once spliced (introns are cut) the mRNA gets out of the nucleus and is translated by the ribosome (animation) which will render a protein of the following length:"
+            html += "<br><b>Protein length:</b> (" +gene.exonsLength  +"bp/3)=" + Math.ceil((gene.exonsLength + 1) / 3.0)  + "aa (For every 3bp - base pairs the ribosome produces 1aa - amino acid).... According to <a target='_blank' href='http://knowpapa.com/wp-content/uploads/2013/10/6.png'>this table</a>."
+            html += "<br><br><b>Description</b>:<br>" + gene.description ;
             if(gene.descriptionImg){
                 html += "<br><img width='250px' src='" + gene.descriptionImg + "'></img>";
             }
-            if(gene["3dImage"]){
-                html += "<br><b>Protein Image (careful to have no copyright)</b>:<br>"
-                html += "<br><img width='250px' src='" + gene["3dImage"] + "'></img>";
+            html += "<br><br><b>Mutation properties (can be represented with symbols) on a little square:</b><ul>";
+            html += "<li>RS name: " + ((gene.mutationInfo && gene.mutationInfo.rsName) ? gene.mutationInfo.rsName : "???")  + "</li>";
+            html += "<li>H/F applicable:";
+            var sexNotSet = true;
+            if(gene.mutationInfo && gene.mutationInfo.sex && gene.mutationInfo.sex.indexOf("H") != -1) {
+                html += "&nbsp;&#9794;";
+                sexNotSet = false;
             }
-            html += "<br><b>Mutation properties (can be represented with symbols) on a little square:</b><ul>";
-            html += "<li>rs name: RS???? </li>";
-            html += "<li>H/F applicable:</b> ??? (&#9792;/&#9794;/&#9892;) </li>";
-            html += "<li>demographic applicable:</b> ??? (Asian/Europeean/African/Indifferent) </li>";
-            html += "<li>allels:</b> ??? (1 alleles or both alleles) </li>";
-            html += "<li>type</b>: ??? (Missense, Insertion, Deletion, Frameshift, STOP, Intergenic, Others...)</li>";
-            html += "<li>base change</b>: ??? ex: C -> G</li>";
+            if(gene.mutationInfo && gene.mutationInfo.sex && gene.mutationInfo.sex.indexOf("F") != -1) {
+                html += "&nbsp;&#9792;";
+                sexNotSet = false;
+            }
+            if(sexNotSet){
+                html += "???";
+            }
+
+            html += "</li>";
+            html += "<li>Demographic pertinence:&nbsp;" + ((gene.mutationInfo && gene.mutationInfo.origin) ? gene.mutationInfo.origin : "???")   + "</li>";
+            html += "<li>Alleles:</b> " + ((gene.mutationInfo && gene.mutationInfo.alleles) ? gene.mutationInfo.alleles : "???")  + " </li>";
+            html += "<li>Type:&nbsp;" + ((gene.mutationInfo && gene.mutationInfo.type) ? gene.mutationInfo.type : "???")   + "</li>";
+            html += "<li>Base origin and mutation:&nbsp;" + ((gene.mutationInfo && gene.mutationInfo.nucleotide) ? gene.mutationInfo.nucleotide : "???")   + "</li>";
             html += "</ul>"
-            html += "<br><b>Chromosome Walk</b>:<br>";
+ 
+            console.log(gene.stopCodon)
+            html += "<br><b>STOP codon bases (can be UGA, UAA, UAG): </b>" + ((gene.stopCodon) ? gene.stopCodon : "???")   +  "";
+ 
+            html += "<br><br><b>Chromosome Walk</b>:<br>";
             html += ((getProteinLink(gene, "chromosomeWalk") !=="") ? getProteinLink(gene, "chromosomeWalk") : "???")
 
-            html += "<br><b>Protein Resources Databases (links to external SIB resources):</b><br>" + 
-                "<ul>" + getProteinLink(gene, "uniprot") 
-                       + getProteinLink(gene, "nextprot") 
-                       + getProteinLink(gene, "proteinSpotlight")
-                + "</ul>";
+            html += "<br><b>Protein Resources Databases (links to external SIB resources):</b><br>" 
+                 + getProteinLink(gene, "uniprot")  
+                 + getProteinLink(gene, "nextprot") 
+                 + getProteinLink(gene, "proteinSpotlight");
 
-            html += "<br><b>Publication Study (ies?)</b>:<br>";
+            html += "<br><b>Publication Studies</b>:<br>";
             html += ((getProteinLink(gene, "pubmed") !=="") ? getProteinLink(gene, "pubmed") : "???")
             html += ((getProteinLink(gene, "snpedia") !=="") ? getProteinLink(gene, "snpedia") : "???")
             
-            
-            html += "<br><b>Links to swissdrug?, ensembl? dbsnpedia? </b><br>"
+            if(gene["3dImage"]){
+                html += "<br><br><b>Protein Image (careful to have no copyright)</b>:<br>"
+                html += "<br><img width='250px' src='" + gene["3dImage"] + "'></img>";
+            }
+
+            html += "<br><b>Links to other resources (like swissdrug)</b><br>"
 
             if(gene.debugInfo) {
-                html += "<br><b>Debug Info Image (To help understanding but not to include in the game)</b><br>";
-                html += "Image to help understanding the impact of this mutation: <br> <img height='50px' src='" + gene.debugInfo.img + "'></img>";
+                html += "<br><b>Debug Info Image</b><br>";
+                html += "Image to help understanding the impact of this mutation (NOT TO BE INCLUDED IN THE GAME): <br> <img height='50px' src='" + gene.debugInfo.img + "'></img>";
                 if(gene.debugInfo.superVariantDescription){
                     html += ("<br>Super Variant Description: " + gene.debugInfo.superVariantDescription)
                 }
