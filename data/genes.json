@@ -48,6 +48,10 @@
         "description": "Thick and straight hair",
         "debugInfo": {
             "img": "http://www.clker.com/cliparts/0/0/d/a/11949845142049183837boy_astrid_graeber_.svg.hi.png"
+        },
+         "externalLinks": {
+            "uniprot": "Q07283",
+            "chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-1/?g=de-beaux-cheveux"
         }
   },
     {
