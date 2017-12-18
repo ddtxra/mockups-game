@@ -36,7 +36,8 @@
         },
         "3dImage": "data/assets/proteins/unknown3D.png",
         "externalLinks": {
-            "uniprot": "Q07283"
+            "uniprot": "Q07283",
+            "chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-1/?g=de-beaux-cheveux"
         }
   },
     {
