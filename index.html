@@ -308,8 +308,8 @@
 
             html += "<h4>Transcript: <a target='_blank' href='http://www.ensembl.org/Homo_sapiens/transview?db=core;transcript=" + gene.transcript + "'>" + gene.transcript + "</a></h4>";
 
-            html +=  "<b>Chromosome</b>: " + gene.chromosome + "<br><b>Position in chromosome (start-end)</b>: " + (gene.chromosomePosition ? gene.chromosomePosition[0] + "-" + gene.chromosomePosition[1] + " => " + (gene.chromosomePosition[1] -  gene.chromosomePosition[0]) + "bp" : "????"); 
-                    if(gene.chromosomePosition && (gene.chromosomePosition[1] -  gene.chromosomePosition[0]) != gene.geneRealLengh) {
+            html +=  "<b>Chromosome</b>: " + gene.chromosome + "<br><b>Position in chromosome (start-end)</b>: " + (gene.chromosomeLocation ? gene.chromosomeLocation[0] + "-" + gene.chromosomeLocation[1] + " => " + (gene.chromosomeLocation[1] -  gene.chromosomeLocation[0]) + "bp" : "????"); 
+                    if(gene.chromosomeLocation && (gene.chromosomeLocation[1] -  gene.chromosomeLocation[0]) != gene.geneRealLengh) {
                        html += " seems to be different than geneRealLength: " + gene.geneRealLength + " . TO CHECK...."
                     }
             html += "<br><b>Gene real length:</b>" + gene.geneRealLength + " bp (base pairs can be A,C,G,T)  ";

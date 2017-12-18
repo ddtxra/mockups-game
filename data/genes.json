@@ -4,7 +4,7 @@
         "geneName": "HBB",
         "transcript": "ENST00000335295",
         "chromosome": "11",
-        "chromosomePosition": ["5225464", "5227071"],
+        "chromosomeLocation": ["5225464", "5227071"],
         "description": "Gène codant pour l’hémoglobine, la protéine qui transporte l’oxygène dans notre sang. Une variation dans ce gène peux produire une maladie qui s'appele <a href='https://fr.wikipedia.org/wiki/Dr%C3%A9panocytose'> l'anémie à cellules falciformes.</a>",
         "mutationInfo": {
             "rsName": "rs334",
