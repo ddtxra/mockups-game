@@ -5,8 +5,8 @@
     "transcript": "ENST00000614923",
     "chromosome": "1",
     "exonsCount": 4,
-    "exonsLength": 5826,
-    "geneLength": 9146,
+    "exonsRealLength": 5826,
+    "geneRealLength": 9146,
     "levelData": [
       {
         "type": "utr",
@@ -68,8 +68,8 @@
     "transcript": "ENST00000258443",
     "chromosome": "2",
     "exonsCount": 12,
-    "exonsLength": 1342,
-    "geneLength": 94928,
+    "exonsRealLength": 1342,
+    "geneRealLength": 94928,
     "levelData": [
       {
         "type": "utr",
@@ -195,8 +195,8 @@
     "transcript": "ENST00000264162",
     "chromosome": "2",
     "exonsCount": 18,
-    "exonsLength": 5778,
-    "geneLength": 49377,
+    "exonsRealLength": 5778,
+    "geneRealLength": 49377,
     "levelData": [
       {
         "type": "utr",
@@ -366,8 +366,8 @@
     "transcript": "ENST00000264156",
     "chromosome": "2",
     "exonsCount": 17,
-    "exonsLength": 2462,
-    "geneLength": 36837,
+    "exonsRealLength": 2462,
+    "geneRealLength": 36837,
     "levelData": [
       {
         "type": "utr",
@@ -533,8 +533,8 @@
     "transcript": "ENST00000254657",
     "chromosome": "2",
     "exonsCount": 23,
-    "exonsLength": 3763,
-    "geneLength": 44620,
+    "exonsRealLength": 3763,
+    "geneRealLength": 44620,
     "levelData": [
       {
         "type": "utr",
@@ -748,8 +748,8 @@
     "transcript": "ENST00000292303",
     "chromosome": "3",
     "exonsCount": 2,
-    "exonsLength": 1054,
-    "geneLength": 5359,
+    "exonsRealLength": 1054,
+    "geneRealLength": 5359,
     "levelData": [
       {
         "type": "utr",
@@ -795,8 +795,8 @@
     "transcript": "ENST00000613647",
     "chromosome": "4",
     "exonsCount": 8,
-    "exonsLength": 1091,
-    "geneLength": 15601,
+    "exonsRealLength": 1091,
+    "geneRealLength": 15601,
     "levelData": [
       {
         "type": "utr",
@@ -978,8 +978,8 @@
     "transcript": "ENST00000359052",
     "chromosome": "4",
     "exonsCount": 23,
-    "exonsLength": 3083,
-    "geneLength": 83730,
+    "exonsRealLength": 3083,
+    "geneRealLength": 83730,
     "levelData": [
       {
         "type": "utr",
@@ -1201,8 +1201,8 @@
     "transcript": "ENST00000296589",
     "chromosome": "5",
     "exonsCount": 8,
-    "exonsLength": 1588,
-    "geneLength": 40131,
+    "exonsRealLength": 1588,
+    "geneRealLength": 40131,
     "levelData": [
       {
         "type": "utr",
@@ -1288,8 +1288,8 @@
     "transcript": "ENST00000641151",
     "chromosome": "6",
     "exonsCount": 2,
-    "exonsLength": 931,
-    "geneLength": 6722,
+    "exonsRealLength": 931,
+    "geneRealLength": 6722,
     "levelData": [
       {
         "type": "utr",
@@ -1351,8 +1351,8 @@
     "transcript": "ENST00000343882",
     "chromosome": "6",
     "exonsCount": 2,
-    "exonsLength": 2018,
-    "geneLength": 124950,
+    "exonsRealLength": 2018,
+    "geneRealLength": 124950,
     "levelData": [
       {
         "type": "utr",
@@ -1422,8 +1422,8 @@
     "transcript": "ENST00000288602",
     "chromosome": "7",
     "exonsCount": 19,
-    "exonsLength": 2296,
-    "geneLength": 190324,
+    "exonsRealLength": 2296,
+    "geneRealLength": 190324,
     "levelData": [
       {
         "type": "utr",
@@ -1597,8 +1597,8 @@
     "transcript": "ENST00000547270",
     "chromosome": "7",
     "exonsCount": 2,
-    "exonsLength": 997,
-    "geneLength": 1147,
+    "exonsRealLength": 997,
+    "geneRealLength": 1147,
     "levelData": [
       {
         "type": "utr",
@@ -1636,8 +1636,8 @@
     "transcript": "ENST00000612452",
     "chromosome": "X",
     "exonsCount": 10,
-    "exonsLength": 2209,
-    "geneLength": 186607,
+    "exonsRealLength": 2209,
+    "geneRealLength": 186607,
     "levelData": [
       {
         "type": "utr",
@@ -1739,8 +1739,8 @@
     "transcript": "ENST00000595290",
     "chromosome": "X",
     "exonsCount": 7,
-    "exonsLength": 1090,
-    "geneLength": 13524,
+    "exonsRealLength": 1090,
+    "geneRealLength": 13524,
     "levelData": [
       {
         "type": "utr",
@@ -1818,8 +1818,8 @@
     "transcript": "ENST00000611156",
     "chromosome": "9",
     "exonsCount": 9,
-    "exonsLength": 1057,
-    "geneLength": 20057,
+    "exonsRealLength": 1057,
+    "geneRealLength": 20057,
     "levelData": [
       {
         "type": "utr",
@@ -1913,8 +1913,8 @@
     "transcript": "ENST00000335295",
     "chromosome": "11",
     "exonsCount": 4,
-    "exonsLength": 439,
-    "geneLength": 1616,
+    "exonsRealLength": 439,
+    "geneRealLength": 1616,
     "levelData": [
       {
         "type": "utr",
@@ -1968,8 +1968,8 @@
     "transcript": "ENST00000502692",
     "chromosome": "11",
     "exonsCount": 22,
-    "exonsLength": 2830,
-    "geneLength": 16976,
+    "exonsRealLength": 2830,
+    "geneRealLength": 16976,
     "levelData": [
       {
         "type": "utr",
@@ -2167,8 +2167,8 @@
     "transcript": "ENST00000373965",
     "chromosome": "10",
     "exonsCount": 35,
-    "exonsLength": 5029,
-    "geneLength": 998593,
+    "exonsRealLength": 5029,
+    "geneRealLength": 998593,
     "levelData": [
       {
         "type": "utr",
@@ -2478,8 +2478,8 @@
     "transcript": "ENST00000372071",
     "chromosome": "10",
     "exonsCount": 12,
-    "exonsLength": 1465,
-    "geneLength": 11923,
+    "exonsRealLength": 1465,
+    "geneRealLength": 11923,
     "levelData": [
       {
         "type": "utr",
@@ -2597,8 +2597,8 @@
     "transcript": "ENST00000355995",
     "chromosome": "10",
     "exonsCount": 15,
-    "exonsLength": 1856,
-    "geneLength": 217461,
+    "exonsRealLength": 1856,
+    "geneRealLength": 217461,
     "levelData": [
       {
         "type": "utr",
@@ -2748,8 +2748,8 @@
     "transcript": "ENST00000341259",
     "chromosome": "12",
     "exonsCount": 8,
-    "exonsLength": 1723,
-    "geneLength": 45694,
+    "exonsRealLength": 1723,
+    "geneRealLength": 45694,
     "levelData": [
       {
         "type": "utr",
@@ -2843,8 +2843,8 @@
     "transcript": "ENST00000261733",
     "chromosome": "12",
     "exonsCount": 14,
-    "exonsLength": 1549,
-    "geneLength": 50636,
+    "exonsRealLength": 1549,
+    "geneRealLength": 50636,
     "levelData": [
       {
         "type": "utr",
@@ -2978,8 +2978,8 @@
     "transcript": "ENST00000382848",
     "chromosome": "13",
     "exonsCount": 2,
-    "exonsLength": 700,
-    "geneLength": 5436,
+    "exonsRealLength": 700,
+    "geneRealLength": 5436,
     "levelData": [
       {
         "type": "utr",
@@ -3021,8 +3021,8 @@
     "transcript": "ENST00000349310",
     "chromosome": "14",
     "exonsCount": 13,
-    "exonsLength": 1439,
-    "geneLength": 26435,
+    "exonsRealLength": 1439,
+    "geneRealLength": 26435,
     "levelData": [
       {
         "type": "utr",
@@ -3172,8 +3172,8 @@
     "transcript": "ENST00000354638",
     "chromosome": "15",
     "exonsCount": 24,
-    "exonsLength": 2512,
-    "geneLength": 344534,
+    "exonsRealLength": 2512,
+    "geneRealLength": 344534,
     "levelData": [
       {
         "type": "utr",
@@ -3395,8 +3395,8 @@
     "transcript": "ENST00000261609",
     "chromosome": "15",
     "exonsCount": 92,
-    "exonsLength": 14501,
-    "geneLength": 211301,
+    "exonsRealLength": 14501,
+    "geneRealLength": 211301,
     "levelData": [
       {
         "type": "utr",
@@ -4170,8 +4170,8 @@
     "transcript": "ENST00000341459",
     "chromosome": "15",
     "exonsCount": 10,
-    "exonsLength": 1498,
-    "geneLength": 21721,
+    "exonsRealLength": 1498,
+    "geneRealLength": 21721,
     "levelData": [
       {
         "type": "utr",
@@ -4273,8 +4273,8 @@
     "transcript": "ENST00000343932",
     "chromosome": "15",
     "exonsCount": 6,
-    "exonsLength": 1547,
-    "geneLength": 7375,
+    "exonsRealLength": 1547,
+    "geneRealLength": 7375,
     "levelData": [
       {
         "type": "utr",
@@ -4360,8 +4360,8 @@
     "transcript": "ENST00000356608",
     "chromosome": "16",
     "exonsCount": 30,
-    "exonsLength": 4144,
-    "geneLength": 80547,
+    "exonsRealLength": 4144,
+    "geneRealLength": 80547,
     "levelData": [
       {
         "type": "utr",
@@ -4631,8 +4631,8 @@
     "transcript": "ENST00000555427",
     "chromosome": "16",
     "exonsCount": 3,
-    "exonsLength": 1144,
-    "geneLength": 7566,
+    "exonsRealLength": 1144,
+    "geneRealLength": 7566,
     "levelData": [
       {
         "type": "utr",
@@ -4694,8 +4694,8 @@
     "transcript": "ENST00000357654",
     "chromosome": "17",
     "exonsCount": 23,
-    "exonsLength": 5587,
-    "geneLength": 81124,
+    "exonsRealLength": 5587,
+    "geneRealLength": 81124,
     "levelData": [
       {
         "type": "utr",
@@ -4909,8 +4909,8 @@
     "transcript": "ENST00000222139",
     "chromosome": "19",
     "exonsCount": 9,
-    "exonsLength": 1522,
-    "geneLength": 7126,
+    "exonsRealLength": 1522,
+    "geneRealLength": 7126,
     "levelData": [
       {
         "type": "utr",
@@ -5004,8 +5004,8 @@
     "transcript": "ENST00000252486",
     "chromosome": "19",
     "exonsCount": 4,
-    "exonsLength": 949,
-    "geneLength": 3650,
+    "exonsRealLength": 949,
+    "geneRealLength": 3650,
     "levelData": [
       {
         "type": "utr",

@@ -43,8 +43,8 @@ var parser = parse({delimiter: '\t'}, function (err, data) {
                 "transcript": block.transcript,
                 "chromosome": block.chromosome,
                 "exonsCount" : 0,
-                "exonsLength" : 0,
-                "geneLength" : 0,
+                "exonsRealLength" : 0,
+                "geneRealLength" : 0,
                 "levelData": []
             }
             genes.push(currentGeneObject);
@@ -52,14 +52,9 @@ var parser = parse({delimiter: '\t'}, function (err, data) {
         
         if(block.type === "exon") {
             currentGeneObject.exonsCount++;
-            currentGeneObject.exonsLength += block.realLength;
+            currentGeneObject.exonsRealLength += block.realLength;
         }
-        currentGeneObject.geneLength += block.realLength;
-
-        if(currentTranscript === "ENST00000292303") {
-            console.log(block)
-            console.log(currentGeneObject.exonsLength)
-        }
+        currentGeneObject.geneRealLength += block.realLength;
         var level = {
             type: block.type,
             realLength: block.realLength,
@@ -73,19 +68,19 @@ var parser = parse({delimiter: '\t'}, function (err, data) {
 
     var selectedTranscript = genes[0];
     var currentGeneName = selectedTranscript.geneName;
-    var maxLengthCurrentTranscript = selectedTranscript.geneLength;
+    var maxLengthCurrentTranscript = selectedTranscript.geneRealLength;
     
     for(var i=0; i < genes.length; i++){
         var currentGene = genes[i];
         if(currentGene.geneName !== currentGeneName) //If a new gene, put the last gene selected 
         {
             selectedTranscripts.push(selectedTranscript)
-            maxLengthCurrentTranscript = selectedTranscript.geneLength;
+            maxLengthCurrentTranscript = selectedTranscript.geneRealLength;
             selectedTranscript = currentGene;
             var currentGeneName = currentGene.geneName;
             
         }else {
-            if(currentGene.geneLength > selectedTranscript.geneLength){
+            if(currentGene.geneRealLength > selectedTranscript.geneRealLength){
                 selectedTranscript = currentGene;
             }
         }
