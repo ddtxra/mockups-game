@@ -354,7 +354,7 @@
             html += "<li>Demographic pertinence:&nbsp;" + ((gene.mutationInfo && gene.mutationInfo.origin) ? gene.mutationInfo.origin : "???")   + "</li>";
             html += "<li>Alleles:</b> " + ((gene.mutationInfo && gene.mutationInfo.alleles) ? gene.mutationInfo.alleles : "???")  + " </li>";
             html += "<li>Type:&nbsp;" + ((gene.mutationInfo && gene.mutationInfo.type) ? gene.mutationInfo.type : "???")   + "</li>";
-            html += "<li>Base origin and mutation:&nbsp;" + ((gene.mutationInfo && gene.mutationInfo.nucleotide) ? gene.mutationInfo.nucleotide : "???")   + "</li>";
+            html += "<li>Base origin and mutation:&nbsp;" + ((gene.mutationInfo && gene.mutationInfo.nucleotideChange) ? (gene.mutationInfo.nucleotideChange[0] + "->" + gene.mutationInfo.nucleotideChange[1]) : "???")   + "</li>";
             html += "</ul>"
             html += "<br><b>STOP codon bases (can be UGA, UAA, UAG): </b>" + ((gene.stopCodon) ? gene.stopCodon : "???")   +  "";
  
