@@ -9,7 +9,7 @@
         "mutationInfo": {
             "rsName": "rs334",
             "sex": ["H", "F"],
-            "populationBackground": ["non-asian", "asian"],
+            "populationBackground": ["caucasian", "asian"],
             "type": "missense",
             "nucleotideChange": ["A", "T"],
             "alleles": "homozygous"
