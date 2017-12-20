@@ -61,6 +61,11 @@
         "description": "This genes is responsible for bla bla bla...",
         "debugInfo": {
             "img": "https://ultimahora.es/sfAttachPlugin/getCachedContent/id/420234"
+        },
+        "externalLinks": {
+            "uniprot": "P68871",
+            "pubmed": "20552021",
+            "chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-11/?g=un-taxi-pour-loxygene"
         }
   },
     {
