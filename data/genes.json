@@ -51,7 +51,7 @@
         },
          "externalLinks": {
             "uniprot": "Q07283",
-            "chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-1/?g=de-beaux-cheveux"
+            "chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-2/?g=de-beaux-cheveux"
         }
   },
     {
@@ -63,9 +63,8 @@
             "img": "https://ultimahora.es/sfAttachPlugin/getCachedContent/id/420234"
         },
         "externalLinks": {
-            "uniprot": "P68871",
-            "pubmed": "20552021",
-            "chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-11/?g=un-taxi-pour-loxygene"
+            "uniprot": "P09848",
+            "chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-2/?g=de-lorigine-des-flatulences"
         }
   },
     {
@@ -76,6 +75,10 @@
         "description": "no milk",
         "debugInfo": {
             "img": "http://strawberryblu.com/wp-content/uploads/2013/05/No_Milk.gif"
+        },
+        "externalLinks": {
+            "uniprot": "Q14566",
+            "chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-2/?g=de-lorigine-des-flatulences"
         }
   },
     {
@@ -86,6 +89,10 @@
         "description": "This genes is responsible for bla bla bla...",
         "debugInfo": {
             "img": "https://media.gettyimages.com/vectors/sleepy-cartoon-man-with-an-alarm-clock-vector-id453556207"
+        },
+        "externalLinks": {
+            "uniprot": "O15055",
+            "chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-2/?g=une-horloge-dans-la-peau"
         }
   },
     {
@@ -96,6 +103,10 @@
         "description": "Resitance to HIV, in principle we will not include it!",
         "debugInfo": {
             "img": "http://www.madinin-art.net/images/sida-333.jpg"
+        },
+        "externalLinks": {
+            "uniprot": "P51681",
+            "chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-3/?g=stop-sida"
         }
   },
     {
@@ -106,6 +117,10 @@
         "description": "nain / dwarfism",
         "debugInfo": {
             "img": "https://media.gettyimages.com/vectors/hand-drawn-garden-gnome-hands-in-his-pockets-cartoon-vector-vector-id516445221"
+        },
+        "externalLinks": {
+            "uniprot": "P22607",
+            "chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-4/?g=la-taille-du-squelette"
         }
   },
     {
@@ -116,7 +131,8 @@
         "description": "No finger print",
         "debugInfo": {
             "img": "https://images-na.ssl-images-amazon.com/images/I/41C2ADL0wML.jpg"
-        }
+        },
+        
   },
     {
         "id": "SLC45A2-ENST00000296589-Chr5",
