@@ -171,10 +171,6 @@
         "transcript": "ENST00000343882",
         "chromosome": "6",
         "description": "This genes is responsible for bla bla bla..."
-        },
-        "externalLinks": {
-            "uniprot": "O43524",
-            "chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-6/?g=vivre-longtemps"
         }
   },
     {
