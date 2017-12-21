@@ -131,6 +131,10 @@
         "description": "No finger print",
         "debugInfo": {
             "img": "https://images-na.ssl-images-amazon.com/images/I/41C2ADL0wML.jpg"
+        },
+        "externalLinks": {
+            "uniprot": "Q9H4L7",
+            "chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-4/?g=le-bout-de-nos-doigts"
         }
   },
     {
@@ -141,6 +145,10 @@
         "description": "This genes is responsible for bla bla bla...",
         "debugInfo": {
             "img": "http://cache.marieclaire.fr/data/photo/w700_c17/3z/maquillage-peau-mate.jpg"
+        },
+        "externalLinks": {
+            "uniprot": "Q9UMX9",
+            "chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-5/?g=la-couleur-de-la-peau"
         }
   },
     {
@@ -154,7 +162,7 @@
         },
         "externalLinks": {
             "uniprot": "O76001",
-            "proteinSpotlight": "150"
+            "chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-6/?g=herbe-coupee"
         }
   },
     {
@@ -163,6 +171,11 @@
         "transcript": "ENST00000343882",
         "chromosome": "6",
         "description": "This genes is responsible for bla bla bla..."
+        },
+        "externalLinks": {
+            "uniprot": "O43524",
+            "chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-6/?g=vivre-longtemps"
+        }
   },
     {
         "id": "BRAF-ENST00000288602-Chr7",
@@ -170,6 +183,11 @@
         "transcript": "ENST00000288602",
         "chromosome": "7",
         "description": "This genes is responsible for bla bla bla..."
+        },
+        "externalLinks": {
+            "uniprot": "P15056",
+            "chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-7/?g=foisonnement-de-cellules"
+        }
   },
     {
         "id": "TAS2R38-ENST00000547270-Chr7",
@@ -179,6 +197,10 @@
         "description": "TAS2R38 is a bitter taste receptor...",
         "debugInfo": {
             "img": "http://downloadclipart.org/do-upload/clipart/2016-01/Cartoon_Broccoli_Clip_Art.png"
+        },
+        "externalLinks": {
+            "uniprot": "P59533",
+            "chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-7/?g=un-gout-amer"
         }
   },
     {
@@ -187,6 +209,11 @@
         "transcript": "ENST00000612452",
         "chromosome": "X",
         "description": "This genes is responsible for bla bla bla..."
+        },
+        "externalLinks": {
+            "uniprot": "P10275",
+            "chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-xx/?g=a-poil"
+        }
   },
     {
         "id": "OPN1MW-ENST00000595290-ChrX",
@@ -199,7 +226,8 @@
             "img": "http://daltonien.free.fr/daltonien/IMG/jpg/15.jpg"
         },
         "externalLinks": {
-            "uniprot": "P68871"
+            "uniprot": "P04001"
+            "chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-xx/?g=daltonisme"
         }
   },
     {
