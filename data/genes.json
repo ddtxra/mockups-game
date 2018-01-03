@@ -234,6 +234,10 @@
         "description": "This genes is responsible for bla bla bla...",
         "debugInfo": {
             "img": "http://whatsmybloodtype.org/files/images/typeb.jpg"
+        },
+        "externalLinks": {
+            "uniprot": "P16442"
+            "chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-9/?g=a-b-ab-ou-o"
         }
   },
     {
@@ -246,6 +250,10 @@
         "debugInfo": {
             "avatarChange": "short de course / basket ,,,,",
             "img": "https://image.shutterstock.com/z/stock-vector-cartoon-character-strong-and-tall-muscular-male-is-sprinter-rapidly-running-along-the-stadium-track-659167981.jpg"
+        },
+        "externalLinks": {
+            "uniprot": "Q08043"
+            "chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-11/?g=medailles-olympiques"
         }
   },
     {
@@ -258,6 +266,10 @@
         "descriptionImg": "http://www.ushersyndroom.nl/wp-content/uploads/2016/12/The-Ushers-infographic-EN-Foundation-Usher-syndrome-DEF.001-kopie.jpg",
         "debugInfo": {
             "img": "http://www.ushersyndroom.nl/wp-content/uploads/2016/10/Dream-stopUSH-bovenstuk.jpg"
+        },
+         "externalLinks": {
+            "uniprot": "Q96QU1"
+            "chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-10/?g=baisse-le-son-et-la-vue"
         }
   },
     {
@@ -268,6 +280,10 @@
         "description": "depression",
         "debugInfo": {
             "img": "http://moziru.com/images/gloomy-clipart-child-depression-4.jpg"
+        },
+        "externalLinks": {
+            "uniprot": "Q9UHM6"
+            "chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-10/?g=une-horloge-dans-la-peau"
         }
   },
     {
@@ -278,6 +294,10 @@
         "description": "This genes is responsible for bla bla bla...",
         "debugInfo": {
             "img": "https://thumbs.dreamstime.com/z/syringe-bottle-insulin-medicines-treatment-diabetes-diabetes-single-icon-cartoon-style-vector-symbol-87971845.jpg"
+        },
+        "externalLinks": {
+            "uniprot": "Q9NQB0"
+            "chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-10/?g=resistance-a-linsuline"
         }
   },
     {
@@ -288,6 +308,10 @@
         "description": "This genes is responsible for bla bla bla...",
         "debugInfo": {
             "img": "https://jimvysechickenchat.files.wordpress.com/2014/07/no-bread-300x203.jpg?w=584"
+        },
+        "externalLinks": {
+            "uniprot": "Q9UQQ2"
+            "chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-12/?g=intolerance-au-gluten"
         }
   },
     {
@@ -300,6 +324,10 @@
         "description": "Avec une choppe de bière a la main...",
         "debugInfo": {
             "img": "https://i.pinimg.com/originals/f9/e2/d6/f9e2d6da65c1c787e72d376e7a7d16f7.jpg"
+        },
+        "externalLinks": {
+            "uniprot": "P05091"
+            "chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-12/?g=un-verre-de-trop"
         }
   },
     {
@@ -311,6 +339,10 @@
         "description": "Il gagne un appareil auditif",
         "debugInfo": {
             "img": "https://st3.depositphotos.com/1432405/12768/v/950/depositphotos_127686200-stock-illustration-hearing-aid-icon-cartoon-style.jpg"
+        },
+        "externalLinks": {
+            "uniprot": "P29033"
+            "chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-13/?g=baisse-le-son"
         }
   },
     {
@@ -322,6 +354,10 @@
         "descriptionImg": "http://genetics.thetech.org/sites/default/files/450Epistasis.gif",
         "debugInfo": {
             "img": "http://media.istockphoto.com/vectors/brown-eyes-vector-id485559036"
+        },
+        "externalLinks": {
+            "uniprot": "Q04671"
+            "chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-15/"
         }
   },
     {
@@ -333,6 +369,10 @@
         "descriptionImg": "http://genetics.thetech.org/sites/default/files/450Epistasis.gif",
         "debugInfo": {
             "img": "https://png.pngtree.com/element_pic/00/16/07/16578993ee35437.jpg"
+        },
+        "externalLinks": {
+            "uniprot": "O95714"
+            "chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-15/"
         }
   },
     {
@@ -343,6 +383,10 @@
         "description": "This genes is responsible for light skin",
         "debugInfo": {
             "img": "http://i.f1g.fr/media/ext/1900x1900/madame.lefigaro.fr/sites/default/files/img/2016/01/1624jpg.jpg"
+        },
+        "externalLinks": {
+            "uniprot": "Q71RS6"
+            "chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-15/?g=la-couleur-de-la-peau (?)"
         }
   },
     {
@@ -353,6 +397,10 @@
         "description": "cafe",
         "debugInfo": {
             "img": "https://static6.depositphotos.com/1001911/636/v/950/depositphotos_6360484-stock-illustration-coffee-cup-cartoon.jpg"
+        },
+        "externalLinks": {
+            "uniprot": "P05177"
+            "chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-15/?g=degradation-moleculaire"
         }
   },
     {
@@ -377,6 +425,10 @@
         "description": "red hair",
         "debugInfo": {
             "img": "https://orig00.deviantart.net/07f1/f/2012/244/2/5/red_hair_and_green_eyes_by_ohaikeely-d5d83d1.jpg"
+        },
+        "externalLinks": {
+            "uniprot": "Q01726"
+            "chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-16/?g=pigmenter"
         }
   },
     {
@@ -388,6 +440,10 @@
         "debugInfo": {
             "avatarChange": "L'avatar doit gagner un coeur avec des super forces et globules rouges autour",
             "img": "https://st2.depositphotos.com/4297405/11770/v/950/depositphotos_117709068-stock-illustration-icon-symbol-of-struggle-and.jpg"
+        },
+        "externalLinks": {
+            "uniprot": "P38398"
+            "chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-17/?g=foisonnement-de-cellules"
         }
   },
     {
@@ -404,6 +460,10 @@
         "debugInfo": {
             "avatarChange": "L'avatar doit gagner un coeur avec des super forces et globules rouges autour",
             "img": "https://thumbs.dreamstime.com/z/super-heart-23167583.jpg"
+        },
+        "externalLinks": {
+            "uniprot": "P19235"
+            "chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-19/?g=medailles-olympiques"
         }
   },
     {
@@ -414,6 +474,10 @@
         "description": "Alzheimer",
         "debugInfo": {
             "img": "https://i.pinimg.com/736x/00/09/f4/0009f4092b5a5a21fb7eaaadccde600e--dementia-clock-green-juice.jpg"
+        },
+        "externalLinks": {
+            "uniprot": "P02649"
+            "chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-19/?g=un-taxi-pour-nos-graisses"
         }
   },
     {
@@ -424,6 +488,10 @@
         "description": "more sensible to canabis",
         "debugInfo": {
             "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Cannabis_leaf.svg/1200px-Cannabis_leaf.svg.png"
+        },
+        "externalLinks": {
+            "uniprot": "P31749"
+            "chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-14/?g=foisonnement-de-cellules"
         }
   }
 ]
