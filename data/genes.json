@@ -1,502 +1,474 @@
-[
-    {
-        "id": "HBB-ENST00000335295-Chr11",
-        "geneName": "HBB",
-        "transcript": "ENST00000335295",
-        "chromosome": "11",
-        "chromosomeLocation": ["5225464", "5227071"],
-        "description": "Gène codant pour l’hémoglobine, la protéine qui transporte l’oxygène dans notre sang. Une variation dans ce gène peux produire une maladie qui s'appele <a href='https://fr.wikipedia.org/wiki/Dr%C3%A9panocytose'> l'anémie à cellules falciformes.</a>",
-        "mutationInfo": {
-            "rsName": "rs334",
-            "sex": ["H", "F"],
-            "populationBackground": ["caucasian", "asian"],
-            "type": "missense",
-            "nucleotideChange": ["A", "T"],
-            "alleles": "homozygous"
-        },
-        "stopCodon": "UGA",
-        "debugInfo": {
-            "img": "http://kidshealth.org/EN/images/illustrations/sickleCell-400x214-rd1-enIL.jpg"
-        },
-        "3dImage": "data/assets/proteins/HBB3D.png",
-        "externalLinks": {
-            "uniprot": "P68871",
-            "pubmed": "20552021",
-            "chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-11/?g=un-taxi-pour-loxygene"
-        }
-  },
-    {
-        "id": "TCHH-ENST00000614923-Chr1",
-        "geneName": "TCHH",
-        "transcript": "ENST00000614923",
-        "chromosome": "1",
-        "description": "Gène impliqué dans la fabrication des cheveux. Certaines variations de ce gène sont associées avec des cheveux crépus.",
-        "debugInfo": {
-            "img": "http://mercredie.com/wp-content/uploads/2014/08/mercredie-blog-beaute-cheveux-frises-pre-wash-post-wash-conseils-cheveux-naturels-crepus-frises-boucles.jpg"
-        },
-        "3dImage": "data/assets/proteins/unknown3D.png",
-        "externalLinks": {
-            "uniprot": "Q07283",
-            "chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-1/?g=de-beaux-cheveux"
-        }
-  },
-    {
-        "id": "EDAR-ENST00000258443-Chr2",
-        "geneName": "EDAR",
-        "transcript": "ENST00000258443",
-        "chromosome": "2",
-        "description": "Thick and straight hair",
-        "debugInfo": {
-            "img": "http://www.clker.com/cliparts/0/0/d/a/11949845142049183837boy_astrid_graeber_.svg.hi.png"
-        },
-         "externalLinks": {
-            "uniprot": "Q07283",
-            "chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-2/?g=de-beaux-cheveux"
-        }
-  },
-    {
-        "id": "LCT-ENST00000264162-Chr2",
-        "geneName": "LCT",
-        "chromosome": "2",
-        "description": "This genes is responsible for bla bla bla...",
-        "debugInfo": {
-            "img": "https://ultimahora.es/sfAttachPlugin/getCachedContent/id/420234"
-        },
-        "externalLinks": {
-            "uniprot": "P09848",
-            "chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-2/?g=de-lorigine-des-flatulences"
-        }
-  },
-    {
-        "id": "MCM6-ENST00000264156-Chr2",
-        "geneName": "MCM6",
-        "transcript": "ENST00000264156",
-        "chromosome": "2",
-        "description": "no milk",
-        "debugInfo": {
-            "img": "http://strawberryblu.com/wp-content/uploads/2013/05/No_Milk.gif"
-        },
-        "externalLinks": {
-            "uniprot": "Q14566",
-            "chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-2/?g=de-lorigine-des-flatulences"
-        }
-  },
-    {
-        "id": "PER2-ENST00000254657-Chr2",
-        "geneName": "PER2",
-        "transcript": "ENST00000254657",
-        "chromosome": "2",
-        "description": "This genes is responsible for bla bla bla...",
-        "debugInfo": {
-            "img": "https://media.gettyimages.com/vectors/sleepy-cartoon-man-with-an-alarm-clock-vector-id453556207"
-        },
-        "externalLinks": {
-            "uniprot": "O15055",
-            "chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-2/?g=une-horloge-dans-la-peau"
-        }
-  },
-    {
-        "id": "CCR5-ENST00000292303-Chr3",
-        "geneName": "CCR5",
-        "transcript": "ENST00000292303",
-        "chromosome": "3",
-        "description": "Resitance to HIV, in principle we will not include it!",
-        "debugInfo": {
-            "img": "http://www.madinin-art.net/images/sida-333.jpg"
-        },
-        "externalLinks": {
-            "uniprot": "P51681",
-            "chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-3/?g=stop-sida"
-        }
-  },
-    {
-        "id": "FGFR3-ENST00000613647-Chr4",
-        "geneName": "FGFR3",
-        "transcript": "ENST00000613647",
-        "chromosome": "4",
-        "description": "nain / dwarfism",
-        "debugInfo": {
-            "img": "https://media.gettyimages.com/vectors/hand-drawn-garden-gnome-hands-in-his-pockets-cartoon-vector-vector-id516445221"
-        },
-        "externalLinks": {
-            "uniprot": "P22607",
-            "chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-4/?g=la-taille-du-squelette"
-        }
-  },
-    {
-        "id": "SMARCAD1-ENST00000359052-Chr4",
-        "geneName": "SMARCAD1",
-        "transcript": "ENST00000359052",
-        "chromosome": "4",
-        "description": "No finger print",
-        "debugInfo": {
-            "img": "https://images-na.ssl-images-amazon.com/images/I/41C2ADL0wML.jpg"
-        },
-        "externalLinks": {
-            "uniprot": "Q9H4L7",
-            "chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-4/?g=le-bout-de-nos-doigts"
-        }
-  },
-    {
-        "id": "SLC45A2-ENST00000296589-Chr5",
-        "geneName": "SLC45A2",
-        "transcript": "ENST00000296589",
-        "chromosome": "5",
-        "description": "This genes is responsible for bla bla bla...",
-        "debugInfo": {
-            "img": "http://cache.marieclaire.fr/data/photo/w700_c17/3z/maquillage-peau-mate.jpg"
-        },
-        "externalLinks": {
-            "uniprot": "Q9UMX9",
-            "chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-5/?g=la-couleur-de-la-peau"
-        }
-  },
-    {
-        "id": "OR2J3-ENST00000641151-Chr6",
-        "geneName": "OR2J3",
-        "transcript": "ENST00000641151",
-        "chromosome": "6",
-        "description": "Gène impliqué dans la perception de l’odeur de l’herbe coupée.",
-        "debugInfo": {
-            "img": "https://thumbs.dreamstime.com/z/ciseaux-pour-couper-l-herbe-32134544.jpg"
-        },
-        "externalLinks": {
-            "uniprot": "O76001",
-            "chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-6/?g=herbe-coupee"
-        }
-  },
-    {
-        "id": "FOXO3-ENST00000343882-Chr6",
-        "geneName": "FOXO3",
-        "transcript": "ENST00000343882",
-        "chromosome": "6",
-        "description": "This genes is responsible for bla bla bla..."
-        },
-        "externalLinks": {
-            "uniprot": "O43524",
-            "chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-6/?g=vivre-longtemps"
-        }
-        
-  },
-    {
-        "id": "BRAF-ENST00000288602-Chr7",
-        "geneName": "BRAF",
-        "transcript": "ENST00000288602",
-        "chromosome": "7",
-        "description": "This genes is responsible for bla bla bla..."
-        },
-        "externalLinks": {
-            "uniprot": "P15056",
-            "chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-7/?g=foisonnement-de-cellules"
-        }
-  },
-    {
-        "id": "TAS2R38-ENST00000547270-Chr7",
-        "geneName": "TAS2R38",
-        "transcript": "ENST00000547270",
-        "chromosome": "7",
-        "description": "TAS2R38 is a bitter taste receptor...",
-        "debugInfo": {
-            "img": "http://downloadclipart.org/do-upload/clipart/2016-01/Cartoon_Broccoli_Clip_Art.png"
-        },
-        "externalLinks": {
-            "uniprot": "P59533",
-            "chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-7/?g=un-gout-amer"
-        }
-  },
-    {
-        "id": "AR-ENST00000612452-ChrX",
-        "geneName": "AR",
-        "transcript": "ENST00000612452",
-        "chromosome": "X",
-        "description": "This genes is responsible for bla bla bla..."
-        },
-        "externalLinks": {
-            "uniprot": "P10275",
-            "chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-xx/?g=a-poil"
-        }
-  },
-    {
-        "id": "OPN1MW-ENST00000595290-ChrX",
-        "geneName": "OPN1MW",
-        "superVariant": true,
-        "transcript": "ENST00000595290",
-        "chromosome": "X",
-        "description": "Daltonien: yeux (un oeil jaune et un oeil bleu)",
-        "debugInfo": {
-            "img": "http://daltonien.free.fr/daltonien/IMG/jpg/15.jpg"
-        },
-        "externalLinks": {
-            "uniprot": "P04001"
-            "chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-xx/?g=daltonisme"
-        }
-  },
-    {
-        "id": "ABO-ENST00000611156-Chr9",
-        "geneName": "ABO",
-        "transcript": "ENST00000611156",
-        "chromosome": "9",
-        "description": "This genes is responsible for bla bla bla...",
-        "debugInfo": {
-            "img": "http://whatsmybloodtype.org/files/images/typeb.jpg"
-        },
-        "externalLinks": {
-            "uniprot": "P16442"
-            "chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-9/?g=a-b-ab-ou-o"
-        }
-  },
-    {
-        "id": "ACTN3-ENST00000502692-Chr11",
-        "superVariant": true,
-        "geneName": "ACTN3",
-        "transcript": "ENST00000502692",
-        "chromosome": "11",
-        "description": " muscle? ",
-        "debugInfo": {
-            "avatarChange": "short de course / basket ,,,,",
-            "img": "https://image.shutterstock.com/z/stock-vector-cartoon-character-strong-and-tall-muscular-male-is-sprinter-rapidly-running-along-the-stadium-track-659167981.jpg"
-        },
-        "externalLinks": {
-            "uniprot": "Q08043"
-            "chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-11/?g=medailles-olympiques"
-        }
-  },
-    {
-        "id": "PCDH15-ENST00000373965-Chr10",
-        "superVariant": true,
-        "geneName": "PCDH15",
-        "transcript": "ENST00000373965",
-        "chromosome": "10",
-        "description": "Usher syndrome un gars avec lunette noir et appareil auditif...",
-        "descriptionImg": "http://www.ushersyndroom.nl/wp-content/uploads/2016/12/The-Ushers-infographic-EN-Foundation-Usher-syndrome-DEF.001-kopie.jpg",
-        "debugInfo": {
-            "img": "http://www.ushersyndroom.nl/wp-content/uploads/2016/10/Dream-stopUSH-bovenstuk.jpg"
-        },
-         "externalLinks": {
-            "uniprot": "Q96QU1"
-            "chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-10/?g=baisse-le-son-et-la-vue"
-        }
-  },
-    {
-        "id": "OPN4-ENST00000372071-Chr10",
-        "geneName": "OPN4",
-        "transcript": "ENST00000372071",
-        "chromosome": "10",
-        "description": "depression",
-        "debugInfo": {
-            "img": "http://moziru.com/images/gloomy-clipart-child-depression-4.jpg"
-        },
-        "externalLinks": {
-            "uniprot": "Q9UHM6"
-            "chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-10/?g=une-horloge-dans-la-peau"
-        }
-  },
-    {
-        "id": "TCF7L2-ENST00000355995-Chr10",
-        "geneName": "TCF7L2",
-        "transcript": "ENST00000355995",
-        "chromosome": "10",
-        "description": "This genes is responsible for bla bla bla...",
-        "debugInfo": {
-            "img": "https://thumbs.dreamstime.com/z/syringe-bottle-insulin-medicines-treatment-diabetes-diabetes-single-icon-cartoon-style-vector-symbol-87971845.jpg"
-        },
-        "externalLinks": {
-            "uniprot": "Q9NQB0"
-            "chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-10/?g=resistance-a-linsuline"
-        }
-  },
-    {
-        "id": "SH2B3-ENST00000341259-Chr12",
-        "geneName": "SH2B3",
-        "transcript": "ENST00000341259",
-        "chromosome": "12",
-        "description": "This genes is responsible for bla bla bla...",
-        "debugInfo": {
-            "img": "https://jimvysechickenchat.files.wordpress.com/2014/07/no-bread-300x203.jpg?w=584"
-        },
-        "externalLinks": {
-            "uniprot": "Q9UQQ2"
-            "chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-12/?g=intolerance-au-gluten"
-        }
-  },
-    {
-        "id": "ALDH2-ENST00000261733-Chr12",
-        "superVariant": true,
-        "geneName": "ALDH2",
-        "transcript": "ENST00000261733",
-        "3dImage": "data/assets/proteins/ALDH23D.png",
-        "chromosome": "12",
-        "description": "Avec une choppe de bière a la main...",
-        "debugInfo": {
-            "img": "https://i.pinimg.com/originals/f9/e2/d6/f9e2d6da65c1c787e72d376e7a7d16f7.jpg"
-        },
-        "externalLinks": {
-            "uniprot": "P05091"
-            "chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-12/?g=un-verre-de-trop"
-        }
-  },
-    {
-        "id": "GJB2-ENST00000382848-Chr13",
-        "superVariant": true,
-        "geneName": "GJB2",
-        "transcript": "ENST00000382848",
-        "chromosome": "13",
-        "description": "Il gagne un appareil auditif",
-        "debugInfo": {
-            "img": "https://st3.depositphotos.com/1432405/12768/v/950/depositphotos_127686200-stock-illustration-hearing-aid-icon-cartoon-style.jpg"
-        },
-        "externalLinks": {
-            "uniprot": "P29033"
-            "chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-13/?g=baisse-le-son"
-        }
-  },
-    {
-        "id": "OCA2-ENST00000354638-Chr15",
-        "geneName": "OCA2",
-        "transcript": "ENST00000354638",
-        "chromosome": "15",
-        "description": "brown eyes",
-        "descriptionImg": "http://genetics.thetech.org/sites/default/files/450Epistasis.gif",
-        "debugInfo": {
-            "img": "http://media.istockphoto.com/vectors/brown-eyes-vector-id485559036"
-        },
-        "externalLinks": {
-            "uniprot": "Q04671"
-            "chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-15/"
-        }
-  },
-    {
-        "id": "HERC2-ENST00000261609-Chr15",
-        "geneName": "HERC2",
-        "transcript": "ENST00000261609",
-        "chromosome": "15",
-        "description": "blues eyes in combinaison with brown",
-        "descriptionImg": "http://genetics.thetech.org/sites/default/files/450Epistasis.gif",
-        "debugInfo": {
-            "img": "https://png.pngtree.com/element_pic/00/16/07/16578993ee35437.jpg"
-        },
-        "externalLinks": {
-            "uniprot": "O95714"
-            "chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-15/"
-        }
-  },
-    {
-        "id": "SLC24A5-ENST00000341459-Chr15",
-        "geneName": "SLC24A5",
-        "transcript": "ENST00000341459",
-        "chromosome": "15",
-        "description": "This genes is responsible for light skin",
-        "debugInfo": {
-            "img": "http://i.f1g.fr/media/ext/1900x1900/madame.lefigaro.fr/sites/default/files/img/2016/01/1624jpg.jpg"
-        },
-        "externalLinks": {
-            "uniprot": "Q71RS6"
-            "chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-15/?g=la-couleur-de-la-peau (?)"
-        }
-  },
-    {
-        "id": "CYP1A2-ENST00000343932-Chr15",
-        "geneName": "CYP1A2",
-        "transcript": "ENST00000343932",
-        "chromosome": "15",
-        "description": "cafe",
-        "debugInfo": {
-            "img": "https://static6.depositphotos.com/1001911/636/v/950/depositphotos_6360484-stock-illustration-coffee-cup-cartoon.jpg"
-        },
-        "externalLinks": {
-            "uniprot": "P05177"
-            "chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-15/?g=degradation-moleculaire"
-        }
-  },
-    {
-        "id": "ABCC11-ENST00000356608-Chr16",
-        "geneName": "ABCC11",
-        "transcript": "ENST00000356608",
-        "chromosome": "16",
-        "description": "Cire d'oreil et odeur. Interet pour les pharmacies",
-        "debugInfo": {
-            "img": "http://sweetclipart.com/multisite/sweetclipart/files/perfume_clip_art.png"
-        },
-        "externalLinks": {
-            "uniprot": "Q96J66",
-            "chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-16/?g=cire-doreille"
-        }
-  },
-    {
-        "id": "MC1R-ENST00000555427-Chr16",
-        "geneName": "MC1R",
-        "transcript": "ENST00000555427",
-        "chromosome": "16",
-        "description": "red hair",
-        "debugInfo": {
-            "img": "https://orig00.deviantart.net/07f1/f/2012/244/2/5/red_hair_and_green_eyes_by_ohaikeely-d5d83d1.jpg"
-        },
-        "externalLinks": {
-            "uniprot": "Q01726"
-            "chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-16/?g=pigmenter"
-        }
-  },
-    {
-        "id": "BRCA1-ENST00000357654-Chr17",
-        "geneName": "BRCA1",
-        "transcript": "ENST00000357654",
-        "chromosome": "17",
-        "description": "This genes is responsible for bla bla bla...",
-        "debugInfo": {
-            "avatarChange": "L'avatar doit gagner un coeur avec des super forces et globules rouges autour",
-            "img": "https://st2.depositphotos.com/4297405/11770/v/950/depositphotos_117709068-stock-illustration-icon-symbol-of-struggle-and.jpg"
-        },
-        "externalLinks": {
-            "uniprot": "P38398"
-            "chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-17/?g=foisonnement-de-cellules"
-        }
-  },
-    {
-        "id": "EPOR-ENST00000222139-Chr19",
-        "superVariant": true,
-        "geneName": "EPOR",
-        "transcript": "ENST00000222139",
-        "chromosome": "19",
-        "description": "beaucoup de globule rouge",
-        "3dImage": "data/assets/proteins/unknown3D.png",
-        "externalLinks": {
-            "uniprot": "P19235"
-        },
-        "debugInfo": {
-            "avatarChange": "L'avatar doit gagner un coeur avec des super forces et globules rouges autour",
-            "img": "https://thumbs.dreamstime.com/z/super-heart-23167583.jpg"
-        },
-        "externalLinks": {
-            "uniprot": "P19235"
-            "chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-19/?g=medailles-olympiques"
-        }
-  },
-    {
-        "id": "APOE-ENST00000252486-Chr19",
-        "geneName": "APOE",
-        "transcript": "ENST00000252486",
-        "chromosome": "19",
-        "description": "Alzheimer",
-        "debugInfo": {
-            "img": "https://i.pinimg.com/736x/00/09/f4/0009f4092b5a5a21fb7eaaadccde600e--dementia-clock-green-juice.jpg"
-        },
-        "externalLinks": {
-            "uniprot": "P02649"
-            "chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-19/?g=un-taxi-pour-nos-graisses"
-        }
-  },
-    {
-        "id": "AKT1-ENST00000349310-Chr14",
-        "geneName": "AKT1",
-        "transcript": "ENST00000349310",
-        "chromosome": "14",
-        "description": "more sensible to canabis",
-        "debugInfo": {
-            "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Cannabis_leaf.svg/1200px-Cannabis_leaf.svg.png"
-        },
-        "externalLinks": {
-            "uniprot": "P31749"
-            "chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-14/?g=foisonnement-de-cellules"
-        }
-  }
+[{
+		"id": "HBB-ENST00000335295-Chr11",
+		"geneName": "HBB",
+		"transcript": "ENST00000335295",
+		"chromosome": "11",
+		"chromosomeLocation": ["5225464", "5227071"],
+		"description": "Gène codant pour l’hémoglobine, la protéine qui transporte l’oxygène dans notre sang. Une variation dans ce gène peux produire une maladie qui s'appele <a href='https://fr.wikipedia.org/wiki/Dr%C3%A9panocytose'> l'anémie à cellules falciformes.</a>",
+		"mutationInfo": {
+			"rsName": "rs334",
+			"sex": ["H", "F"],
+			"populationBackground": ["caucasian", "asian"],
+			"type": "missense",
+			"nucleotideChange": ["A", "T"],
+			"alleles": "homozygous"
+		},
+		"stopCodon": "UGA",
+		"debugInfo": {
+			"img": "http://kidshealth.org/EN/images/illustrations/sickleCell-400x214-rd1-enIL.jpg"
+		},
+		"3dImage": "data/assets/proteins/HBB3D.png",
+		"externalLinks": {
+			"uniprot": "P68871",
+			"pubmed": "20552021",
+			"chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-11/?g=un-taxi-pour-loxygene"
+		}
+	},
+	{
+		"id": "TCHH-ENST00000614923-Chr1",
+		"geneName": "TCHH",
+		"transcript": "ENST00000614923",
+		"chromosome": "1",
+		"description": "Gène impliqué dans la fabrication des cheveux. Certaines variations de ce gène sont associées avec des cheveux crépus.",
+		"debugInfo": {
+			"img": "http://mercredie.com/wp-content/uploads/2014/08/mercredie-blog-beaute-cheveux-frises-pre-wash-post-wash-conseils-cheveux-naturels-crepus-frises-boucles.jpg"
+		},
+		"3dImage": "data/assets/proteins/unknown3D.png",
+		"externalLinks": {
+			"uniprot": "Q07283",
+			"chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-1/?g=de-beaux-cheveux"
+		}
+	},
+	{
+		"id": "EDAR-ENST00000258443-Chr2",
+		"geneName": "EDAR",
+		"transcript": "ENST00000258443",
+		"chromosome": "2",
+		"description": "Thick and straight hair",
+		"debugInfo": {
+			"img": "http://www.clker.com/cliparts/0/0/d/a/11949845142049183837boy_astrid_graeber_.svg.hi.png"
+		},
+		"externalLinks": {
+			"uniprot": "Q07283",
+			"chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-2/?g=de-beaux-cheveux"
+		}
+	},
+	{
+		"id": "LCT-ENST00000264162-Chr2",
+		"geneName": "LCT",
+		"chromosome": "2",
+		"description": "This genes is responsible for bla bla bla...",
+		"debugInfo": {
+			"img": "https://ultimahora.es/sfAttachPlugin/getCachedContent/id/420234"
+		},
+		"externalLinks": {
+			"uniprot": "P09848",
+			"chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-2/?g=de-lorigine-des-flatulences"
+		}
+	},
+	{
+		"id": "MCM6-ENST00000264156-Chr2",
+		"geneName": "MCM6",
+		"transcript": "ENST00000264156",
+		"chromosome": "2",
+		"description": "no milk",
+		"debugInfo": {
+			"img": "http://strawberryblu.com/wp-content/uploads/2013/05/No_Milk.gif"
+		},
+		"externalLinks": {
+			"uniprot": "Q14566",
+			"chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-2/?g=de-lorigine-des-flatulences"
+		}
+	},
+	{
+		"id": "PER2-ENST00000254657-Chr2",
+		"geneName": "PER2",
+		"transcript": "ENST00000254657",
+		"chromosome": "2",
+		"description": "This genes is responsible for bla bla bla...",
+		"debugInfo": {
+			"img": "https://media.gettyimages.com/vectors/sleepy-cartoon-man-with-an-alarm-clock-vector-id453556207"
+		},
+		"externalLinks": {
+			"uniprot": "O15055",
+			"chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-2/?g=une-horloge-dans-la-peau"
+		}
+	},
+	{
+		"id": "CCR5-ENST00000292303-Chr3",
+		"geneName": "CCR5",
+		"transcript": "ENST00000292303",
+		"chromosome": "3",
+		"description": "Resitance to HIV, in principle we will not include it!",
+		"debugInfo": {
+			"img": "http://www.madinin-art.net/images/sida-333.jpg"
+		},
+		"externalLinks": {
+			"uniprot": "P51681",
+			"chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-3/?g=stop-sida"
+		}
+	},
+	{
+		"id": "FGFR3-ENST00000613647-Chr4",
+		"geneName": "FGFR3",
+		"transcript": "ENST00000613647",
+		"chromosome": "4",
+		"description": "nain / dwarfism",
+		"debugInfo": {
+			"img": "https://media.gettyimages.com/vectors/hand-drawn-garden-gnome-hands-in-his-pockets-cartoon-vector-vector-id516445221"
+		},
+		"externalLinks": {
+			"uniprot": "P22607",
+			"chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-4/?g=la-taille-du-squelette"
+		}
+	},
+	{
+		"id": "SMARCAD1-ENST00000359052-Chr4",
+		"geneName": "SMARCAD1",
+		"transcript": "ENST00000359052",
+		"chromosome": "4",
+		"description": "No finger print",
+		"debugInfo": {
+			"img": "https://images-na.ssl-images-amazon.com/images/I/41C2ADL0wML.jpg"
+		},
+		"externalLinks": {
+			"uniprot": "Q9H4L7",
+			"chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-4/?g=le-bout-de-nos-doigts"
+		}
+	},
+	{
+		"id": "SLC45A2-ENST00000296589-Chr5",
+		"geneName": "SLC45A2",
+		"transcript": "ENST00000296589",
+		"chromosome": "5",
+		"description": "This genes is responsible for bla bla bla...",
+		"debugInfo": {
+			"img": "http://cache.marieclaire.fr/data/photo/w700_c17/3z/maquillage-peau-mate.jpg"
+		},
+		"externalLinks": {
+			"uniprot": "Q9UMX9",
+			"chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-5/?g=la-couleur-de-la-peau"
+		}
+	},
+	{
+		"id": "OR2J3-ENST00000641151-Chr6",
+		"geneName": "OR2J3",
+		"transcript": "ENST00000641151",
+		"chromosome": "6",
+		"description": "Gène impliqué dans la perception de l’odeur de l’herbe coupée.",
+		"debugInfo": {
+			"img": "https://thumbs.dreamstime.com/z/ciseaux-pour-couper-l-herbe-32134544.jpg"
+		},
+		"externalLinks": {
+			"uniprot": "O76001",
+			"chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-6/?g=herbe-coupee"
+		}
+	},
+	{
+		"id": "FOXO3-ENST00000343882-Chr6",
+		"geneName": "FOXO3",
+		"transcript": "ENST00000343882",
+		"chromosome": "6",
+		"description": "This genes is responsible for bla bla bla...",
+		"externalLinks": {
+			"uniprot": "O43524",
+			"chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-6/?g=vivre-longtemps"
+		}
+	}, {
+		"id": "BRAF-ENST00000288602-Chr7",
+		"geneName": "BRAF",
+		"transcript": "ENST00000288602",
+		"chromosome": "7",
+		"description": "This genes is responsible for bla bla bla...",
+		"externalLinks": {
+			"uniprot": "P15056",
+			"chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-7/?g=foisonnement-de-cellules"
+		}
+	},
+	{
+		"id": "TAS2R38-ENST00000547270-Chr7",
+		"geneName": "TAS2R38",
+		"transcript": "ENST00000547270",
+		"chromosome": "7",
+		"description": "TAS2R38 is a bitter taste receptor...",
+		"debugInfo": {
+			"img": "http://downloadclipart.org/do-upload/clipart/2016-01/Cartoon_Broccoli_Clip_Art.png"
+		},
+		"externalLinks": {
+			"uniprot": "P59533",
+			"chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-7/?g=un-gout-amer"
+		}
+	},
+	{
+		"id": "AR-ENST00000612452-ChrX",
+		"geneName": "AR",
+		"transcript": "ENST00000612452",
+		"chromosome": "X",
+		"description": "This genes is responsible for bla bla bla...",
+		"externalLinks": {
+			"uniprot": "P10275",
+			"chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-xx/?g=a-poil"
+		}
+	}, {
+		"id": "OPN1MW-ENST00000595290-ChrX",
+		"geneName": "OPN1MW",
+		"superVariant": true,
+		"transcript": "ENST00000595290",
+		"chromosome": "X",
+		"description": "Daltonien: yeux (un oeil jaune et un oeil bleu)",
+		"debugInfo": {
+			"img": "http://daltonien.free.fr/daltonien/IMG/jpg/15.jpg"
+		},
+		"externalLinks": {
+			"uniprot": "P04001",
+			"chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-xx/?g=daltonisme"
+		}
+	}, {
+		"id": "ABO-ENST00000611156-Chr9",
+		"geneName": "ABO",
+		"transcript": "ENST00000611156",
+		"chromosome": "9",
+		"description": "This genes is responsible for bla bla bla...",
+		"debugInfo": {
+			"img": "http://whatsmybloodtype.org/files/images/typeb.jpg"
+		},
+		"externalLinks": {
+			"uniprot": "P16442",
+			"chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-9/?g=a-b-ab-ou-o"
+		}
+	}, {
+		"id": "ACTN3-ENST00000502692-Chr11",
+		"superVariant": true,
+		"geneName": "ACTN3",
+		"transcript": "ENST00000502692",
+		"chromosome": "11",
+		"description": " muscle? ",
+		"debugInfo": {
+			"avatarChange": "short de course / basket ,,,,",
+			"img": "https://image.shutterstock.com/z/stock-vector-cartoon-character-strong-and-tall-muscular-male-is-sprinter-rapidly-running-along-the-stadium-track-659167981.jpg"
+		},
+		"externalLinks": {
+			"uniprot": "Q08043",
+			"chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-11/?g=medailles-olympiques"
+		}
+	}, {
+		"id": "PCDH15-ENST00000373965-Chr10",
+		"superVariant": true,
+		"geneName": "PCDH15",
+		"transcript": "ENST00000373965",
+		"chromosome": "10",
+		"description": "Usher syndrome un gars avec lunette noir et appareil auditif...",
+		"descriptionImg": "http://www.ushersyndroom.nl/wp-content/uploads/2016/12/The-Ushers-infographic-EN-Foundation-Usher-syndrome-DEF.001-kopie.jpg",
+		"debugInfo": {
+			"img": "http://www.ushersyndroom.nl/wp-content/uploads/2016/10/Dream-stopUSH-bovenstuk.jpg"
+		},
+		"externalLinks": {
+			"uniprot": "Q96QU1",
+			"chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-10/?g=baisse-le-son-et-la-vue"
+		}
+	}, {
+		"id": "OPN4-ENST00000372071-Chr10",
+		"geneName": "OPN4",
+		"transcript": "ENST00000372071",
+		"chromosome": "10",
+		"description": "depression",
+		"debugInfo": {
+			"img": "http://moziru.com/images/gloomy-clipart-child-depression-4.jpg"
+		},
+		"externalLinks": {
+			"uniprot": "Q9UHM6",
+			"chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-10/?g=une-horloge-dans-la-peau"
+		}
+	}, {
+		"id": "TCF7L2-ENST00000355995-Chr10",
+		"geneName": "TCF7L2",
+		"transcript": "ENST00000355995",
+		"chromosome": "10",
+		"description": "This genes is responsible for bla bla bla...",
+		"debugInfo": {
+			"img": "https://thumbs.dreamstime.com/z/syringe-bottle-insulin-medicines-treatment-diabetes-diabetes-single-icon-cartoon-style-vector-symbol-87971845.jpg"
+		},
+		"externalLinks": {
+			"uniprot": "Q9NQB0",
+			"chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-10/?g=resistance-a-linsuline"
+		}
+	}, {
+		"id": "SH2B3-ENST00000341259-Chr12",
+		"geneName": "SH2B3",
+		"transcript": "ENST00000341259",
+		"chromosome": "12",
+		"description": "This genes is responsible for bla bla bla...",
+		"debugInfo": {
+			"img": "https://jimvysechickenchat.files.wordpress.com/2014/07/no-bread-300x203.jpg?w=584"
+		},
+		"externalLinks": {
+			"uniprot": "Q9UQQ2",
+			"chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-12/?g=intolerance-au-gluten"
+		}
+	}, {
+		"id": "ALDH2-ENST00000261733-Chr12",
+		"superVariant": true,
+		"geneName": "ALDH2",
+		"transcript": "ENST00000261733",
+		"3dImage": "data/assets/proteins/ALDH23D.png",
+		"chromosome": "12",
+		"description": "Avec une choppe de bière a la main...",
+		"debugInfo": {
+			"img": "https://i.pinimg.com/originals/f9/e2/d6/f9e2d6da65c1c787e72d376e7a7d16f7.jpg"
+		},
+		"externalLinks": {
+			"uniprot": "P05091",
+			"chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-12/?g=un-verre-de-trop"
+		}
+	}, {
+		"id": "GJB2-ENST00000382848-Chr13",
+		"superVariant": true,
+		"geneName": "GJB2",
+		"transcript": "ENST00000382848",
+		"chromosome": "13",
+		"description": "Il gagne un appareil auditif",
+		"debugInfo": {
+			"img": "https://st3.depositphotos.com/1432405/12768/v/950/depositphotos_127686200-stock-illustration-hearing-aid-icon-cartoon-style.jpg"
+		},
+		"externalLinks": {
+			"uniprot": "P29033",
+			"chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-13/?g=baisse-le-son"
+		}
+	}, {
+		"id": "OCA2-ENST00000354638-Chr15",
+		"geneName": "OCA2",
+		"transcript": "ENST00000354638",
+		"chromosome": "15",
+		"description": "brown eyes",
+		"descriptionImg": "http://genetics.thetech.org/sites/default/files/450Epistasis.gif",
+		"debugInfo": {
+			"img": "http://media.istockphoto.com/vectors/brown-eyes-vector-id485559036"
+		},
+		"externalLinks": {
+			"uniprot": "Q04671",
+			"chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-15/"
+		}
+	}, {
+		"id": "HERC2-ENST00000261609-Chr15",
+		"geneName": "HERC2",
+		"transcript": "ENST00000261609",
+		"chromosome": "15",
+		"description": "blues eyes in combinaison with brown",
+		"descriptionImg": "http://genetics.thetech.org/sites/default/files/450Epistasis.gif",
+		"debugInfo": {
+			"img": "https://png.pngtree.com/element_pic/00/16/07/16578993ee35437.jpg"
+		},
+		"externalLinks": {
+			"uniprot": "O95714",
+			"chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-15/"
+		}
+	}, {
+		"id": "SLC24A5-ENST00000341459-Chr15",
+		"geneName": "SLC24A5",
+		"transcript": "ENST00000341459",
+		"chromosome": "15",
+		"description": "This genes is responsible for light skin",
+		"debugInfo": {
+			"img": "http://i.f1g.fr/media/ext/1900x1900/madame.lefigaro.fr/sites/default/files/img/2016/01/1624jpg.jpg"
+		},
+		"externalLinks": {
+			"uniprot": "Q71RS6",
+			"chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-15/?g=la-couleur-de-la-peau (?)"
+		}
+	}, {
+		"id": "CYP1A2-ENST00000343932-Chr15",
+		"geneName": "CYP1A2",
+		"transcript": "ENST00000343932",
+		"chromosome": "15",
+		"description": "cafe",
+		"debugInfo": {
+			"img": "https://static6.depositphotos.com/1001911/636/v/950/depositphotos_6360484-stock-illustration-coffee-cup-cartoon.jpg"
+		},
+		"externalLinks": {
+			"uniprot": "P05177",
+			"chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-15/?g=degradation-moleculaire"
+		}
+	}, {
+		"id": "ABCC11-ENST00000356608-Chr16",
+		"geneName": "ABCC11",
+		"transcript": "ENST00000356608",
+		"chromosome": "16",
+		"description": "Cire d'oreil et odeur. Interet pour les pharmacies",
+		"debugInfo": {
+			"img": "http://sweetclipart.com/multisite/sweetclipart/files/perfume_clip_art.png"
+		},
+		"externalLinks": {
+			"uniprot": "Q96J66",
+			"chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-16/?g=cire-doreille"
+		}
+	}, {
+		"id": "MC1R-ENST00000555427-Chr16",
+		"geneName": "MC1R",
+		"transcript": "ENST00000555427",
+		"chromosome": "16",
+		"description": "red hair",
+		"debugInfo": {
+			"img": "https://orig00.deviantart.net/07f1/f/2012/244/2/5/red_hair_and_green_eyes_by_ohaikeely-d5d83d1.jpg"
+		},
+		"externalLinks": {
+			"uniprot": "Q01726",
+			"chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-16/?g=pigmenter"
+		}
+	}, {
+		"id": "BRCA1-ENST00000357654-Chr17",
+		"geneName": "BRCA1",
+		"transcript": "ENST00000357654",
+		"chromosome": "17",
+		"description": "This genes is responsible for bla bla bla...",
+		"debugInfo": {
+			"avatarChange": "L'avatar doit gagner un coeur avec des super forces et globules rouges autour",
+			"img": "https://st2.depositphotos.com/4297405/11770/v/950/depositphotos_117709068-stock-illustration-icon-symbol-of-struggle-and.jpg"
+		},
+		"externalLinks": {
+			"uniprot": "P38398",
+			"chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-17/?g=foisonnement-de-cellules"
+		}
+	}, {
+		"id": "EPOR-ENST00000222139-Chr19",
+		"superVariant": true,
+		"geneName": "EPOR",
+		"transcript": "ENST00000222139",
+		"chromosome": "19",
+		"description": "beaucoup de globule rouge",
+		"3dImage": "data/assets/proteins/unknown3D.png",
+		"externalLinks": {
+			"uniprot": "P19235",
+			"chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-19/?g=medailles-olympiques"
+		},
+		"debugInfo": {
+			"avatarChange": "L'avatar doit gagner un coeur avec des super forces et globules rouges autour",
+			"img": "https://thumbs.dreamstime.com/z/super-heart-23167583.jpg"
+		}
+	}, {
+		"id": "APOE-ENST00000252486-Chr19",
+		"geneName": "APOE",
+		"transcript": "ENST00000252486",
+		"chromosome": "19",
+		"description": "Alzheimer",
+		"debugInfo": {
+			"img": "https://i.pinimg.com/736x/00/09/f4/0009f4092b5a5a21fb7eaaadccde600e--dementia-clock-green-juice.jpg"
+		},
+		"externalLinks": {
+			"uniprot": "P02649",
+			"chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-19/?g=un-taxi-pour-nos-graisses"
+		}
+	}, {
+		"id": "AKT1-ENST00000349310-Chr14",
+		"geneName": "AKT1",
+		"transcript": "ENST00000349310",
+		"chromosome": "14",
+		"description": "more sensible to canabis",
+		"debugInfo": {
+			"img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Cannabis_leaf.svg/1200px-Cannabis_leaf.svg.png"
+		},
+		"externalLinks": {
+			"uniprot": "P31749",
+			"chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-14/?g=foisonnement-de-cellules"
+		}
+	}
 ]
