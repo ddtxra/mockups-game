@@ -228,6 +228,12 @@
 		"transcript": "ENST00000288602",
 		"chromosome": "7",
 		"description": "This genes is responsible for bla bla bla...",
+		"mutationInfo": {
+			"rsName": "rs113488022",
+			"sex": ["H", "F"],
+			"populationBackground": ["caucasian", "asian"],
+			"type": "missense"
+		},
 		"externalLinks": {
 			"uniprot": "P15056",
 			"chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-7/?g=foisonnement-de-cellules"
@@ -239,6 +245,12 @@
 		"transcript": "ENST00000547270",
 		"chromosome": "7",
 		"description": "TAS2R38 is a bitter taste receptor...",
+	    "mutationInfo": {
+			"rsName": "rs713598",
+			"sex": ["H", "F"],
+			"populationBackground": ["caucasian", "asian"],
+			"type": "missense"
+		},
 		"debugInfo": {
 			"img": "http://downloadclipart.org/do-upload/clipart/2016-01/Cartoon_Broccoli_Clip_Art.png"
 		},
@@ -253,6 +265,12 @@
 		"transcript": "ENST00000612452",
 		"chromosome": "X",
 		"description": "This genes is responsible for bla bla bla...",
+		"mutationInfo": {
+			"rsName": "rs6152",
+			"sex": ["H"],
+			"populationBackground": ["caucasian", "asian"],
+			"type": "synonymous"
+		},
 		"externalLinks": {
 			"uniprot": "P10275",
 			"chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-xx/?g=a-poil"
@@ -264,6 +282,12 @@
 		"transcript": "ENST00000595290",
 		"chromosome": "X",
 		"description": "Daltonien: yeux (un oeil jaune et un oeil bleu)",
+		"mutationInfo": {
+			"rsName": "rs104894914",
+			"sex": ["H", "F"],
+			"populationBackground": ["caucasian"],
+			"type": "missense"
+		},
 		"debugInfo": {
 			"img": "http://daltonien.free.fr/daltonien/IMG/jpg/15.jpg"
 		},
@@ -277,6 +301,12 @@
 		"transcript": "ENST00000611156",
 		"chromosome": "9",
 		"description": "This genes is responsible for bla bla bla...",
+		"mutationInfo": {
+			"rsName": "rs7853989",
+			"sex": ["H", "F"],
+			"populationBackground": ["caucasian", "asian"],
+			"type": "missense"
+		},
 		"debugInfo": {
 			"img": "http://whatsmybloodtype.org/files/images/typeb.jpg"
 		},
@@ -291,6 +321,12 @@
 		"transcript": "ENST00000502692",
 		"chromosome": "11",
 		"description": " muscle? ",
+		"mutationInfo": {
+			"rsName": "rs1815739",
+			"sex": ["H", "F"],
+			"populationBackground": ["caucasian", "asian"],
+			"type": "stop"
+		},
 		"debugInfo": {
 			"avatarChange": "short de course / basket ,,,,",
 			"img": "https://image.shutterstock.com/z/stock-vector-cartoon-character-strong-and-tall-muscular-male-is-sprinter-rapidly-running-along-the-stadium-track-659167981.jpg"
@@ -307,6 +343,12 @@
 		"chromosome": "10",
 		"description": "Usher syndrome un gars avec lunette noir et appareil auditif...",
 		"descriptionImg": "http://www.ushersyndroom.nl/wp-content/uploads/2016/12/The-Ushers-infographic-EN-Foundation-Usher-syndrome-DEF.001-kopie.jpg",
+		"mutationInfo": {
+			"rsName": "rs111033260",
+			"sex": ["H", "F"],
+			"populationBackground": ["caucasian", "asian"],
+			"type": "stop"
+		},
 		"debugInfo": {
 			"img": "http://www.ushersyndroom.nl/wp-content/uploads/2016/10/Dream-stopUSH-bovenstuk.jpg"
 		},
@@ -320,6 +362,12 @@
 		"transcript": "ENST00000372071",
 		"chromosome": "10",
 		"description": "depression",
+		"mutationInfo": {
+			"rsName": "rs2675703",
+			"sex": ["H", "F"],
+			"populationBackground": ["caucasian", "asian"],
+			"type": "missense"
+		},
 		"debugInfo": {
 			"img": "http://moziru.com/images/gloomy-clipart-child-depression-4.jpg"
 		},
@@ -333,6 +381,12 @@
 		"transcript": "ENST00000355995",
 		"chromosome": "10",
 		"description": "This genes is responsible for bla bla bla...",
+		"mutationInfo": {
+			"rsName": "rs7903146",
+			"sex": ["H", "F"],
+			"populationBackground": ["caucasian"],
+			"type": "intron variant"
+		},
 		"debugInfo": {
 			"img": "https://thumbs.dreamstime.com/z/syringe-bottle-insulin-medicines-treatment-diabetes-diabetes-single-icon-cartoon-style-vector-symbol-87971845.jpg"
 		},
@@ -346,6 +400,12 @@
 		"transcript": "ENST00000341259",
 		"chromosome": "12",
 		"description": "This genes is responsible for bla bla bla...",
+		"mutationInfo": {
+			"rsName": "rs3184504",
+			"sex": ["H", "F"],
+			"populationBackground": ["caucasian"],
+			"type": "missense"
+		},
 		"debugInfo": {
 			"img": "https://jimvysechickenchat.files.wordpress.com/2014/07/no-bread-300x203.jpg?w=584"
 		},
@@ -361,6 +421,12 @@
 		"3dImage": "data/assets/proteins/ALDH23D.png",
 		"chromosome": "12",
 		"description": "Avec une choppe de bière a la main...",
+		"mutationInfo": {
+			"rsName": "rs671",
+			"sex": ["H", "F"],
+			"populationBackground": ["asian"],
+			"type": "missense"
+		},
 		"debugInfo": {
 			"img": "https://i.pinimg.com/originals/f9/e2/d6/f9e2d6da65c1c787e72d376e7a7d16f7.jpg"
 		},
@@ -375,6 +441,12 @@
 		"transcript": "ENST00000382848",
 		"chromosome": "13",
 		"description": "Il gagne un appareil auditif",
+		"mutationInfo": {
+			"rsName": "rs80338939",
+			"sex": ["H", "F"],
+			"populationBackground": ["caucasian", "asian"],
+			"type": "frameshift"
+		},
 		"debugInfo": {
 			"img": "https://st3.depositphotos.com/1432405/12768/v/950/depositphotos_127686200-stock-illustration-hearing-aid-icon-cartoon-style.jpg"
 		},
@@ -389,6 +461,12 @@
 		"chromosome": "15",
 		"description": "brown eyes",
 		"descriptionImg": "http://genetics.thetech.org/sites/default/files/450Epistasis.gif",
+		"mutationInfo": {
+			"rsName": "rs1800401",
+			"sex": ["H", "F"],
+			"populationBackground": ["caucasian"],
+			"type": "missense"
+		},
 		"debugInfo": {
 			"img": "http://media.istockphoto.com/vectors/brown-eyes-vector-id485559036"
 		},
@@ -403,6 +481,12 @@
 		"chromosome": "15",
 		"description": "blues eyes in combinaison with brown",
 		"descriptionImg": "http://genetics.thetech.org/sites/default/files/450Epistasis.gif",
+		"mutationInfo": {
+			"rsName": "rs12913832",
+			"sex": ["H", "F"],
+			"populationBackground": ["caucasian", "asian"],
+			"type": "intron variant"
+		},
 		"debugInfo": {
 			"img": "https://png.pngtree.com/element_pic/00/16/07/16578993ee35437.jpg"
 		},
@@ -416,6 +500,12 @@
 		"transcript": "ENST00000341459",
 		"chromosome": "15",
 		"description": "This genes is responsible for light skin",
+		"mutationInfo": {
+			"rsName": "rs1426654",
+			"sex": ["H", "F"],
+			"populationBackground": ["caucasian", "asian"],
+			"type": "missense"
+		},
 		"debugInfo": {
 			"img": "http://i.f1g.fr/media/ext/1900x1900/madame.lefigaro.fr/sites/default/files/img/2016/01/1624jpg.jpg"
 		},
@@ -429,6 +519,12 @@
 		"transcript": "ENST00000343932",
 		"chromosome": "15",
 		"description": "cafe",
+		"mutationInfo": {
+			"rsName": "rs762551",
+			"sex": ["H", "F"],
+			"populationBackground": ["caucasian", "asian"],
+			"type": "intron variant"
+		},
 		"debugInfo": {
 			"img": "https://static6.depositphotos.com/1001911/636/v/950/depositphotos_6360484-stock-illustration-coffee-cup-cartoon.jpg"
 		},
@@ -442,6 +538,12 @@
 		"transcript": "ENST00000356608",
 		"chromosome": "16",
 		"description": "Cire d'oreil et odeur. Interet pour les pharmacies",
+		"mutationInfo": {
+			"rsName": "rs17822931",
+			"sex": ["H", "F"],
+			"populationBackground": ["asian"],
+			"type": "missense"
+		},
 		"debugInfo": {
 			"img": "http://sweetclipart.com/multisite/sweetclipart/files/perfume_clip_art.png"
 		},
@@ -455,6 +557,12 @@
 		"transcript": "ENST00000555427",
 		"chromosome": "16",
 		"description": "red hair",
+		"mutationInfo": {
+			"rsName": "rs1805007",
+			"sex": ["H", "F"],
+			"populationBackground": ["caucasian"],
+			"type": "missense"
+		},
 		"debugInfo": {
 			"img": "https://orig00.deviantart.net/07f1/f/2012/244/2/5/red_hair_and_green_eyes_by_ohaikeely-d5d83d1.jpg"
 		},
@@ -468,6 +576,12 @@
 		"transcript": "ENST00000357654",
 		"chromosome": "17",
 		"description": "This genes is responsible for bla bla bla...",
+		"mutationInfo": {
+			"rsName": "rs80357914",
+			"sex": ["F"],
+			"populationBackground": ["caucasian", "asian"],
+			"type": "frameshift"
+		},
 		"debugInfo": {
 			"avatarChange": "L'avatar doit gagner un coeur avec des super forces et globules rouges autour",
 			"img": "https://st2.depositphotos.com/4297405/11770/v/950/depositphotos_117709068-stock-illustration-icon-symbol-of-struggle-and.jpg"
@@ -483,6 +597,12 @@
 		"transcript": "ENST00000222139",
 		"chromosome": "19",
 		"description": "beaucoup de globule rouge",
+		"mutationInfo": {
+			"rsName": "rs121918116",
+			"sex": ["H", "F"],
+			"populationBackground": ["caucasian", "asian"],
+			"type": "stop"
+		},
 		"3dImage": "data/assets/proteins/unknown3D.png",
 		"externalLinks": {
 			"uniprot": "P19235",
@@ -498,6 +618,12 @@
 		"transcript": "ENST00000252486",
 		"chromosome": "19",
 		"description": "Alzheimer",
+		"mutationInfo": {
+			"rsName": "rs429358",
+			"sex": ["H", "F"],
+			"populationBackground": ["caucasian"],
+			"type": "missense"
+		},
 		"debugInfo": {
 			"img": "https://i.pinimg.com/736x/00/09/f4/0009f4092b5a5a21fb7eaaadccde600e--dementia-clock-green-juice.jpg"
 		},
@@ -511,6 +637,12 @@
 		"transcript": "ENST00000349310",
 		"chromosome": "14",
 		"description": "more sensible to canabis",
+		"mutationInfo": {
+			"rsName": "rs2494732",
+			"sex": ["H", "F"],
+			"populationBackground": ["caucasian", "asian"],
+			"type": "intron variant"
+		},
 		"debugInfo": {
 			"img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Cannabis_leaf.svg/1200px-Cannabis_leaf.svg.png"
 		},
