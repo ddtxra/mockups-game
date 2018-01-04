@@ -45,6 +45,12 @@
 		"transcript": "ENST00000258443",
 		"chromosome": "2",
 		"description": "Thick and straight hair",
+		"mutationInfo": {
+			"rsName": "rs3827760",
+			"sex": ["H", "F"],
+			"populationBackground": ["asian"],
+			"type": "missense"
+		},
 		"debugInfo": {
 			"img": "http://www.clker.com/cliparts/0/0/d/a/11949845142049183837boy_astrid_graeber_.svg.hi.png"
 		},
@@ -72,6 +78,12 @@
 		"transcript": "ENST00000264156",
 		"chromosome": "2",
 		"description": "no milk",
+		"mutationInfo": {
+			"rsName": "rs4988235",
+			"sex": ["H", "F"],
+			"populationBackground": ["caucasian"],
+			"type": "intron variant"
+		},
 		"debugInfo": {
 			"img": "http://strawberryblu.com/wp-content/uploads/2013/05/No_Milk.gif"
 		},
@@ -86,6 +98,12 @@
 		"transcript": "ENST00000254657",
 		"chromosome": "2",
 		"description": "This genes is responsible for bla bla bla...",
+		"mutationInfo": {
+			"rsName": "rs121908635",
+			"sex": ["H", "F"],
+			"populationBackground": ["caucasian", "asian"],
+			"type": "missense"
+		},
 		"debugInfo": {
 			"img": "https://media.gettyimages.com/vectors/sleepy-cartoon-man-with-an-alarm-clock-vector-id453556207"
 		},
@@ -100,6 +118,12 @@
 		"transcript": "ENST00000292303",
 		"chromosome": "3",
 		"description": "Resitance to HIV, in principle we will not include it!",
+		"mutationInfo": {
+			"rsName": "rs333",
+			"sex": ["H", "F"],
+			"populationBackground": ["caucasian", "asian"],
+			"type": "frameshift"
+		},
 		"debugInfo": {
 			"img": "http://www.madinin-art.net/images/sida-333.jpg"
 		},
@@ -114,6 +138,12 @@
 		"transcript": "ENST00000613647",
 		"chromosome": "4",
 		"description": "nain / dwarfism",
+		"mutationInfo": {
+			"rsName": "rs75790268",
+			"sex": ["H", "F"],
+			"populationBackground": ["caucasian", "asian"],
+			"type": "missense"
+		},
 		"debugInfo": {
 			"img": "https://media.gettyimages.com/vectors/hand-drawn-garden-gnome-hands-in-his-pockets-cartoon-vector-vector-id516445221"
 		},
@@ -128,6 +158,12 @@
 		"transcript": "ENST00000359052",
 		"chromosome": "4",
 		"description": "No finger print",
+		"mutationInfo": {
+			"rsName": "rs1057519613",
+			"sex": ["H", "F"],
+			"populationBackground": ["caucasian"],
+			"type": "splice donor"
+		},
 		"debugInfo": {
 			"img": "https://images-na.ssl-images-amazon.com/images/I/41C2ADL0wML.jpg"
 		},
@@ -142,6 +178,12 @@
 		"transcript": "ENST00000296589",
 		"chromosome": "5",
 		"description": "This genes is responsible for bla bla bla...",
+		"mutationInfo": {
+			"rsName": "rs16891982",
+			"sex": ["H", "F"],
+			"populationBackground": ["caucasian"],
+			"type": "missense"
+		},
 		"debugInfo": {
 			"img": "http://cache.marieclaire.fr/data/photo/w700_c17/3z/maquillage-peau-mate.jpg"
 		},
@@ -156,6 +198,12 @@
 		"transcript": "ENST00000641151",
 		"chromosome": "6",
 		"description": "Gène impliqué dans la perception de l’odeur de l’herbe coupée.",
+		"mutationInfo": {
+			"rsName": "rs28757581",
+			"sex": ["H", "F"],
+			"populationBackground": ["caucasian", "asian"],
+			"type": "missense"
+		},
 		"debugInfo": {
 			"img": "https://thumbs.dreamstime.com/z/ciseaux-pour-couper-l-herbe-32134544.jpg"
 		},
