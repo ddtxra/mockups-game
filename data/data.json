@@ -2978,8 +2978,8 @@
     "transcript": "ENST00000382848",
     "chromosome": "13",
     "exonsCount": 2,
-    "exonsRealLength": 700,
-    "geneRealLength": 5436,
+    "exonsRealLength": 676,
+    "geneRealLength": 5435,
     "levelData": [
       {
         "type": "utr",
@@ -2990,12 +2990,16 @@
         "realLength": 3181
       },
       {
+        "type": "utr",
+        "realLength": 23
+      },
+      {
         "type": "start_codon",
         "realLength": 3
       },
       {
         "type": "exon",
-        "realLength": 57
+        "realLength": 33
       },
       {
         "type": "snp",
