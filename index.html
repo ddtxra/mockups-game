@@ -359,7 +359,7 @@
             html += "<li>Type:&nbsp;" + ((gene.mutationInfo && gene.mutationInfo.type) ? gene.mutationInfo.type : "???")   + "</li>";
             html += "<li>Nucleotide change (from -> to) :&nbsp;" + ((gene.mutationInfo && gene.mutationInfo.nucleotideChange) ? (gene.mutationInfo.nucleotideChange[0] + "->" + gene.mutationInfo.nucleotideChange[1]) : "???")   + "</li>";
             html += "</ul>"
-            html += "<br><b>STOP codon bases (can be UGA, UAA, UAG): </b>" + ((gene.stopCodon) ? gene.stopCodon : "???")   +  "";
+            html += "<br><b>STOP codon bases (can be UGA, UAA, UAG): </b>" + gene.stopCodon;
  
             html += "<br><br><b>Chromosome Walk</b>:<br>";
             html += ((getProteinLink(gene, "chromosomeWalk") !=="") ? getProteinLink(gene, "chromosomeWalk") : "???")

@@ -12,6 +12,16 @@ records.forEach(function(line) {
     chromosomeLengthMap[line[0]] = line[1]
 })
 
+// Read stop codons
+var transcriptStopCodonsMap = {};
+var content = fs.readFileSync('stop-codons.tsv', 'utf8');
+var stopRecords = syncparse(content, {delimiter: '\t'});
+stopRecords.forEach(function(line) {
+    transcriptStopCodonsMap[line[0]] = line[1]
+})
+
+console.log(transcriptStopCodonsMap)
+
 var parser = parse({delimiter: '\t'}, function (err, data) {
 
     var rejected = []
@@ -29,6 +39,7 @@ var parser = parse({delimiter: '\t'}, function (err, data) {
             var transcriptEnd = chromosomeToken[2];
             var chromosomeLength = chromosomeLengthMap[chromosomeNumber];
             var transcriptDirection = chromosomeToken[3] == "+" ? "FORWARD_STRAND" : "REVERSE_STRAND"
+            var stopCodon = transcriptStopCodonsMap[transcriptToken[2]]
 
             var relativePositionPercentage = Math.round((transcriptStart * 100) / chromosomeLength) / 100.0
         
@@ -36,6 +47,7 @@ var parser = parse({delimiter: '\t'}, function (err, data) {
                 "geneName" : transcriptToken[1],
                 "transcript" : transcriptToken[2], 
                 "geneTranscript" : transcriptToken[1] + "-" + transcriptToken[2] + "-Chr" + chromosomeNumber,
+                "stopCodon" : stopCodon,
                 "ensg" : transcriptToken[0],
                 "chromosome" : chromosomeNumber,
                 "chromosomeLength" : chromosomeLength,
@@ -66,6 +78,7 @@ var parser = parse({delimiter: '\t'}, function (err, data) {
                 "id": block.geneTranscript,
                 "geneName": block.geneName,
                 "transcript": block.transcript,
+                "stopCodon": block.stopCodon,
                 "chromosome": block.chromosome,
                 "chromosomeLength": Number(block.chromosomeLength),
                 "transcriptStartPosition": Number(block.transcriptStartPosition),
