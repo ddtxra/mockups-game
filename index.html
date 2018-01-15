@@ -308,13 +308,16 @@
 
             html += "<h4>Transcript: <a target='_blank' href='http://www.ensembl.org/Homo_sapiens/transview?db=core;transcript=" + gene.transcript + "'>" + gene.transcript + "</a></h4>";
 
-            html +=  "<b>Chromosome</b>: " + gene.chromosome + "<br><b>Position in chromosome (start-end)</b>: " + (gene.chromosomeLocation ? gene.chromosomeLocation[0] + "-" + gene.chromosomeLocation[1] + " => " + (gene.chromosomeLocation[1] -  gene.chromosomeLocation[0]) + "bp" : "????"); 
-                    if(gene.chromosomeLocation && (gene.chromosomeLocation[1] -  gene.chromosomeLocation[0]) != gene.geneRealLengh) {
-                       html += " seems to be different than geneRealLength: " + gene.geneRealLength + " . TO CHECK...."
+            html +=  "<b>Chromosome</b>: " + gene.chromosome + "<br><b>Position in chromosome</b>: " + (gene.relativePositionPercentage * 100) + "%" + 
+            "<a target='_blank' href='https://genome-euro.ucsc.edu/cgi-bin/hgTracks?db=hg38&lastVirtModeType=default&lastVirtModeExtraState=&virtModeType=default&virtMode=0&nonVirtPosition=&position=chr" + gene.chromosome +  "%3A" + (gene.transcriptStartPosition - 10000) + "-" + (gene.transcriptEndPosition + 10000) + "'> localize it on UCSC Genome Browser</a>" +
+            "<br> <b> Computed gene length (transcript end - start position) </b>: " +  (gene.transcriptStartPosition ? gene.transcriptStartPosition + "-" + gene.transcriptEndPosition + " => " + (gene.transcriptEndPosition -  gene.transcriptStartPosition) + "bp" : "????"); 
+                    if((gene.transcriptEndPosition -  gene.transcriptStartPosition) != gene.geneRealLengh) {
+                       html += " seems to be different than geneRealLength: " + gene.geneRealLength + " <span style='color:red'> TO CHECK.... </span>"
                     }
-            html += "<br><b>Gene real length:</b>" + gene.geneRealLength + " bp (base pairs can be A,C,G,T)  ";
+            html += "<br><b>Gene real length (summing blocks) :</b>" + gene.geneRealLength + " bp (base pairs can be A,C,G,T)  ";
+            html += "<br><b>Coding Direction: </b>" + gene.transcriptDirection;
 
-            html += "<br><br><b>Normalized Length: </b>"+ gene.totalNormalizedLength + " units (walkable: " + gene.totalNormalizedWalkableLength + " units -> after removing introns), composed by <b>exons:</b> " + gene.classCount.exon + 
+            html += "<br><br>THIS CAN BE CHANGED DEPENDING ON THE NORMALIZATION PARAMETERS:<br><b>Normalized Gene Length: </b>"+ gene.totalNormalizedLength + " units (walkable: " + gene.totalNormalizedWalkableLength + " units -> after removing introns), composed by <b>exons:</b> " + gene.classCount.exon + 
                     "&nbsp;&nbsp;<b>small-introns:</b> " + (gene.classCount["small-intron"] ? gene.classCount["small-intron"] : "0")  + 
                     "&nbsp;&nbsp;<b>medium-introns:</b> " + (gene.classCount["medium-intron"] ? gene.classCount["medium-intron"] : "0")  + 
                     "&nbsp;&nbsp;<b>large-introns:</b> " + (gene.classCount["large-intron"] ? gene.classCount["large-intron"] : "0")  + 

@@ -1,33 +1,58 @@
-var fs = require('fs');
+var fs = require('fs')
 var parse = require('csv-parse');
+var syncparse = require('csv-parse/lib/sync');
 
 var inputFile='gene_coordinates.txt';
-var parser = parse({delimiter: '\t'}, function (err, data) {
 
+// Read chromosome length
+var chromosomeLengthMap = {};
+var content = fs.readFileSync('chromosome-length.tsv', 'utf8');
+var records = syncparse(content, {delimiter: '\t'});
+records.forEach(function(line) {
+    chromosomeLengthMap[line[0]] = line[1]
+})
+
+var parser = parse({delimiter: '\t'}, function (err, data) {
 
     var rejected = []
     ////////////////// FLAT FILE //////////////////////////////////////////////////////////
     var blocks = []
     data.forEach(function(line) {
 
-        var transcript = line[0].split("|");
-        if(rejected.indexOf(transcript[2]) == -1){
-            
-          var block = { 
-              "geneName" : transcript[1],
-              "transcript" : transcript[2], 
-              "geneTranscript" : transcript[1] + "-" + transcript[2] + "-Chr" + line[1],
-              "ensg" : transcript[0],
-              "chromosome" : line[1],
-              "type" : line[6],
-              "realLength" : parseInt(line[5])
-          };
-          blocks.push(block);
+        var transcriptToken = line[0].split("|");
+        var chromosomeToken = line[1].split(":");
+
+        if(rejected.indexOf(transcriptToken[2]) == -1){
+
+            var chromosomeNumber = chromosomeToken[0];
+            var transcriptStart = chromosomeToken[1];
+            var transcriptEnd = chromosomeToken[2];
+            var chromosomeLength = chromosomeLengthMap[chromosomeNumber];
+            var transcriptDirection = chromosomeToken[3] == "+" ? "FORWARD_STRAND" : "REVERSE_STRAND"
+
+            var relativePositionPercentage = Math.round((transcriptStart * 100) / chromosomeLength) / 100.0
+        
+            var block = { 
+                "geneName" : transcriptToken[1],
+                "transcript" : transcriptToken[2], 
+                "geneTranscript" : transcriptToken[1] + "-" + transcriptToken[2] + "-Chr" + chromosomeNumber,
+                "ensg" : transcriptToken[0],
+                "chromosome" : chromosomeNumber,
+                "chromosomeLength" : chromosomeLength,
+                "transcriptStartPosition" : transcriptStart,
+                "transcriptEndPosition" : transcriptEnd,
+                "transcriptDirection" : transcriptDirection,
+                "relativePositionPercentage" : relativePositionPercentage,
+                "type" : line[5],
+                "realLength" : parseInt(line[4])
+            };
+            blocks.push(block);
             //console.log(JSON.stringify(block));
         }
-
     });
-    
+
+
+   
     
     ////////////////// GENES (Objects) //////////////////////////////////////////////////////////
     var genes = []
@@ -42,6 +67,11 @@ var parser = parse({delimiter: '\t'}, function (err, data) {
                 "geneName": block.geneName,
                 "transcript": block.transcript,
                 "chromosome": block.chromosome,
+                "chromosomeLength": Number(block.chromosomeLength),
+                "transcriptStartPosition": Number(block.transcriptStartPosition),
+                "transcriptEndPosition": Number(block.transcriptEndPosition),
+                "relativePositionPercentage": block.relativePositionPercentage,
+                "transcriptDirection": block.transcriptDirection,
                 "exonsCount" : 0,
                 "exonsRealLength" : 0,
                 "geneRealLength" : 0,
