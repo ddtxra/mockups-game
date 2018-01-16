@@ -42,7 +42,7 @@
 		"geneName": "EDAR",
 		"transcript": "ENST00000258443",
 		"chromosome": "2",
-		"description": "Thick and straight hair",
+		"description": "Chromosomewalk : Gène impliqué dans la formation des cheveux. game : Thick and straight hair",
 		"mutationInfo": {
 			"rsName": "rs3827760",
 			"sex": ["H", "F"],
@@ -63,7 +63,7 @@
 		"id": "LCT-ENST00000264162-Chr2",
 		"geneName": "LCT",
 		"chromosome": "2",
-		"description": "This genes is responsible for bla bla bla...",
+		"description": "Chromosomewalk : Gène codant pour une protéine qui digère le lactose.",
 		"debugInfo": {
 			"img": "https://ultimahora.es/sfAttachPlugin/getCachedContent/id/420234"
 		},
@@ -77,7 +77,7 @@
 		"geneName": "MCM6",
 		"transcript": "ENST00000264156",
 		"chromosome": "2",
-		"description": "no milk",
+		"description": "Chromosomewalk : Gène associé avec une intolérance au lactose. Il influence l’expression de la lactase au cours de la vie. game : no milk",
 		"mutationInfo": {
 			"rsName": "rs4988235",
 			"sex": ["H", "F"],
@@ -99,7 +99,7 @@
 		"geneName": "PER2",
 		"transcript": "ENST00000254657",
 		"chromosome": "2",
-		"description": "This genes is responsible for bla bla bla...",
+		"description": "Chromosomewalk : Gène impliqué dans nos rythmes biologiques journaliers. Des variations dans ce gène sont liées à une résistance plus ou moins grande au manque de sommeil.",
 		"mutationInfo": {
 			"rsName": "rs121908635",
 			"sex": ["H", "F"],
@@ -121,7 +121,7 @@
 		"geneName": "CCR5",
 		"transcript": "ENST00000292303",
 		"chromosome": "3",
-		"description": "Resitance to HIV, in principle we will not include it!",
+		"description": "Chromosomewalk : Gène codant pour un récepteur à une cytokine. Certaines versions du gène sont associées avec une résistance à l’infection par le virus du SIDA. game : Resitance to HIV, in principle we will not include it!",
 		"mutationInfo": {
 			"rsName": "rs333",
 			"sex": ["H", "F"],
@@ -143,7 +143,7 @@
 		"geneName": "FGFR3",
 		"transcript": "ENST00000613647",
 		"chromosome": "4",
-		"description": "nain / dwarfism",
+		"description": "Chromosomewalk : Gène impliqué dans le développement des os.  game : nain / dwarfism",
 		"mutationInfo": {
 			"rsName": "rs75790268",
 			"sex": ["H", "F"],
@@ -165,7 +165,7 @@
 		"geneName": "SMARCAD1",
 		"transcript": "ENST00000359052",
 		"chromosome": "4",
-		"description": "No finger print",
+		"description": "Chromosomewalk : Gène impliqué dans la formation des crêtes épidermiques de nos doigts. Les personnes chez lesquelles ce gène est défectueux n’ont pas d’empreinte digitale (immigration delay disease) et ont souvent des problèmes pour passer la douane ! …  game : No finger print",
 		"mutationInfo": {
 			"rsName": "rs1057519613",
 			"sex": ["H", "F"],
@@ -187,7 +187,7 @@
 		"geneName": "SLC45A2",
 		"transcript": "ENST00000296589",
 		"chromosome": "5",
-		"description": "This genes is responsible for bla bla bla...",
+		"description": "Chromosomewalk : Gène impliqué dans la synthèse de la mélanine, un pigment que l’on retrouve dans notre peau, nos cheveux et l’iris de nos yeux.",
 		"mutationInfo": {
 			"rsName": "rs16891982",
 			"sex": ["H", "F"],
@@ -241,7 +241,7 @@
 		"geneName": "BRAF",
 		"transcript": "ENST00000288602",
 		"chromosome": "7",
-		"description": "This genes is responsible for bla bla bla...",
+		"description": "Chromosomewalk : Gène impliqué dans la prolifération des cellules et associé au cancer de la peau. game : This genes is responsible for bla bla bla...",
 		"mutationInfo": {
 			"rsName": "rs113488022",
 			"sex": ["H", "F"],
@@ -260,7 +260,7 @@
 		"geneName": "TAS2R38",
 		"transcript": "ENST00000547270",
 		"chromosome": "7",
-		"description": "TAS2R38 is a bitter taste receptor...",
+		"description": "chromosomewalk : Gènes codant pour des protéines impliquées dans la perception des composés amers au niveau de nos poumons (comme par exemple le PTC, une substance retrouvée dans les brocolis). game : TAS2R38 is a bitter taste receptor...",
 	    "mutationInfo": {
 			"rsName": "rs713598",
 			"sex": ["H", "F"],
@@ -282,7 +282,7 @@
 		"geneName": "AR",
 		"transcript": "ENST00000612452",
 		"chromosome": "X",
-		"description": "This genes is responsible for bla bla bla...",
+		"description": "Chromosomewalk : Gène codant pour le récepteur aux androgènes qui est impliqué dans le développement des caractères sexuels mâles, et associé avec le développement de la calvitie chez l’homme.",
 		"mutationInfo": {
 			"rsName": "rs6152",
 			"sex": ["H"],
@@ -301,7 +301,7 @@
 		"superVariant": true,
 		"transcript": "ENST00000595290",
 		"chromosome": "X",
-		"description": "Daltonien: yeux (un oeil jaune et un oeil bleu)",
+		"description": "Chromosomewalk : Gène impliqué dans le daltonisme rouge/vert. Les garçons ont plus souvent ce type de daltonisme, car ils n’ont pas de copie de secours sur leur chromosome Y, contraiement aux filles qui en ont une sur l’autre chromosome X.  game : Daltonien: yeux (un oeil jaune et un oeil bleu)",
 		"mutationInfo": {
 			"rsName": "rs104894914",
 			"sex": ["H", "F"],
@@ -322,7 +322,7 @@
 		"geneName": "ABO",
 		"transcript": "ENST00000611156",
 		"chromosome": "9",
-		"description": "This genes is responsible for bla bla bla...",
+		"description": "Chromosomewalk : Gène impliqué dans la détermination de notre groupe sanguin – A, AB, B ou O.",
 		"mutationInfo": {
 			"rsName": "rs7853989",
 			"sex": ["H", "F"],
@@ -344,7 +344,7 @@
 		"geneName": "ACTN3",
 		"transcript": "ENST00000502692",
 		"chromosome": "11",
-		"description": " muscle? ",
+		"description": "Chromosomewalk : Gène codant pour une protéine importante pour la structure des muscles sollicités lors d’efforts rapides et intenses. Environ 18 % de la population possède une protéine ACTN3 plus courte: cette variation est associée avec une meilleure endurance physique! game : muscle? ",
 		"mutationInfo": {
 			"rsName": "rs1815739",
 			"sex": ["H", "F"],
@@ -367,7 +367,7 @@
 		"geneName": "PCDH15",
 		"transcript": "ENST00000373965",
 		"chromosome": "10",
-		"description": "Usher syndrome un gars avec lunette noir et appareil auditif...",
+		"description": "Chromosomewalk : Gène associé à une surdité congénitale et à une perte de la vision. game : Usher syndrome un gars avec lunette noir et appareil auditif...",
 		"descriptionImg": "http://www.ushersyndroom.nl/wp-content/uploads/2016/12/The-Ushers-infographic-EN-Foundation-Usher-syndrome-DEF.001-kopie.jpg",
 		"mutationInfo": {
 			"rsName": "rs111033260",
@@ -389,7 +389,7 @@
 		"geneName": "OPN4",
 		"transcript": "ENST00000372071",
 		"chromosome": "10",
-		"description": "depression",
+		"description": "Chromosomewalk : Gène impliqué dans la synchronisation de nos rythmes biologiques avec l’alternance du jour et de la nuit. game : depression",
 		"mutationInfo": {
 			"rsName": "rs2675703",
 			"sex": ["H", "F"],
@@ -410,7 +410,7 @@
 		"geneName": "TCF7L2",
 		"transcript": "ENST00000355995",
 		"chromosome": "10",
-		"description": "This genes is responsible for bla bla bla...",
+		"description": "chromosomewalk : Gène impliqué dans l’apparition d’un diabète de type 2.",
 		"mutationInfo": {
 			"rsName": "rs7903146",
 			"sex": ["H", "F"],
@@ -431,7 +431,7 @@
 		"geneName": "SH2B3",
 		"transcript": "ENST00000341259",
 		"chromosome": "12",
-		"description": "This genes is responsible for bla bla bla...",
+		"description": "Chromosomewalk : Gène associé avec une intolérance au gluten (maladie coeliaque).",
 		"mutationInfo": {
 			"rsName": "rs3184504",
 			"sex": ["H", "F"],
@@ -454,12 +454,14 @@
 		"transcript": "ENST00000261733",
 		"3dImage": "data/assets/proteins/ALDH23D.png",
 		"chromosome": "12",
-		"description": "Avec une choppe de bière a la main...",
+		"description": "Chromosomewalk : Gène impliqué dans la tolérance à l’alcool. game : Avec une choppe de bière a la main...",
 		"mutationInfo": {
 			"rsName": "rs671",
 			"sex": ["H", "F"],
 			"populationBackground": ["asian"],
-			"type": "missense"
+			"type": "missense",
+			"nucleotideChange": ["G", "A"],
+			"alleles": "heterozygous"
 		},
 		"debugInfo": {
 			"img": "https://i.pinimg.com/originals/f9/e2/d6/f9e2d6da65c1c787e72d376e7a7d16f7.jpg"
@@ -474,12 +476,14 @@
 		"geneName": "GJB2",
 		"transcript": "ENST00000382848",
 		"chromosome": "13",
-		"description": "Il gagne un appareil auditif",
+		"description": "chromosomewalk : Gène associé à une surdité congénitale. game : Il gagne un appareil auditif",
 		"mutationInfo": {
 			"rsName": "rs80338939",
 			"sex": ["H", "F"],
 			"populationBackground": ["caucasian", "asian"],
-			"type": "frameshift"
+			"type": "frameshift",
+			"nucleotideChange": ["G", "-"],
+			"alleles": "heterozygous"
 		},
 		"debugInfo": {
 			"img": "https://st3.depositphotos.com/1432405/12768/v/950/depositphotos_127686200-stock-illustration-hearing-aid-icon-cartoon-style.jpg"
@@ -499,7 +503,9 @@
 			"rsName": "rs1800401",
 			"sex": ["H", "F"],
 			"populationBackground": ["caucasian"],
-			"type": "missense"
+			"type": "missense",
+			"nucleotideChange": ["C", "T"],
+			"alleles": "heterozygous"
 		},
 		"debugInfo": {
 			"img": "http://media.istockphoto.com/vectors/brown-eyes-vector-id485559036"
@@ -519,7 +525,9 @@
 			"rsName": "rs12913832",
 			"sex": ["H", "F"],
 			"populationBackground": ["caucasian", "asian"],
-			"type": "intron variant"
+			"type": "intron variant",
+			"nucleotideChange": ["A", "G"],
+			"alleles": "homozogous"
 		},
 		"debugInfo": {
 			"img": "https://png.pngtree.com/element_pic/00/16/07/16578993ee35437.jpg"
@@ -533,12 +541,14 @@
 		"geneName": "SLC24A5",
 		"transcript": "ENST00000341459",
 		"chromosome": "15",
-		"description": "This genes is responsible for light skin",
+		"description": "Chromosomewalk : Gène impliqué dans la synthèse de la mélanine, un pigment que l’on retrouve dans notre peau, nos cheveux et l’iris de nos yeux. game : This genes is responsible for light skin",
 		"mutationInfo": {
 			"rsName": "rs1426654",
 			"sex": ["H", "F"],
 			"populationBackground": ["caucasian", "asian"],
-			"type": "missense"
+			"type": "missense",
+			"nucleotideChange": ["G", "A"],
+			"alleles": "heterozygous"
 		},
 		"debugInfo": {
 			"img": "http://i.f1g.fr/media/ext/1900x1900/madame.lefigaro.fr/sites/default/files/img/2016/01/1624jpg.jpg"
@@ -552,12 +562,14 @@
 		"geneName": "CYP1A2",
 		"transcript": "ENST00000343932",
 		"chromosome": "15",
-		"description": "cafe",
+		"description": "chromosomewalk : Gène impliqué dans la dégradation de certaines molécules, dont la caféine. game : cafe",
 		"mutationInfo": {
 			"rsName": "rs762551",
 			"sex": ["H", "F"],
 			"populationBackground": ["caucasian", "asian"],
-			"type": "intron variant"
+			"type": "intron variant",
+			"nucleotideChange": ["A", "C"],
+			"alleles": "heterozygous"
 		},
 		"debugInfo": {
 			"img": "https://static6.depositphotos.com/1001911/636/v/950/depositphotos_6360484-stock-illustration-coffee-cup-cartoon.jpg"
@@ -571,12 +583,14 @@
 		"geneName": "ABCC11",
 		"transcript": "ENST00000356608",
 		"chromosome": "16",
-		"description": "Cire d'oreil et odeur. Interet pour les pharmacies",
+		"description": "chromosomewalk : Gène impliqué dans la qualité de la cire de nos oreilles. Les européens ont une cire d’oreille humide et les japonais ont une cire d’oreille sèche. game : Cire d'oreil et odeur. Interet pour les pharmacies",
 		"mutationInfo": {
 			"rsName": "rs17822931",
 			"sex": ["H", "F"],
 			"populationBackground": ["asian"],
-			"type": "missense"
+			"type": "missense",
+			"nucleotideChange": ["C", "T"],
+			"alleles": "heterozygous"
 		},
 		"debugInfo": {
 			"img": "http://sweetclipart.com/multisite/sweetclipart/files/perfume_clip_art.png"
@@ -590,12 +604,14 @@
 		"geneName": "MC1R",
 		"transcript": "ENST00000555427",
 		"chromosome": "16",
-		"description": "red hair",
+		"description": "chromosomewalk : Gène impliqué dans la couleur de la peau, des cheveux (roux) et des yeux. Curieusement, il influence également l’efficacité de certains anesthésiants utilisés par les dentistes. game : red hair",
 		"mutationInfo": {
 			"rsName": "rs1805007",
 			"sex": ["H", "F"],
 			"populationBackground": ["caucasian"],
-			"type": "missense"
+			"type": "missense",
+			"nucleotideChange": ["C", "T"],
+			"alleles": "homozogous"
 		},
 		"debugInfo": {
 			"img": "https://orig00.deviantart.net/07f1/f/2012/244/2/5/red_hair_and_green_eyes_by_ohaikeely-d5d83d1.jpg"
@@ -609,12 +625,14 @@
 		"geneName": "BRCA1",
 		"transcript": "ENST00000357654",
 		"chromosome": "17",
-		"description": "This genes is responsible for bla bla bla...",
+		"description": "Chromosomewalk : Gène impliqué dans la prolifération des cellules et associé en particulier au cancer du sein.",
 		"mutationInfo": {
 			"rsName": "rs80357914",
 			"sex": ["F"],
 			"populationBackground": ["caucasian", "asian"],
-			"type": "frameshift"
+			"type": "frameshift",
+			"nucleotideChange": ["-", "G"],
+			"alleles": "heterozygous"
 		},
 		"debugInfo": {
 			"avatarChange": "L'avatar doit gagner un coeur avec des super forces et globules rouges autour",
@@ -630,12 +648,14 @@
 		"geneName": "EPOR",
 		"transcript": "ENST00000222139",
 		"chromosome": "19",
-		"description": "beaucoup de globule rouge",
+		"description": "chromosomewalk : Gène codant pour le récepteur de l’EPO, une hormone impliquée dans la fabrication des globules rouges. Des variations dans ce gène sont associées avec un taux élevé de globules rouges dans le sang. Un athlète finlandais, Eero Mäntyranta, porteur d’une de ces variations, a gagné une médaille d’or aux Jeux Olympiques d’hiver en 1964. Était-il avantagé? game : beaucoup de globule rouge",
 		"mutationInfo": {
 			"rsName": "rs121918116",
 			"sex": ["H", "F"],
 			"populationBackground": ["caucasian", "asian"],
-			"type": "stop"
+			"type": "stop",
+			"nucleotideChange": ["G", "A"],
+			"alleles": "heterozygous"
 		},
 		"3dImage": "data/assets/proteins/unknown3D.png",
 		"externalLinks": {
@@ -651,12 +671,14 @@
 		"geneName": "APOE",
 		"transcript": "ENST00000252486",
 		"chromosome": "19",
-		"description": "Alzheimer",
+		"description": "chromosomewalk : Gène codant pour une protéine qui transporte les graisses dans notre sang et qui peut prédisposer à la maladie d’Alzheimer. game : Alzheimer",
 		"mutationInfo": {
 			"rsName": "rs429358",
 			"sex": ["H", "F"],
 			"populationBackground": ["caucasian"],
-			"type": "missense"
+			"type": "missense",
+			"nucleotideChange": ["T", "C"],
+			"alleles": "heterozygous"
 		},
 		"debugInfo": {
 			"img": "https://i.pinimg.com/736x/00/09/f4/0009f4092b5a5a21fb7eaaadccde600e--dementia-clock-green-juice.jpg"
@@ -670,12 +692,14 @@
 		"geneName": "AKT1",
 		"transcript": "ENST00000349310",
 		"chromosome": "14",
-		"description": "more sensible to canabis",
+		"description": "chromosomewalk : Gène impliqué dans l’apparition d’excroissance de certains tissus. Certaines variations de ce gène influencent l’effet du cannabis…  game : more sensible to canabis",
 		"mutationInfo": {
 			"rsName": "rs2494732",
 			"sex": ["H", "F"],
 			"populationBackground": ["caucasian", "asian"],
-			"type": "intron variant"
+			"type": "intron variant",
+			"nucleotideChange": ["T", "C"],
+			"alleles": "heterozygous"
 		},
 		"debugInfo": {
 			"img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Cannabis_leaf.svg/1200px-Cannabis_leaf.svg.png"
