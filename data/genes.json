@@ -47,7 +47,9 @@
 			"rsName": "rs3827760",
 			"sex": ["H", "F"],
 			"populationBackground": ["asian"],
-			"type": "missense"
+			"type": "missense",
+			"nucleotideChange": ["T", "C"],
+			"alleles": "heterozygous"
 		},
 		"debugInfo": {
 			"img": "http://www.clker.com/cliparts/0/0/d/a/11949845142049183837boy_astrid_graeber_.svg.hi.png"
@@ -80,7 +82,9 @@
 			"rsName": "rs4988235",
 			"sex": ["H", "F"],
 			"populationBackground": ["caucasian"],
-			"type": "intron variant"
+			"type": "intron variant",
+			"nucleotideChange": ["T", "C"],
+			"alleles": "homozogous"
 		},
 		"debugInfo": {
 			"img": "http://strawberryblu.com/wp-content/uploads/2013/05/No_Milk.gif"
@@ -100,7 +104,9 @@
 			"rsName": "rs121908635",
 			"sex": ["H", "F"],
 			"populationBackground": ["caucasian", "asian"],
-			"type": "missense"
+			"type": "missense",
+			"nucleotideChange": ["A", "G"],
+			"alleles": "heterozygous"
 		},
 		"debugInfo": {
 			"img": "https://media.gettyimages.com/vectors/sleepy-cartoon-man-with-an-alarm-clock-vector-id453556207"
@@ -120,7 +126,9 @@
 			"rsName": "rs333",
 			"sex": ["H", "F"],
 			"populationBackground": ["caucasian", "asian"],
-			"type": "frameshift"
+			"type": "frameshift",
+			"nucleotideChange": ["?", "?"],
+			"alleles": "heterozygous"
 		},
 		"debugInfo": {
 			"img": "http://www.madinin-art.net/images/sida-333.jpg"
@@ -140,7 +148,9 @@
 			"rsName": "rs75790268",
 			"sex": ["H", "F"],
 			"populationBackground": ["caucasian", "asian"],
-			"type": "missense"
+			"type": "missense",
+			"nucleotideChange": ["C", "A"],
+			"alleles": "heterozygous"
 		},
 		"debugInfo": {
 			"img": "https://media.gettyimages.com/vectors/hand-drawn-garden-gnome-hands-in-his-pockets-cartoon-vector-vector-id516445221"
@@ -160,7 +170,9 @@
 			"rsName": "rs1057519613",
 			"sex": ["H", "F"],
 			"populationBackground": ["caucasian"],
-			"type": "splice donor"
+			"type": "splice donor",
+			"nucleotideChange": ["G", "T"],
+			"alleles": "homozogous"
 		},
 		"debugInfo": {
 			"img": "https://images-na.ssl-images-amazon.com/images/I/41C2ADL0wML.jpg"
@@ -180,7 +192,9 @@
 			"rsName": "rs16891982",
 			"sex": ["H", "F"],
 			"populationBackground": ["caucasian"],
-			"type": "missense"
+			"type": "missense",
+			"nucleotideChange": ["G", "C"],
+			"alleles": "heterozygous"
 		},
 		"debugInfo": {
 			"img": "http://cache.marieclaire.fr/data/photo/w700_c17/3z/maquillage-peau-mate.jpg"
@@ -200,7 +214,9 @@
 			"rsName": "rs28757581",
 			"sex": ["H", "F"],
 			"populationBackground": ["caucasian", "asian"],
-			"type": "missense"
+			"type": "missense",
+			"nucleotideChange": ["A", "G"],
+			"alleles": "heterozygous"
 		},
 		"debugInfo": {
 			"img": "https://thumbs.dreamstime.com/z/ciseaux-pour-couper-l-herbe-32134544.jpg"
@@ -230,7 +246,9 @@
 			"rsName": "rs113488022",
 			"sex": ["H", "F"],
 			"populationBackground": ["caucasian", "asian"],
-			"type": "missense"
+			"type": "missense",
+			"nucleotideChange": ["T", "A"],
+			"alleles": "heterozygous"
 		},
 		"externalLinks": {
 			"uniprot": "P15056",
@@ -247,7 +265,9 @@
 			"rsName": "rs713598",
 			"sex": ["H", "F"],
 			"populationBackground": ["caucasian", "asian"],
-			"type": "missense"
+			"type": "missense",
+			"nucleotideChange": ["C", "G"],
+			"alleles": "homozogous"
 		},
 		"debugInfo": {
 			"img": "http://downloadclipart.org/do-upload/clipart/2016-01/Cartoon_Broccoli_Clip_Art.png"
@@ -267,7 +287,9 @@
 			"rsName": "rs6152",
 			"sex": ["H"],
 			"populationBackground": ["caucasian", "asian"],
-			"type": "synonymous"
+			"type": "synonymous",
+			"nucleotideChange": ["A", "G"],
+			"alleles": "heterozygous"
 		},
 		"externalLinks": {
 			"uniprot": "P10275",
@@ -284,7 +306,9 @@
 			"rsName": "rs104894914",
 			"sex": ["H", "F"],
 			"populationBackground": ["caucasian"],
-			"type": "missense"
+			"type": "missense",
+			"nucleotideChange": ["T", "C"],
+			"alleles": "homozogous"
 		},
 		"debugInfo": {
 			"img": "http://daltonien.free.fr/daltonien/IMG/jpg/15.jpg"
@@ -303,7 +327,9 @@
 			"rsName": "rs7853989",
 			"sex": ["H", "F"],
 			"populationBackground": ["caucasian", "asian"],
-			"type": "missense"
+			"type": "missense",
+			"nucleotideChange": ["G", "C"],
+			"alleles": "heterozygous"
 		},
 		"debugInfo": {
 			"img": "http://whatsmybloodtype.org/files/images/typeb.jpg"
@@ -323,7 +349,9 @@
 			"rsName": "rs1815739",
 			"sex": ["H", "F"],
 			"populationBackground": ["caucasian", "asian"],
-			"type": "stop"
+			"type": "stop",
+			"nucleotideChange": ["T", "C"],
+			"alleles": "heterozygous"
 		},
 		"debugInfo": {
 			"avatarChange": "short de course / basket ,,,,",
@@ -345,7 +373,9 @@
 			"rsName": "rs111033260",
 			"sex": ["H", "F"],
 			"populationBackground": ["caucasian", "asian"],
-			"type": "stop"
+			"type": "stop",
+			"nucleotideChange": ["C", "T"],
+			"alleles": "homozogous"
 		},
 		"debugInfo": {
 			"img": "http://www.ushersyndroom.nl/wp-content/uploads/2016/10/Dream-stopUSH-bovenstuk.jpg"
@@ -364,7 +394,9 @@
 			"rsName": "rs2675703",
 			"sex": ["H", "F"],
 			"populationBackground": ["caucasian", "asian"],
-			"type": "missense"
+			"type": "missense",
+			"nucleotideChange": ["C", "T"],
+			"alleles": "homozogous"
 		},
 		"debugInfo": {
 			"img": "http://moziru.com/images/gloomy-clipart-child-depression-4.jpg"
@@ -383,7 +415,9 @@
 			"rsName": "rs7903146",
 			"sex": ["H", "F"],
 			"populationBackground": ["caucasian"],
-			"type": "intron variant"
+			"type": "intron variant",
+			"nucleotideChange": ["C", "T"],
+			"alleles": "heterozygous"
 		},
 		"debugInfo": {
 			"img": "https://thumbs.dreamstime.com/z/syringe-bottle-insulin-medicines-treatment-diabetes-diabetes-single-icon-cartoon-style-vector-symbol-87971845.jpg"
@@ -402,7 +436,9 @@
 			"rsName": "rs3184504",
 			"sex": ["H", "F"],
 			"populationBackground": ["caucasian"],
-			"type": "missense"
+			"type": "missense",
+			"nucleotideChange": ["C", "T"],
+			"alleles": "heterozygous"
 		},
 		"debugInfo": {
 			"img": "https://jimvysechickenchat.files.wordpress.com/2014/07/no-bread-300x203.jpg?w=584"
