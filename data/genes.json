@@ -741,5 +741,22 @@
 			"uniprot": "P31749",
 			"chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-14/?g=foisonnement-de-cellules"
 		}
+	}, {
+		"id": "SERPINE1-ENSG00000106366-Chr7",
+		"geneName": "SERPINE1",
+		"transcript": "ENST00000223095",
+		"chromosome": "7",
+		"description": "correlates with increased age in amish population",
+		"mutationInfo": {
+			"rsName": "-",
+			"sex": ["H", "F"],
+			"populationBackground": ["caucasian"],
+			"type": "frameshift",
+			"nucleotideChange": ["-", "TA"],
+			"alleles": "heterozygous"
+		},
+		"externalLinks": {
+			"uniprot": "P05121"
+		}
 	}
 ]
