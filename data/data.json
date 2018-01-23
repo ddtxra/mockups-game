@@ -1,5 +1,23 @@
 [
   {
+    "id": "undefined-undefined-Chrtranscript_pos",
+    "chromosome": "transcript_pos",
+    "chromosomeLength": null,
+    "transcriptStartPosition": null,
+    "transcriptEndPosition": null,
+    "relativePositionPercentage": null,
+    "transcriptDirection": "REVERSE_STRAND",
+    "exonsCount": 0,
+    "exonsRealLength": 0,
+    "geneRealLength": null,
+    "levelData": [
+      {
+        "type": "type",
+        "realLength": null
+      }
+    ]
+  },
+  {
     "id": "TCHH-ENST00000614923-Chr1",
     "geneName": "TCHH",
     "transcript": "ENST00000614923",
@@ -1478,6 +1496,114 @@
       {
         "type": "utr",
         "realLength": 4948
+      }
+    ]
+  },
+  {
+    "id": "SERPINE1-ENST00000223095-Chr7",
+    "geneName": "SERPINE1",
+    "transcript": "ENST00000223095",
+    "chromosome": "7",
+    "chromosomeLength": 159345973,
+    "transcriptStartPosition": 101127089,
+    "transcriptEndPosition": 101139266,
+    "relativePositionPercentage": 0.63,
+    "transcriptDirection": "FORWARD_STRAND",
+    "exonsCount": 9,
+    "exonsRealLength": 1204,
+    "geneRealLength": 12198,
+    "levelData": [
+      {
+        "type": "utr",
+        "realLength": 156
+      },
+      {
+        "type": "intron",
+        "realLength": 1150
+      },
+      {
+        "type": "utr",
+        "realLength": 2
+      },
+      {
+        "type": "start_codon",
+        "realLength": 3
+      },
+      {
+        "type": "exon",
+        "realLength": 269
+      },
+      {
+        "type": "intron",
+        "realLength": 1758
+      },
+      {
+        "type": "exon",
+        "realLength": 234
+      },
+      {
+        "type": "intron",
+        "realLength": 1222
+      },
+      {
+        "type": "exon",
+        "realLength": 37
+      },
+      {
+        "type": "snp",
+        "realLength": 1
+      },
+      {
+        "type": "exon",
+        "realLength": 157
+      },
+      {
+        "type": "intron",
+        "realLength": 1627
+      },
+      {
+        "type": "exon",
+        "realLength": 199
+      },
+      {
+        "type": "intron",
+        "realLength": 1602
+      },
+      {
+        "type": "exon",
+        "realLength": 101
+      },
+      {
+        "type": "intron",
+        "realLength": 122
+      },
+      {
+        "type": "exon",
+        "realLength": 87
+      },
+      {
+        "type": "intron",
+        "realLength": 1201
+      },
+      {
+        "type": "exon",
+        "realLength": 84
+      },
+      {
+        "type": "intron",
+        "realLength": 322
+      },
+      {
+        "type": "exon",
+        "realLength": 36
+      },
+      {
+        "type": "stop_codon",
+        "realLength": 3
+      },
+      {
+        "type": "utr",
+        "realLength": 1825
       }
     ]
   },
