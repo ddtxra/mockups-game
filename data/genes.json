@@ -76,12 +76,12 @@
 			"img": "https://ultimahora.es/sfAttachPlugin/getCachedContent/id/420234"
 		},
 		"mutationInfo": {
-			"rsName": "rs",
+			"rsName": "rs121908937",
 			"sex": ["H", "F"],
-			"populationBackground": ["asian"],
+			"populationBackground": ["caucasian", "asian"],
 			"type": "missense",
-			"nucleotideChange": ["T", "C"],
-			"alleles": "heterozygous"
+			"nucleotideChange": ["G", "C"],
+			"alleles": "homozygous"
 		},
 		"externalLinks": {
 			"uniprot": "P09848",
@@ -103,7 +103,7 @@
 			"alleles": "homozogous"
 		},
 		"debugInfo": {
-			"img": "http://strawberryblu.com/wp-content/uploads/2013/05/No_Milk.gif"
+			"img": "https://ih0.redbubble.net/image.375118370.5549/flat,800x800,075,f.u2.jpg"
 		},
 		"externalLinks": {
 			"uniprot": "Q14566",
@@ -243,32 +243,21 @@
 		}
 	},
 	{
-		"id": "FOXO3.H-ENST00000343882-Chr6",
+		"id": "FOXO3-ENST00000343882-Chr6",
 		"geneName": "FOXO3",
 		"transcript": "ENST00000343882",
 		"chromosome": "6",
 		"description": "This genes is responsible for longevity in asian man.",
 		"mutationInfo": {
-			"rsName": "rs2802292",
+			"rsName": "rs2802292 (first snp)",
 			"sex": ["H"],
 			"populationBackground": ["asian"],
 			"type": "intron variant",
 			"nucleotideChange": ["G", "T"],
 			"alleles": "heterozygous"
 		},
-		"externalLinks": {
-			"uniprot": "O43524",
-			"chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-6/?g=vivre-longtemps"
-		}
-	},
- 	{
-		"id": "FOXO3.F-ENST00000343882-Chr6",
-		"geneName": "FOXO3",
-		"transcript": "ENST00000343882",
-		"chromosome": "6",
-		"description": "This genes is responsible for longevity in asian woman",
-		"mutationInfo": {
-			"rsName": "rs1935949",
+		"mutationInfoAlternative": {
+			"rsName": "rs1935949 (second snp)",
 			"sex": ["F"],
 			"populationBackground": ["asian"],
 			"type": "intron variant",

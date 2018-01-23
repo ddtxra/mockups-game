@@ -288,6 +288,26 @@
                 sv = "<span style='background-color:orange'>super variant</span>";
             }
 
+
+            function getMutationInfoHTML (mutationInfo){
+                var tx = "";
+                tx += "<br><br><b>Mutation properties (can be represented with symbols) on a little square:</b><ul>";
+                tx += "<li>RS name: " + ((mutationInfo && mutationInfo.rsName) ? mutationInfo.rsName : "???")  + "</li>";
+                tx += "<li>H/F applicable:";
+                var sexNotSet = true;
+                if(mutationInfo && mutationInfo.sex && mutationInfo.sex.indexOf("H") != -1) { tx += "&nbsp;&#9794;"; sexNotSet = false; }
+                if(mutationInfo && mutationInfo.sex && mutationInfo.sex.indexOf("F") != -1) {  tx += "&nbsp;&#9792;"; sexNotSet = false; }
+                if(sexNotSet){ html += "???"; }
+                tx += "</li>";
+                tx += "<li>Population Background:&nbsp;" + ((mutationInfo && mutationInfo.populationBackground) ? mutationInfo.populationBackground : "???")   + "</li>";
+                tx += "<li>Alleles:</b> " + ((mutationInfo && mutationInfo.alleles) ? mutationInfo.alleles : "???")  + " </li>";
+                tx += "<li>Type:&nbsp;" + ((mutationInfo && mutationInfo.type) ? mutationInfo.type : "???")   + "</li>";
+                tx += "<li>Nucleotide change (from -> to) :&nbsp;" + ((mutationInfo && mutationInfo.nucleotideChange) ? (mutationInfo.nucleotideChange[0] + "->" + mutationInfo.nucleotideChange[1]) : "???")   + "</li>";
+                tx += "</ul>"
+
+                return tx;
+    
+            }
             html = ""
 
 
@@ -334,33 +354,14 @@
             html += "Once spliced (introns are cut) the mRNA gets out of the nucleus and is translated by the ribosome (animation) which will render a protein of the following length:"
             html += "<br><b>Protein length:</b> (" +gene.exonsRealLength  +"bp/3)=" + Math.ceil((gene.exonsRealLength + 1) / 3.0)  + "aa (For every 3bp - base pairs the ribosome produces 1aa - amino acid).... According to <a target='_blank' href='http://knowpapa.com/wp-content/uploads/2013/10/6.png'>this table</a>."
             html += "<br><br><b>Description</b>:<br>" + gene.description ;
-            if(gene.descriptionImg){
-                html += "<br><img width='250px' src='" + gene.descriptionImg + "'></img>";
+            if(gene.descriptionImg){ html += "<br><img width='250px' src='" + gene.descriptionImg + "'></img>"; }
+            
+            html += getMutationInfoHTML(gene.mutationInfo)
+            if(gene.mutationInfoAlternative) {
+                html += "<b style='color:red'>Alternative mutation</b>";
+                html += getMutationInfoHTML(gene.mutationInfoAlternative)
             }
-            html += "<br><br><b>Mutation properties (can be represented with symbols) on a little square:</b><ul>";
-            html += "<li>RS name: " + ((gene.mutationInfo && gene.mutationInfo.rsName) ? gene.mutationInfo.rsName : "???")  + "</li>";
-            html += "<li>H/F applicable:";
-            var sexNotSet = true;
-            if(gene.mutationInfo && gene.mutationInfo.sex && gene.mutationInfo.sex.indexOf("H") != -1) {
-                html += "&nbsp;&#9794;";
-                sexNotSet = false;
-            }
-            if(gene.mutationInfo && gene.mutationInfo.sex && gene.mutationInfo.sex.indexOf("F") != -1) {
-                html += "&nbsp;&#9792;";
-                sexNotSet = false;
-            }
-            if(sexNotSet){
-                html += "???";
-            }
-
-            html += "</li>";
-            html += "<li>Population Background:&nbsp;" + ((gene.mutationInfo && gene.mutationInfo.populationBackground) ? gene.mutationInfo.populationBackground : "???")   + " --------- (check if other populations are needed, like africans)</li>";
-            html += "<li>Alleles:</b> " + ((gene.mutationInfo && gene.mutationInfo.alleles) ? gene.mutationInfo.alleles : "???")  + " </li>";
-            html += "<li>Type:&nbsp;" + ((gene.mutationInfo && gene.mutationInfo.type) ? gene.mutationInfo.type : "???")   + "</li>";
-            html += "<li>Nucleotide change (from -> to) :&nbsp;" + ((gene.mutationInfo && gene.mutationInfo.nucleotideChange) ? (gene.mutationInfo.nucleotideChange[0] + "->" + gene.mutationInfo.nucleotideChange[1]) : "???")   + "</li>";
-            html += "</ul>"
             html += "<br><b>STOP codon bases (can be UGA, UAA, UAG): </b>" + gene.stopCodon;
- 
             html += "<br><br><b>Chromosome Walk</b>:<br>";
             html += ((getProteinLink(gene, "chromosomeWalk") !=="") ? getProteinLink(gene, "chromosomeWalk") : "???")
 
