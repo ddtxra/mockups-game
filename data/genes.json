@@ -23,7 +23,7 @@
 		}
 	},
 	{
-		"id": "TCHH.1-ENST00000614923-Chr1",
+		"id": "TCHH-ENST00000614923-Chr1",
 		"geneName": "TCHH",
 		"transcript": "ENST00000614923",
 		"chromosome": "1",
@@ -35,29 +35,6 @@
 			"type": "missense",
 			"nucleotideChange": ["A", "T"],
 			"alleles": "heterozygous"
-		},
-		"debugInfo": {
-			"img": "http://mercredie.com/wp-content/uploads/2014/08/mercredie-blog-beaute-cheveux-frises-pre-wash-post-wash-conseils-cheveux-naturels-crepus-frises-boucles.jpg"
-		},
-		"3dImage": "data/assets/proteins/unknown3D.png",
-		"externalLinks": {
-			"uniprot": "Q07283",
-			"chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-1/?g=de-beaux-cheveux"
-		}
-	},
-	{
-		"id": "TCHH.2-ENST00000614923-Chr1",
-		"geneName": "TCHH",
-		"transcript": "ENST00000614923",
-		"chromosome": "1",
-		"description": "Gène impliqué dans la fabrication des cheveux. Certaines variations de ce gène sont associées avec des cheveux crépus. Cette mutation est responsable pour le uncompable hair syndrome.",
-		"mutationInfo": {
-			"rsName": "rs201930497",
-			"sex": ["H", "F"],
-			"populationBackground": ["caucasian"],
-			"type": "stop",
-			"nucleotideChange": ["G", "A"],
-			"alleles": "homozygous"
 		},
 		"debugInfo": {
 			"img": "http://mercredie.com/wp-content/uploads/2014/08/mercredie-blog-beaute-cheveux-frises-pre-wash-post-wash-conseils-cheveux-naturels-crepus-frises-boucles.jpg"
@@ -97,6 +74,14 @@
 		"description": "Chromosomewalk : Gène codant pour une protéine qui digère le lactose.",
 		"debugInfo": {
 			"img": "https://ultimahora.es/sfAttachPlugin/getCachedContent/id/420234"
+		},
+		"mutationInfo": {
+			"rsName": "rs",
+			"sex": ["H", "F"],
+			"populationBackground": ["asian"],
+			"type": "missense",
+			"nucleotideChange": ["T", "C"],
+			"alleles": "heterozygous"
 		},
 		"externalLinks": {
 			"uniprot": "P09848",
@@ -258,7 +243,7 @@
 		}
 	},
 	{
-		"id": "FOXO3.1-ENST00000343882-Chr6",
+		"id": "FOXO3.H-ENST00000343882-Chr6",
 		"geneName": "FOXO3",
 		"transcript": "ENST00000343882",
 		"chromosome": "6",
@@ -277,7 +262,7 @@
 		}
 	},
  	{
-		"id": "FOXO3.2-ENST00000343882-Chr6",
+		"id": "FOXO3.F-ENST00000343882-Chr6",
 		"geneName": "FOXO3",
 		"transcript": "ENST00000343882",
 		"chromosome": "6",
