@@ -62,7 +62,6 @@
         <br>Exons count with minimal unit: <span id="minExonsCount" style="color:green">computing...</span>
         Exons count with maximal unit: <span id="maxExonsCount" style="color:green">computing...</span> (minimize this number)
         <br>Introns types distribution: <span id="intronsDist" style="color:green">computing...</span>
-        
     </div>
     <div style="margin: 10px;">
         <h3>Notes</h3>
@@ -73,6 +72,10 @@
             <li>There is not a hole below the start, snp stop codon (it is a limitation of the library in use for the schema). It should be a walkable exon with different color: from exon to utr (untranslated region)</li>
             <li>For SIB: Double Check aa length (does not seem correct for GJB2 counts 234aa but Ensembl counts 226aa)</li>
         </ul>
+    </div>
+    <div style="margin: 10px;">
+        <br><button data-toggle='collapse' data-target="#full-json">Click to view and copy FULL JSON</button>
+        <div style="font-size:8px" id="full-json" class='collapse'></div>
     </div>
     <div id="container" style="margin: 10px;">
     <h3>Genes and corresponding JSON</h3>
@@ -463,6 +466,7 @@
 
         })
 
+        $("#full-json").html("<pre><code>" +  JSON.stringify(genesSorted) + "</code></pre>")
 
     }
 

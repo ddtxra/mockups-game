@@ -1,23 +1,5 @@
 [
   {
-    "id": "undefined-undefined-Chrtranscript_pos",
-    "chromosome": "transcript_pos",
-    "chromosomeLength": null,
-    "transcriptStartPosition": null,
-    "transcriptEndPosition": null,
-    "relativePositionPercentage": null,
-    "transcriptDirection": "REVERSE_STRAND",
-    "exonsCount": 0,
-    "exonsRealLength": 0,
-    "geneRealLength": null,
-    "levelData": [
-      {
-        "type": "type",
-        "realLength": null
-      }
-    ]
-  },
-  {
     "id": "TCHH-ENST00000614923-Chr1",
     "geneName": "TCHH",
     "transcript": "ENST00000614923",
