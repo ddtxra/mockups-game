@@ -1,0 +1,96 @@
+où (screen) (voir user flow)	reference	nom	type	unique id	anglais	francais	allemand
+intro		central_dogma	vidéo				
+							
+	https://www.nature.com/articles/ng1733 https://www.sciencedirect.com/science/article/pii/S0022202X15363259?via%3Dihub	ABCC11	gène	abcc11-text	The ABCC11 gene encodes a protein, which helps to transport small molecules across the cell membrane of sweat glands. The T-allele leads to lower protein levels, causing dryer earwax and reduced sweating. Individuals with the C-allele sweat more and are more likely to use a deodorant. The T-allele is associated with East Asian populations, while C is mostly present in Africans and European populations. Drier earwax and less sweat might be an adaption to a colder climate.		
+				abcs11-short-text	This variation makes you sweat more, take this nice perfume with you :)		
+	https://en.wikipedia.org/wiki/ABO_(gene) https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3058268/	ABO	gène	abo-text	The ABO gene ecodes a protein that influences human blood types. The protein modifies molecules on the cell surface of red blood cells. Depending on the allele, the ABO gene produces proteins leading to different modifications of the cell surface molecules and the three different blood types  A, B and 0. The C-allele causes blood type B.		
+				abo-short-text	Your blood-type is B.		
+	https://www.wired.com/2008/10/the-gene-for-jamaican-sprinting-success-no-not-really/ (blog entry of author)	ACTN3	gène	actn3-text	The protein encoded by the ACTN3 gene is active in skeletal muscles. It influences the "explosive" power of the muscle. The T-allele leads to a non-functional protein. Individuals with this allele (about 1/6th-1/4th of the human population) have lower muscle power, a reduced sprinting performance and have a better endurance capacity. Individuals with a C-allele in contrast, can built up more muscle strength. However, the C-allele explains only 2-3% of sprinting variability and diet and training contribute strongly to the performance.		
+				actn3-short-text	Your muscles just became more powerful!		
+	http://www.pnas.org/content/81/1/258	ALDH2	gène	aldh2-text	The ALDH2 gene encodes a protein, which metabolizes alcohol. Individuals with the A-allele produce a defective protein and possess therefore a sensitivity to alcohol. After drinking alcohol, they are for example more likely to suffer from severe hangovers or to have a red skin and neck color. The A-allele is over-represented in asian populations.		
+				aldh2-short-text	You might have difficulties to metabolize alcohol!		
+	https://en.wikipedia.org/wiki/Apolipoprotein_E#Alzheimer's_disease	APOE	gène	apoe-text	The APOE gene enocodes a fat-binding protein that mediates the cholesterol metabolism in liver and brain. The C-allele is associated with an increased risk of developping late-onset sporadic Alzheimer. The observed effect is less severe in african populations than in caucasian and asian populations, because the cholesterol levels of Africans are lower (rephrase softer).		
+				apoe-short-text	Your risk to develop Alzheimer increased!		
+	https://www.sciencedirect.com/science/article/pii/S0022202X15411753?via%3Dihub https://www.sciencedirect.com/science/article/pii/S0002929707609100?via%3Dihub	AR	gène	ar-text	The AR gene enocodes a receptor protein, that can bind the male hormone androgene. Androgene influences the development of male characteristic traits as well as hair growth. The G-allele increases the risk of man to develop baldness. However, additional - though unknown alleles - need to be present too.		
+				ar-short-text	Oups - you just became bald!		
+	http://blogs.nature.com/freeassociation/2011/08/melanoma_sequencing_identifies_1.html https://www.nature.com/articles/nature00766	BRAF	gène	braf-text	The BRAF gene encodes a protein which influences cell proliferation. The A-allele may increase the activity of the protein. The BRAF gene is mutated in 40-60% of skin melanoma and therefore drugs that target the overactive protein, might be a potential treatment.	mutation imitates phospohorylation site which leads to higher activity, treatment works only temporaily, patients bceome resistent....	
+				braf-short-text	Take this nice cap with you to prevent melanoma (skin cancer)		
+	https://jamanetwork.com/journals/jama/fullarticle/2632503 https://en.wikipedia.org/wiki/BRCA1#Mutations_and_cancer_risk	BRCA1	gène	brca1-text	The BRCA1 gene encodes a protein that can repair the DNA. If the DNA repair mechanisms does not work properly, other important genes might mutate as well. The insertion of extra nucleotides in the BRCA1 gene, disturps the repair function of the protein and causes a high a risk of breast cancer. It is used to predict the breast cancer risk of woman.		
+				brca1-short-text	This mutation can be used to assess the risk of breast cancer.		
+		CYP1A2	gène	cyp1a2-text	The CYP1A2 gene encodes a protein, which is involved in various metabolic processes such as the drug metabolism or cholesterol synthesis. Individuals with the C-allele metabolize for example coffeine slower. A slower caffeine metabolizm means that one cup of coffee has a stronger effect on them, because the caffeine remains longer in the system.	should we do it the other way around? fast metabolizer needs more coffee that's why he has a coffee mug how is cyp1a2 altered by the allele?	
+				cyp1a2-short-text	Coffee has a strong effect on you!		
+	https://academic.oup.com/hmg/article/17/6/835/601141 https://dx.doi.org/10.1007/s00439-013-1324-1	EDAR	gène	edar-text	The protein encoded by the EDAR gene has important developmental functions. It is expressed at the cell surface and influences the interaction of cells that form for example skin, hair or teeth. The C-allele reduces the efficiency of the protein to activate other proteins, which leads to thicker and straighter hair. The majority of people in asian populations carry the C-allele and have straigther and thicker hair than europeans for example. 	EDAR interacts with anothe rprotein to activate nfkb. reduces nfkb leads to hair regrowth	
+				edar-shhort-text	Beautiful - you got thick and straight hair!		
+	http://www.pnas.org/content/90/10/4495.long	EPOR	gène	epor-text	The EPOR gene encodes a protein that controls the proliferation of red blood cells and prevents them from dying. The A-allele is very rare and causes a strong increase in red blood cells. An increased number of red blood cells allows the body to carry more oxygen in the blood and to perform for example better physical activity.	doping case	
+				epor-short-text	You have a high number of red blood cells, enjoy your super powers!		
+	https://www.omim.org/entry/134934#0003	FGFR3	gène	fgfr3-text	The FGFR3 gene encodes a protein which is involved in bone development and maintenance. This mutation is very rare. It results in an constantly active protein, which leads to shorter and smaller bones during development. Individuals with the mutation are much smaller than the average person (dwarfism).		
+				fgfr3-short-text	The best things come in small packages		
+	https://www.nature.com/articles/5200406 https://www.nature.com/articles/387080a0	GJB2	gène	gjb2-text	The GJB2 gene encodes a membrane protein that is important for cell-to-cell communication in different tissues, including the ear. This mutation (G-allele) leads to a non-functional protein and is associated with deafness. It is the most common allele associated with deafness in european populations.		
+				gjb2-short-text	Take this hearing aids to hear better!		
+	https://www.sciencedirect.com/science/article/pii/S0002929707611902?via%3Dihub	HBB	gène	hbb-text	The HBB gene encodes a subunit of the haemoglobin protein, which binds and transports oxygen in our blood. This variation leads to a malformation of the red blood cells causing a disease known as "sickel cell anemia". Individuals with a single A-allele of the gene (either from the mum or the father) are healthy and are more resistant to the Malaria parasite, which cannot bind to the red blood cell anymore. Individuals with two A-alleles, suffer from sickle cell anemia.		
+				hbb-short-text	Your red blood cells have a different shape but you are more resitant to maleria!		
+		HERC2	gène	herc2-text	The G-allele is found in the intron of the HERC2 gene. It has no influence on the HERC2 protein itself, but instead influences the protein production of the neighboring OCA2 gene. The protein produced by the OCA2 gene is essential for the synthesis of melanin (a dark pigment). The G-allele leads to lower levels of the OCA2 protein, fewer pigments in the cells and subsequently to a higher probability of having blue eyes. This allele is very common in Europe.	This variation influences the production of melanine. The melanine pigments concentration varies and in this case your chances are to have blue eyes!	
+				herc2-short-text	You have blue eyes, lucky you =)		
+	https://www.sciencedirect.com/science/article/pii/S0002929707623647?via%3Dihub https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1627962/	LCT	gène	lct-text	The LCT gene encodes a protein that is important for the digestion of milk. The C-allele causes a structural change of the protein, which impairs its function and leads to a disease called "Congenital Lactase Deficiency". Individuals with this allele are unable to digest breast milk as a baby and any milk products as adults.		
+				lct-short-text	No choice here - You need to drink lactose-free milk to grow up!		
+	https://bmcgenet.biomedcentral.com/articles/10.1186/1471-2156-10-88 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1288200/	MC1R	gène	mc1r-text	The MC1R gene encodes one of the key proteins determining human skin and hair color. The T-allele leads to a disrupted protein and an increase of red/yellow pigments (pheomelanin). Individuals with this allele have lighter skin and red hair. The T-allele is very rare in African populations, because a loss of dark pigments makes skin cells more vulnerable to strong sunlight. However, the T-allele is less harmful in European populations, because the sunlight is weaker.		
+				mc1r-short-text	You have red hair, probably a celtic ancestor!	Viking?	
+	https://www.nature.com/articles/ng826 http://linkinghub.elsevier.com/retrieve/pii/S0002-9297(07)62838-9	MCM6	gène	mcm6-text	The C-allele is found in the intron (non-coding part) of the MCM6 gene and increases the protein production from the neighbouring gene LCT. LCT produces a protein that is responsible for the digestionion of milk. Individuals with the C-allele become lactose-intolerant when they are adult, but have no problems with digesting breast milk.		
+				mcm6-short-text	You're likely to be lactose intolerant as an adult.		
+	http://onlinelibrary.wiley.com/doi/10.1111/j.1469-1809.2007.00407.x/full	OCA2	gène	oca2-text	The OCA2 gene encodes a protein that is involved in the production of melanin (a dark pigment). change snp to the one with green eye color vs blue -> stronger candidate than the current SNP		
+				oca2-short-text	You are more likely to have green eyes!		
+	https://www.sciencedirect.com/science/article/pii/S0042698910005699 http://www.color-blindness.com/deuteranopia-red-green-color-blindness/  	OPN1MW	gène	opn1mw-text	The OPN1MW gene encodes a protein that absorbs green light in the retina of our eyes. The C-allele disrupts (?) the protein and causes red-green color blindness (deuteranopia). (green cones completely missing? check). The allele is frequently present in european man. Woman are less likely to suffer from this type of color blindness, because the OPN1MW gene is located on the X-chromosomes. Woman have two X-chromosomes, which increases the probability of having a functional OPN1MW gene.		
+				opn1mw-short-text	You can't distinguish red and green!		
+	https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2647333/	OPN4	gène	opn4-text	The OPN4 gene ecodes a photoreceptor that is sensitive to light and measures light intensity. The T-allele decreases the activity of the protein. Individuals with a less active version of this protein react stronger to missing sun light. The T-allele is present in a subset of people that suffer from depressions in winter (seasonal deffective disorder) due to the decrease in sunlight.		
+				opn4-short-text	You might have a higher risk to suffer from depressions in winter		
+	https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3408771/	OR2J3	gène	or2j3-text	The OR2J3 gene encodes an olfactory protein in the nose. The G-allele decreases the sensitivity to a molecule that is released from wounded plants (e.g. cut grass). People with this alllele are not able to smell cut grass. The same molecule that is released from wounded plants is also present in many fresh vegetables and fruits. The G-allele could therefore influence the food preferences of individuals. (Needs to be present with a second SNP)		
+				or2j3-short-text	You can't smell cut grass!		
+	http://www.nejm.org/doi/full/10.1056/NEJMoa021502	PCDH15	gène	pcdh15-text	The PCDH15 gene encodes a protein that is important for the propper function of the eye and ear. The T-allele causes a disease called "Usher syndrome type 1", the most common condition causing deafness and concurrent blindness.		
+				pcdh15-short-text			
+	http://science.sciencemag.org/content/291/5506/1040.long https://www.nature.com/articles/nm0999_1062	PER2	gène	per2-text	The PER2 gene encodes a protein that is important for the sleep-awake rhythm. Individuals with the G-allele have decreased PER2 protein levels in a cell causing the "Familial Advanced Sleep Phase Syndrome". The sleep cycle of individuals with this syndrome is shifted - they go to bed very early (6-8pm) and get up early as well (3 am).		
+				per2-short-text	Your are a morning lark!		
+		SH2B3	gène	sh2b3-text	The SH2B3 gene encodes a regulatory protein that is involved in blood cell development, inflammatory proccesses and cell migration. It is strongly expressed in the small intestine. The T-allele may lead to a more sensitive protein that triggers a strong auto-immune response to ingested gluten.		
+				sh2b3-short-text	You have higher chances to be gluten-intolerant!		
+	https://academic.oup.com/mbe/article/24/3/710/1240790	SLC24A5	gène	slc24a5-text	The SLC24A5 gene encodes a protein involved in skin pigmentation.The A-allele is present in almost 100% of Europeans and leads to lighter skin. The A-allele evolved recently and is believed to be under positive selection. In areas of decreased light intensity, lighter skin facilitates the absorption of UV and subsequently the production of Vitamin D.		
+				slc24a5-short-text	You have light skin!		
+	https://www.nature.com/articles/jhg2008124	SLC45A2	gène	slc45a2-text	The SLC45A2 gene encodes a protein involved in the synthesis of melanin (dark pigment). The C-allele is usually not present in European populations. However, if an individual is of european ancestry and has the C-allele, the person is more likely to have black hair. Check the influnce on skin color!!!!		
+				slc45a2-short-text	You may have black hair!		
+	http://science.sciencemag.org/content/299/5610/1221.full	TAS2R38	gène	tas2r38-text	The TAS2R38 gene encodes a bitter-taste receptor in the tongue. Individuals with the G-allele are unable to taste some bitter substances in food like cabbage or raw brocoli.		
+				tas2r38-short-text	Raw broccoli tastes bitter to you!		
+		TCF7L2	gène	tcf7l2-text	The TCF7L2 gene encodes a protein that can regulate the transcription (mRNA production) of other genes. Some of these genes controlled by TCF7L2 are involved in the glucose metabolism. One of the genes that is regulated by TCF2L2 encodes a protein important the control of blood sugar levels. If mis-regulated, individuals have a higher risk of developping diabetes type 2.		
+				tcf7l2-short-text	You have a higher risk to develop diabetes type 2.		
+	https://www.sciencedirect.com/science/article/pii/S0002929709004649?via%3Dihub	TCHH	gène	tchh-text	The TCHH gene encodes a protein that gives mechanical strength to hair fibers. Individuals with the T-allele have an altered protein leading to weaker and curlier hair fibers. 		
+				tchh-short-text	This variation makes your hair curly!		
+	http://advances.sciencemag.org/content/3/11/eaao1617.full	SERPINE1	gène	serpine1-text	The SERPINE1 gene encodes a protein that is important to degrade othe proteins in the blood plasma (check connection to telomeres...). The insertion of two extra nucleotides (TA) in this gene leads to a non-functional protein. It was recently associated with an increased life span in Amish population.		
+				serpine1-short-text	Congratulations - You may live longer!		
+		SMARCAD1	gène	smarcad1-text	The SMARCAD1 gene enocdes a protein that controls the chromosome structure (find transition to next sentence). The T-allele interferes with the splicing reaction and a protein that is usually expressed on the finger skin is not expressed anymore leading to the abscence of fingerprints.		
+				smarcad1-short-text	You don't have fingerprints, good luck with border controls!		
+	http://www.pnas.org/content/105/37/13987.long	FOXO3	gène	foxo3-text	The FOXO3 gene encodes a protein that controls cell death. The T-allele has been associated with longevity in Japanese (asian?) populations. Interestingly the allele in the FOXO3 gene that was associated with longevity in woman is different from the allele found in man.		
+				foxo3-short-text	Your are more likely to live at least 100 years old!		
+	https://www.nature.com/articles/tp2015219	AKT1	gène	akt1-text	The AKT1 gene encodes a protein that is expressed in the brain and controls cell survival. The C-allele enhances the psychotic reaction to Cannabis. With the introduction of cannabis for medical treatment, it is thus important to understand how different individuals react to its consumption.		
+				akt1-short-text	Don't smoke cannabis - you might have a strong reaction to it.		
+outro		outro	vidéo				
+page statique		ADN	glossar				
+page statique		génome	glossar				
+page statique		chromosome	glossar	gloss-chromosome	The chromosome  .....		
+page statique		gène	glossar				
+page statique		protéine	glossar				
+page statique		ARN	glossar				
+page statique		transcription	glossar				
+page statique		translation	glossar				
+page statique		diversité	glossar				
+page statique		génétique	glossar				
+page statique		single nucleotide polymorphism	glossar				
+page statique		phénotype	glossar				
+page statique		exon	glossar				
+page statique		intron	glossar				
+page statique		précurseur ARN messageur	glossar				
+page statique		splicing	glossar				
+page statique		spliceosome	glossar				
+page statique		structure secondaire	glossar				
+page statique		splicing enhancer	glossar				
+page statique		SR protein	glossar				
+page statique		splice site	glossar				
+page statique		5'-cap	glossar				
+page statique		3'-tail	glossar				
+page statique		UTR	glossar				
