@@ -10,8 +10,8 @@
     "transcriptEndPosition": 152115454,
     "relativePositionPercentage": 0.61,
     "transcriptDirection": "REVERSE_STRAND",
-    "exonsCount": 4,
-    "exonsRealLength": 5826,
+    "exonsCount": 3,
+    "exonsRealLength": 5827,
     "geneRealLength": 9146,
     "levelData": [
       {
@@ -40,15 +40,7 @@
       },
       {
         "type": "exon",
-        "realLength": 852
-      },
-      {
-        "type": "snp",
-        "realLength": 1
-      },
-      {
-        "type": "exon",
-        "realLength": 1376
+        "realLength": 2229
       },
       {
         "type": "snp",
@@ -212,7 +204,7 @@
     "relativePositionPercentage": 0.56,
     "transcriptDirection": "REVERSE_STRAND",
     "exonsCount": 18,
-    "exonsRealLength": 5778,
+    "exonsRealLength": 5779,
     "geneRealLength": 49377,
     "levelData": [
       {
@@ -241,11 +233,7 @@
       },
       {
         "type": "exon",
-        "realLength": 83
-      },
-      {
-        "type": "snp",
-        "realLength": 1
+        "realLength": 84
       },
       {
         "type": "intron",
