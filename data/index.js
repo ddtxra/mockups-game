@@ -14,10 +14,10 @@ records.forEach(function(line) {
 
 // Read stop codons
 var transcriptStopCodonsMap = {};
-var content = fs.readFileSync('stop-codons.tsv', 'utf8');
+var content = fs.readFileSync('stopcodons_transcript.txt', 'utf8');
 var stopRecords = syncparse(content, {delimiter: '\t'});
 stopRecords.forEach(function(line) {
-    transcriptStopCodonsMap[line[0]] = line[1]
+    transcriptStopCodonsMap[line[0]] = line[2]
 })
 
 console.log(transcriptStopCodonsMap)
