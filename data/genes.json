@@ -247,7 +247,8 @@
 		"chromosome": "6",
 		"description": "This genes is responsible for longevity in asian man.",
 		"mutationInfo": {
-			"rsName": "rs2802292 (first snp)",
+			"DEBUG_INFO" : "This is the first snp only valid for MALES", 
+			"rsName": "rs2802292",
 			"sex": ["H"],
 			"populationBackground": ["asian"],
 			"type": "intron variant",
@@ -255,7 +256,8 @@
 			"alleles": "heterozygous"
 		},
 		"mutationInfoAlternative": {
-			"rsName": "rs1935949 (second snp)",
+			"DEBUG_INFO" : "This is the second snp only valid for FEMALES", 
+			"rsName": "rs1935949",
 			"sex": ["F"],
 			"populationBackground": ["asian"],
 			"type": "intron variant",
@@ -752,6 +754,7 @@
 			"alleles": "heterozygous"
 		},
 		"externalLinks": {
+			"chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-7/?g=vivre-longtemps",
 			"uniprot": "P05121"
 		}
 	}
