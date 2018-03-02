@@ -235,6 +235,9 @@
             }
             totalChromosomeCount["Chr" + gene.chromosome] += 1;
 
+            var snpType = "";
+            var previousClass = "";
+            var skipNextSum = false;
             gene.levelData.forEach(function (ld) {
                 normalizeLength(ld);
                 if(!classCount[ld.class]){
@@ -243,16 +246,38 @@
                 if(!totalClassCount[ld.class]){
                     totalClassCount[ld.class] = 0;
                 }
-                classCount[ld.class] += 1;
-                totalClassCount[ld.class] += 1;
+
+                if(!skipNextSum){
+                    classCount[ld.class] += 1;
+                    totalClassCount[ld.class] += 1;
+                }
+
                 gene.totalNormalizedLength += ld.normalizedLength
                 if(ld.class.indexOf("intron") == -1 ){
                     gene.totalNormalizedWalkableLength += ld.normalizedLength
                 }
+
+                if(ld.class == "snp"){
+                    if(previousClass.indexOf("_intron") != -1){
+                        snpType = "intronic";
+                    }else if(previousClass == "exon"){
+                        snpType = "exonic";
+                    }else if(previousClass == "utr"){
+                        snpType = "utric";
+                    }else {
+                        console.log("WHAT IS THIS SNP???????", previousClass, gene.geneName)
+                    }
+                    skipNextSum = true;
+                }else {
+                    skipNextSum = false;
+                }
+                previousClass = ld.class;
             })
 
+            gene.snpType = snpType;
             gene.classCount = classCount;
-
+            //gene.classCount.exon = gene.classCount.exon - 1;
+            gene.proteinLength = Math.ceil((gene.exonsRealLength + 1) / 3.0)
             var gi = genesInfo.filter(g => g.geneName === gene.geneName);
             Object.assign(gene, gi[0])
 
