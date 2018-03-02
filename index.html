@@ -276,8 +276,8 @@
             minNormalizedLength = Math.min(minNormalizedLength, gene.totalNormalizedLength)
 
             if(gene.externalLinks && gene.externalLinks.uniprot){
-                gene.externalLinks.uniprot = "https://www.uniprot.org/uniprot/" + gene.externalLinks.uniprot
                 gene.externalLinks.nextprot = "https://www.nextprot.org/entry/NX_" + gene.externalLinks.uniprot
+                gene.externalLinks.uniprot = "https://www.uniprot.org/uniprot/" + gene.externalLinks.uniprot
             }
 
             if(gene.externalLinks && gene.externalLinks.pubmed){
