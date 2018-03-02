@@ -39,11 +39,11 @@
         <div id="normParams" class='collapse'>
             <p>Introns are the non-coding parts of the gene (represented as the holes), which we could classify in 5 different classes for the game:</p>
             <ul>
-                <li><label>small-intron is smaller than </label><input id="small-intron" type="number" value="5000">&nbsp;bps and normalized value is:<input id="small-intron-norm" type="number" value="1">units. With this type of intron we could say the avatar could easily jump.</li>
-                <li><label>medium-intron is smaller than </label><input id="medium-intron" type="number" value="10000">&nbsp;bps and normalized value is:<input id="medium-intron-norm" type="number" value="5">units. With this type of intron we could say there are 1, 2 splicies (rocks) that the avatar need to jump on top to traverse the holw</li>
-                <li><label>large-intron is smaller than </label><input id="large-intron" type="number" value="15000">&nbsp;bps and normalized value is:<input id="large-intron-norm" type="number" value="10">units. With this type of intron we could say that there is a spliceosome that moves</li>
-                <li><label>big-intron is smaller than </label><input id="big-intron" type="number" value="20000">&nbsp;bps and normalized value is:<input id="big-intron-norm" type="number" value="20">units.  With this type of intron we could say that there is a spliceosome that moves and it is more complicated</li>
-                <li><label>huge-intron is equal or bigger than </label><input id="huge-intron" type="number" value="20000">&nbsp;bps and normalized value is:<input id="huge-intron-norm" type="number"  value="50">units. With this type of intron there could be an SR protein before and the avatar would be propulsated (I think it is easy for the avatar)</li>
+                <li><label>small_intron is smaller than </label><input id="small_intron" type="number" value="5000">&nbsp;bps and normalized value is:<input id="small_intron-norm" type="number" value="1">units. With this type of intron we could say the avatar could easily jump.</li>
+                <li><label>medium_intron is smaller than </label><input id="medium_intron" type="number" value="10000">&nbsp;bps and normalized value is:<input id="medium_intron-norm" type="number" value="5">units. With this type of intron we could say there are 1, 2 splicies (rocks) that the avatar need to jump on top to traverse the holw</li>
+                <li><label>large_intron is smaller than </label><input id="large_intron" type="number" value="15000">&nbsp;bps and normalized value is:<input id="large_intron-norm" type="number" value="10">units. With this type of intron we could say that there is a spliceosome that moves</li>
+                <li><label>big_intron is smaller than </label><input id="big_intron" type="number" value="20000">&nbsp;bps and normalized value is:<input id="big_intron-norm" type="number" value="20">units.  With this type of intron we could say that there is a spliceosome that moves and it is more complicated</li>
+                <li><label>huge_intron is equal or bigger than </label><input id="huge_intron" type="number" value="20000">&nbsp;bps and normalized value is:<input id="huge_intron-norm" type="number"  value="50">units. With this type of intron there could be an SR protein before and the avatar would be propulsated (I think it is easy for the avatar)</li>
             </ul>
             <p>Exons (includes stop_codon, snp, start_codon) are relatively smallers (average is 500bps) compared to the introns (10000bps) and a continous normalisation approach was adopted:</p>
             <ul>
@@ -187,35 +187,34 @@
 
         //Based on histogram in R
         //hist(log(exons$V6), breaks=5, col="lightgreen")
-        if (number < parseInt($("#small-intron").val()))
+        if (number < parseInt($("#small_intron").val()))
             return {
-                class: "small-intron",
-                normalizedLength: parseInt($("#small-intron-norm").val())
+                class: "small_intron",
+                normalizedLength: parseInt($("#small_intron-norm").val())
             } //simple jump --> most of them end up in this category
-        if (number < parseInt($("#medium-intron").val()))
+        if (number < parseInt($("#medium_intron").val()))
             return {
-                class: "medium-intron",
-                normalizedLength: parseInt($("#medium-intron-norm").val())
+                class: "medium_intron",
+                normalizedLength: parseInt($("#medium_intron-norm").val())
             } //mutiple jumps (kind of rocks) 
-        if (number < parseInt($("#large-intron").val()))
+        if (number < parseInt($("#large_intron").val()))
             return {
-                class: "large-intron",
-                normalizedLength: parseInt($("#large-intron-norm").val())
+                class: "large_intron",
+                normalizedLength: parseInt($("#large_intron-norm").val())
             } //spliceosome
-        if (number < parseInt($("#big-intron").val()))
+        if (number < parseInt($("#big_intron").val()))
             return {
-                class: "big-intron",
-                normalizedLength: parseInt($("#big-intron-norm").val())
+                class: "big_intron",
+                normalizedLength: parseInt($("#big_intron-norm").val())
             } //Complicated spliceosome
         return {
-            class: "huge-intron",
-            normalizedLength: parseInt($("#huge-intron-norm").val())
+            class: "huge_intron",
+            normalizedLength: parseInt($("#huge_intron-norm").val())
         } //SR protein (Catapult)
     };
     
 
     function renderGenes(genesInfo, genesData) {
-
 
         maximalExon = 0;
         minimalExon = 0;
@@ -276,11 +275,11 @@
         $("#maxExonsCount").text(maximalExon)
         $("#minExonsCount").text(minimalExon)
         $("#intronsDist").text("");
-        $("#intronsDist").append("small-introns:" + totalClassCount["small-intron"] + " ")
-        $("#intronsDist").append("medium-introns:" + totalClassCount["medium-intron"] + " ")
-        $("#intronsDist").append("big-introns:" + totalClassCount["big-intron"] + " ")
-        $("#intronsDist").append("large-introns:" + totalClassCount["large-intron"] + " ")
-        $("#intronsDist").append("huge-introns:" + totalClassCount["huge-intron"] + " ")
+        $("#intronsDist").append("small_introns:" + totalClassCount["small_intron"] + " ")
+        $("#intronsDist").append("medium_introns:" + totalClassCount["medium_intron"] + " ")
+        $("#intronsDist").append("big_introns:" + totalClassCount["big_intron"] + " ")
+        $("#intronsDist").append("large_introns:" + totalClassCount["large_intron"] + " ")
+        $("#intronsDist").append("huge_introns:" + totalClassCount["huge_intron"] + " ")
 
         var g = 1;
         genesSorted.forEach(function (gene) {
@@ -341,11 +340,11 @@
             html += "<br><b>Coding Direction: </b>" + gene.transcriptDirection;
 
             html += "<br><br>THIS CAN BE CHANGED DEPENDING ON THE NORMALIZATION PARAMETERS:<br><b>Normalized Gene Length: </b>"+ gene.totalNormalizedLength + " units (walkable: " + gene.totalNormalizedWalkableLength + " units -> after removing introns), composed by <b>exons:</b> " + gene.classCount.exon + 
-                    "&nbsp;&nbsp;<b>small-introns:</b> " + (gene.classCount["small-intron"] ? gene.classCount["small-intron"] : "0")  + 
-                    "&nbsp;&nbsp;<b>medium-introns:</b> " + (gene.classCount["medium-intron"] ? gene.classCount["medium-intron"] : "0")  + 
-                    "&nbsp;&nbsp;<b>large-introns:</b> " + (gene.classCount["large-intron"] ? gene.classCount["large-intron"] : "0")  + 
-                    "&nbsp;&nbsp;<b>big-introns:</b> " + (gene.classCount["big-intron"] ? gene.classCount["big-intron"] : "0")  + 
-                    "&nbsp;&nbsp;<b>huge-introns:</b> " + (gene.classCount["huge-intron"] ? gene.classCount["huge-intron"] : "0")  + 
+                    "&nbsp;&nbsp;<b>small_introns:</b> " + (gene.classCount["small_intron"] ? gene.classCount["small_intron"] : "0")  + 
+                    "&nbsp;&nbsp;<b>medium_introns:</b> " + (gene.classCount["medium_intron"] ? gene.classCount["medium_intron"] : "0")  + 
+                    "&nbsp;&nbsp;<b>large_introns:</b> " + (gene.classCount["large_intron"] ? gene.classCount["large_intron"] : "0")  + 
+                    "&nbsp;&nbsp;<b>big_introns:</b> " + (gene.classCount["big_intron"] ? gene.classCount["big_intron"] : "0")  + 
+                    "&nbsp;&nbsp;<b>huge_introns:</b> " + (gene.classCount["huge_intron"] ? gene.classCount["huge_intron"] : "0")  + 
                     "<br><b>Sentence in the beginning of the game with the animation (TBC):</b><br><i> Only " + codingPercentage + "% of this gene encodes a protein: Those coding blocks, are called exons! The rest of the gene, is composed by introns and untranslated regions (UTR). <br>Once finished you will revealed the secret of this gene and associated protein! But to find out its secret, you will need first to avoid introns by jumping on top of them and collect the variant, start and stop codons! Good Luck!</i>";
 
             html += "<br><br>JSON:"
@@ -377,11 +376,6 @@
             html += ((getProteinLink(gene, "pubmed") !=="") ? getProteinLink(gene, "pubmed") : "???")
             html += ((getProteinLink(gene, "snpedia") !=="") ? getProteinLink(gene, "snpedia") : "???")
             
-            if(gene["3dImage"]){
-                html += "<br><br><b>Protein Image (careful to have no copyright)</b>:<br>"
-                html += "<br><img width='250px' src='" + gene["3dImage"] + "'></img>";
-            }
-
             html += "<br><b>Links to other resources (like swissdrug)</b><br>"
 
             if(gene.debugInfo) {

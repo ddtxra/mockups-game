@@ -15,7 +15,6 @@
 		"debugInfo": {
 			"img": "http://kidshealth.org/EN/images/illustrations/sickleCell-400x214-rd1-enIL.jpg"
 		},
-		"3dImage": "data/assets/proteins/HBB3D.png",
 		"externalLinks": {
 			"uniprot": "P68871",
 			"pubmed": "20552021",
@@ -39,7 +38,6 @@
 		"debugInfo": {
 			"img": "http://mercredie.com/wp-content/uploads/2014/08/mercredie-blog-beaute-cheveux-frises-pre-wash-post-wash-conseils-cheveux-naturels-crepus-frises-boucles.jpg"
 		},
-		"3dImage": "data/assets/proteins/unknown3D.png",
 		"externalLinks": {
 			"uniprot": "Q07283",
 			"chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-1/?g=de-beaux-cheveux"
@@ -485,7 +483,6 @@
 		"superVariant": true,
 		"geneName": "ALDH2",
 		"transcript": "ENST00000261733",
-		"3dImage": "data/assets/proteins/ALDH23D.png",
 		"chromosome": "12",
 		"description": "Chromosomewalk : Gène impliqué dans la tolérance à l’alcool. game : Avec une choppe de bière a la main...",
 		"mutationInfo": {
@@ -690,7 +687,6 @@
 			"nucleotideChange": ["G", "A"],
 			"alleles": "heterozygous"
 		},
-		"3dImage": "data/assets/proteins/unknown3D.png",
 		"externalLinks": {
 			"uniprot": "P19235",
 			"chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-19/?g=medailles-olympiques"
