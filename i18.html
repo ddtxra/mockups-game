@@ -25,7 +25,8 @@
     </script>
   </head>
   <body>
- 
+
+    <a target="_blank" href="https://docs.google.com/spreadsheets/d/1Yt9CPdfSEvMlRMGYaLUqkTiSzln9H_oXDHRHtnitfxI/edit#gid=0">Add / Edit Translations on Google Docs</a>
     <!--Add buttons to initiate auth sequence and sign out-->
     <button id="authorize-button" style="display: none;">Authorize</button>
     <button id="signout-button" style="display: none;">Sign Out</button>
@@ -36,6 +37,7 @@
     <textarea id="fr-content" rows="10" cols="600" wrap="hard"></textarea>
     <a id="download-de" href="#">Download German</a>
     <textarea id="de-content" rows="10" cols="600" wrap="hard"></textarea>
+
 
     <script type="text/javascript">
       // Client ID and API key from the Developer Console
@@ -139,9 +141,11 @@
             for (i = 0; i < range.values.length; i++) {
               var row = range.values[i];
               // Print columns A and E, which correspond to indices 0 and 4.
-              appendPre("en", row[0] + '=' + row[1]);
-              appendPre("fr", row[0] + '=' + row[2]);
-              appendPre("de", row[0] + '=' + row[3]);
+              if(row[0] !== undefined){
+                appendPre("en", row[0] + '=' + row[1]);
+                appendPre("fr", row[0] + '=' + row[2]);
+                appendPre("de", row[0] + '=' + row[3]);
+              }
             }
           } else {
             appendPre('No data found.');
