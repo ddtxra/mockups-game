@@ -8,8 +8,21 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style>
       body {margin:10px}
-      textarea { font-size: 8px; }
+      textarea { font-size: 10px; }
     </style>
+
+    <script>
+      function download(lang) {
+      var text = $('#' + lang + '-content').val();
+      var element = document.createElement('a');
+      element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+      element.setAttribute('download', "genome-jumper-" + lang);
+      element.style.display = 'none';
+      document.body.appendChild(element);
+      element.click();
+      document.body.removeChild(element);
+    }
+    </script>
   </head>
   <body>
  
@@ -17,12 +30,12 @@
     <button id="authorize-button" style="display: none;">Authorize</button>
     <button id="signout-button" style="display: none;">Sign Out</button>
 
-    <b>EN</b>
-    <textarea id="en-content" rows="10" cols="600" wrap="hard" id="content"></textarea>
-    <b>FR</b>
-    <textarea id="fr-content" rows="10" cols="600" wrap="hard" id="content"></textarea>
-    <b>DE</b>
-    <textarea id="de-content" rows="10" cols="600" wrap="hard" id="content"></textarea>
+    <a id="download-en" href="#">Download English</a>
+    <textarea id="en-content" rows="10" cols="600" wrap="hard"></textarea>
+    <a id="download-fr" href="#">Download French</a>
+    <textarea id="fr-content" rows="10" cols="600" wrap="hard"></textarea>
+    <a id="download-de" href="#">Download German</a>
+    <textarea id="de-content" rows="10" cols="600" wrap="hard"></textarea>
 
     <script type="text/javascript">
       // Client ID and API key from the Developer Console
@@ -38,6 +51,10 @@
 
       var authorizeButton = document.getElementById('authorize-button');
       var signoutButton = document.getElementById('signout-button');
+
+      $('#download-en').click( function(e) {e.preventDefault(); download("en"); return false; } );
+      $('#download-fr').click( function(e) {e.preventDefault(); download("fr"); return false; } );
+      $('#download-de').click( function(e) {e.preventDefault(); download("de"); return false; } );
 
       /**
        *  On load, called to load the auth2 library and API client library.
