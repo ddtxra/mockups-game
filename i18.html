@@ -3,6 +3,13 @@
   <head>
     <title>Google Sheets API Quickstart</title>
     <meta charset='utf-8' />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+      body {margin:10px}
+      textarea { font-size: 8px; }
+    </style>
   </head>
   <body>
  
@@ -10,7 +17,12 @@
     <button id="authorize-button" style="display: none;">Authorize</button>
     <button id="signout-button" style="display: none;">Sign Out</button>
 
-    <pre id="content"></pre>
+    <b>EN</b>
+    <textarea id="en-content" rows="10" cols="600" wrap="hard" id="content"></textarea>
+    <b>FR</b>
+    <textarea id="fr-content" rows="10" cols="600" wrap="hard" id="content"></textarea>
+    <b>DE</b>
+    <textarea id="de-content" rows="10" cols="600" wrap="hard" id="content"></textarea>
 
     <script type="text/javascript">
       // Client ID and API key from the Developer Console
@@ -90,8 +102,8 @@
        *
        * @param {string} message Text to be placed in pre element.
        */
-      function appendPre(message) {
-        var pre = document.getElementById('content');
+      function appendPre(lang, message) {
+        var pre = document.getElementById(lang + '-content');
         var textContent = document.createTextNode(message + '\n');
         pre.appendChild(textContent);
       }
@@ -103,14 +115,16 @@
       function listMajors() {
         gapi.client.sheets.spreadsheets.values.get({
           spreadsheetId: '1Yt9CPdfSEvMlRMGYaLUqkTiSzln9H_oXDHRHtnitfxI',
-          range: 'Sheet1!E4:F',
+          range: 'Sheet1!E4:H',
         }).then(function(response) {
           var range = response.result;
           if (range.values.length > 0) {
             for (i = 0; i < range.values.length; i++) {
               var row = range.values[i];
               // Print columns A and E, which correspond to indices 0 and 4.
-              appendPre(row[0] + '=' + row[1]);
+              appendPre("en", row[0] + '=' + row[1]);
+              appendPre("fr", row[0] + '=' + row[2]);
+              appendPre("de", row[0] + '=' + row[3]);
             }
           } else {
             appendPre('No data found.');
