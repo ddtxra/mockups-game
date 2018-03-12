@@ -121,9 +121,12 @@
        *
        * @param {string} message Text to be placed in pre element.
        */
-      function appendPre(lang, message) {
+      function appendPre(lang, m1, m2) {
+        if(m2 !== undefined){
+          m2 = m2.replace(/(\r\n\t|\n|\r\t)/gm,"<br/>");
+        }
         var pre = document.getElementById(lang + '-content');
-        var textContent = document.createTextNode(message + '\n');
+        var textContent = document.createTextNode(m1 + "=" + m2 + '\n');
         pre.appendChild(textContent);
       }
 
@@ -142,9 +145,9 @@
               var row = range.values[i];
               // Print columns A and E, which correspond to indices 0 and 4.
               if(row[0] !== undefined){
-                appendPre("en", row[0] + '=' + row[1]);
-                appendPre("fr", row[0] + '=' + row[2]);
-                appendPre("de", row[0] + '=' + row[3]);
+                appendPre("en", row[0] , row[1]);
+                appendPre("fr", row[0] , row[2]);
+                appendPre("de", row[0] , row[3]);
               }
             }
           } else {
