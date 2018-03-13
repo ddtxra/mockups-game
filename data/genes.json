@@ -15,6 +15,12 @@
 		"debugInfo": {
 			"img": "http://kidshealth.org/EN/images/illustrations/sickleCell-400x214-rd1-enIL.jpg"
 		},
+	        "publications": [
+			{  
+				"label" : "Haptoglobin and sickle cell polymorphisms and risk of active trachoma in Gambian children.",
+			    	"url" : "https://www.ncbi.nlm.nih.gov/pubmed/?term=20552021"
+			}
+		],
 		"externalLinks": {
 			"uniprot": "P68871",
 			"pubmed": "20552021",
