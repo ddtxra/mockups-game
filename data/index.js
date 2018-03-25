@@ -20,7 +20,7 @@ stopRecords.forEach(function(line) {
     transcriptStopCodonsMap[line[0]] = line[2]
 })
 
-console.log(transcriptStopCodonsMap)
+//console.log(transcriptStopCodonsMap)
 
 var parser = parse({delimiter: '\t'}, function (err, data) {
 
@@ -112,26 +112,52 @@ var parser = parse({delimiter: '\t'}, function (err, data) {
     var selectedTranscript = genes[0];
     var currentGeneName = selectedTranscript.geneName;
     var maxLengthCurrentTranscript = selectedTranscript.geneRealLength;
-    
+
+    //For PCDH15 we choose one ENST
+    //                if((currentGene.geneName == "PCDH15") && (currentGene.transcript == "ENST00000395442")){
+
+    console.log("-- ALL ----");
+    for(var i=0; i < genes.length; i++){
+        var cg = genes[i];
+        console.log(cg.id);
+    }
+
     for(var i=0; i < genes.length; i++){
         var currentGene = genes[i];
         if(currentGene.geneName !== currentGeneName) //If a new gene, put the last gene selected 
         {
             selectedTranscripts.push(selectedTranscript)
+            //console.log(selectedTranscript.id);
             maxLengthCurrentTranscript = selectedTranscript.geneRealLength;
             selectedTranscript = currentGene;
             var currentGeneName = currentGene.geneName;
             
         }else {
-            if(currentGene.geneRealLength > selectedTranscript.geneRealLength){
+
+            if(currentGene.geneName === "PCDH15"){
+                if(currentGene.transcript === "ENST00000395442"){
+                    selectedTranscript = currentGene;
+                }
+            }else if(currentGene.geneName === "SMARCAD1"){
+                if(currentGene.transcript === "ENST00000509418"){
+                    selectedTranscript = currentGene;
+                }
+            }else if(currentGene.geneRealLength > selectedTranscript.geneRealLength){
                 selectedTranscript = currentGene;
+                console.log("CHANGE TO " + currentGene.id);
             }
         }
 
     }
 
     selectedTranscripts.push(selectedTranscript)
-    
+
+    console.log("-- CHOSEN ----");
+    for(var i=0; i < selectedTranscripts.length; i++){
+        console.log(selectedTranscripts[i].id);
+
+    }
+
     //console.log(JSON.stringify(selectedTranscripts))
     
     fs.writeFile('data.json', JSON.stringify(selectedTranscripts, null, 2), 'utf8');

@@ -1003,99 +1003,22 @@
     ]
   },
   {
-    "id": "SMARCAD1-ENST00000359052-Chr4",
+    "id": "SMARCAD1-ENST00000509418-Chr4",
     "geneName": "SMARCAD1",
-    "transcript": "ENST00000359052",
-    "stopCodon": "UGA",
+    "transcript": "ENST00000509418",
     "chromosome": "4",
     "chromosomeLength": 190214555,
-    "transcriptStartPosition": 94207611,
-    "transcriptEndPosition": 94291290,
+    "transcriptStartPosition": 94253294,
+    "transcriptEndPosition": 94289704,
     "relativePositionPercentage": 0.5,
     "transcriptDirection": "FORWARD_STRAND",
-    "exonsCount": 23,
-    "exonsRealLength": 3083,
-    "geneRealLength": 83730,
+    "exonsCount": 15,
+    "exonsRealLength": 1787,
+    "geneRealLength": 36444,
     "levelData": [
       {
         "type": "utr",
-        "realLength": 125
-      },
-      {
-        "type": "intron",
-        "realLength": 612
-      },
-      {
-        "type": "utr",
-        "realLength": 50
-      },
-      {
-        "type": "start_codon",
-        "realLength": 3
-      },
-      {
-        "type": "exon",
-        "realLength": 188
-      },
-      {
-        "type": "intron",
-        "realLength": 17536
-      },
-      {
-        "type": "exon",
-        "realLength": 178
-      },
-      {
-        "type": "intron",
-        "realLength": 7659
-      },
-      {
-        "type": "exon",
-        "realLength": 169
-      },
-      {
-        "type": "intron",
-        "realLength": 2831
-      },
-      {
-        "type": "exon",
-        "realLength": 67
-      },
-      {
-        "type": "intron",
-        "realLength": 3889
-      },
-      {
-        "type": "exon",
-        "realLength": 101
-      },
-      {
-        "type": "intron",
-        "realLength": 8649
-      },
-      {
-        "type": "exon",
-        "realLength": 102
-      },
-      {
-        "type": "intron",
-        "realLength": 998
-      },
-      {
-        "type": "exon",
-        "realLength": 82
-      },
-      {
-        "type": "intron",
-        "realLength": 1784
-      },
-      {
-        "type": "exon",
-        "realLength": 392
-      },
-      {
-        "type": "intron",
-        "realLength": 665
+        "realLength": 378
       },
       {
         "type": "snp",
@@ -1106,8 +1029,16 @@
         "realLength": 11035
       },
       {
+        "type": "utr",
+        "realLength": 10
+      },
+      {
+        "type": "start_codon",
+        "realLength": 3
+      },
+      {
         "type": "exon",
-        "realLength": 200
+        "realLength": 189
       },
       {
         "type": "intron",
@@ -1175,11 +1106,11 @@
       },
       {
         "type": "intron",
-        "realLength": 191
+        "realLength": 197
       },
       {
         "type": "exon",
-        "realLength": 128
+        "realLength": 122
       },
       {
         "type": "intron",
@@ -1227,7 +1158,7 @@
       },
       {
         "type": "utr",
-        "realLength": 1757
+        "realLength": 171
       }
     ]
   },
@@ -2367,19 +2298,18 @@
     ]
   },
   {
-    "id": "PCDH15-ENST00000373965-Chr10",
+    "id": "PCDH15-ENST00000395442-Chr10",
     "geneName": "PCDH15",
-    "transcript": "ENST00000373965",
-    "stopCodon": "UGA",
+    "transcript": "ENST00000395442",
     "chromosome": "10",
     "chromosomeLength": 133797422,
-    "transcriptStartPosition": 53802771,
+    "transcriptStartPosition": 53808070,
     "transcriptEndPosition": 54801291,
     "relativePositionPercentage": 0.4,
     "transcriptDirection": "REVERSE_STRAND",
-    "exonsCount": 35,
-    "exonsRealLength": 5029,
-    "geneRealLength": 998593,
+    "exonsCount": 11,
+    "exonsRealLength": 1948,
+    "geneRealLength": 993246,
     "levelData": [
       {
         "type": "utr",
@@ -2475,203 +2405,11 @@
       },
       {
         "type": "intron",
-        "realLength": 18048
+        "realLength": 404391
       },
       {
         "type": "exon",
-        "realLength": 207
-      },
-      {
-        "type": "intron",
-        "realLength": 10416
-      },
-      {
-        "type": "exon",
-        "realLength": 135
-      },
-      {
-        "type": "intron",
-        "realLength": 1542
-      },
-      {
-        "type": "exon",
-        "realLength": 150
-      },
-      {
-        "type": "intron",
-        "realLength": 30152
-      },
-      {
-        "type": "exon",
-        "realLength": 194
-      },
-      {
-        "type": "intron",
-        "realLength": 20094
-      },
-      {
-        "type": "exon",
-        "realLength": 133
-      },
-      {
-        "type": "intron",
-        "realLength": 42813
-      },
-      {
-        "type": "exon",
-        "realLength": 80
-      },
-      {
-        "type": "intron",
-        "realLength": 10561
-      },
-      {
-        "type": "exon",
-        "realLength": 94
-      },
-      {
-        "type": "intron",
-        "realLength": 12447
-      },
-      {
-        "type": "exon",
-        "realLength": 129
-      },
-      {
-        "type": "intron",
-        "realLength": 43561
-      },
-      {
-        "type": "exon",
-        "realLength": 306
-      },
-      {
-        "type": "intron",
-        "realLength": 2477
-      },
-      {
-        "type": "exon",
-        "realLength": 225
-      },
-      {
-        "type": "intron",
-        "realLength": 24428
-      },
-      {
-        "type": "exon",
-        "realLength": 117
-      },
-      {
-        "type": "intron",
-        "realLength": 33758
-      },
-      {
-        "type": "exon",
-        "realLength": 141
-      },
-      {
-        "type": "intron",
-        "realLength": 1909
-      },
-      {
-        "type": "exon",
-        "realLength": 113
-      },
-      {
-        "type": "intron",
-        "realLength": 18758
-      },
-      {
-        "type": "exon",
-        "realLength": 110
-      },
-      {
-        "type": "intron",
-        "realLength": 1912
-      },
-      {
-        "type": "exon",
-        "realLength": 141
-      },
-      {
-        "type": "intron",
-        "realLength": 35446
-      },
-      {
-        "type": "exon",
-        "realLength": 128
-      },
-      {
-        "type": "intron",
-        "realLength": 36387
-      },
-      {
-        "type": "exon",
-        "realLength": 216
-      },
-      {
-        "type": "intron",
-        "realLength": 9380
-      },
-      {
-        "type": "exon",
-        "realLength": 89
-      },
-      {
-        "type": "intron",
-        "realLength": 16680
-      },
-      {
-        "type": "exon",
-        "realLength": 177
-      },
-      {
-        "type": "intron",
-        "realLength": 8788
-      },
-      {
-        "type": "exon",
-        "realLength": 219
-      },
-      {
-        "type": "intron",
-        "realLength": 2743
-      },
-      {
-        "type": "exon",
-        "realLength": 9
-      },
-      {
-        "type": "intron",
-        "realLength": 1018
-      },
-      {
-        "type": "exon",
-        "realLength": 156
-      },
-      {
-        "type": "intron",
-        "realLength": 2253
-      },
-      {
-        "type": "exon",
-        "realLength": 6
-      },
-      {
-        "type": "intron",
-        "realLength": 14473
-      },
-      {
-        "type": "exon",
-        "realLength": 109
-      },
-      {
-        "type": "intron",
-        "realLength": 3427
-      },
-      {
-        "type": "exon",
-        "realLength": 550
+        "realLength": 853
       },
       {
         "type": "stop_codon",
@@ -2679,7 +2417,7 @@
       },
       {
         "type": "utr",
-        "realLength": 3809
+        "realLength": 623
       }
     ]
   },

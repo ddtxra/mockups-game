@@ -175,9 +175,9 @@
 		}
 	},
 	{
-		"id": "SMARCAD1-ENST00000359052-Chr4",
+		"id": "SMARCAD1-ENST00000509418-Chr4",
 		"geneName": "SMARCAD1",
-		"transcript": "ENST00000359052",
+		"transcript": "ENST00000509418",
 		"chromosome": "4",
 		"description": "Chromosomewalk : Gène impliqué dans la formation des crêtes épidermiques de nos doigts. Les personnes chez lesquelles ce gène est défectueux n’ont pas d’empreinte digitale (immigration delay disease) et ont souvent des problèmes pour passer la douane ! …  game : No finger print",
 		"mutationInfo": {
@@ -395,10 +395,10 @@
 			"chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-11/?g=medailles-olympiques"
 		}
 	}, {
-		"id": "PCDH15-ENST00000373965-Chr10",
+		"id": "PCDH15-ENST00000395442-Chr10",
 		"superVariant": true,
 		"geneName": "PCDH15",
-		"transcript": "ENST00000373965",
+		"transcript": "ENST00000395442",
 		"chromosome": "10",
 		"description": "Chromosomewalk : Gène associé à une surdité congénitale et à une perte de la vision. game : Usher syndrome un gars avec lunette noir et appareil auditif...",
 		"descriptionImg": "http://www.ushersyndroom.nl/wp-content/uploads/2016/12/The-Ushers-infographic-EN-Foundation-Usher-syndrome-DEF.001-kopie.jpg",
