@@ -3390,7 +3390,7 @@
     "id": "HERC2-hg38_sibGene_HTR011213_15_189_5-Chr15",
     "geneName": "HERC2",
     "transcript": "hg38_sibGene_HTR011213_15_189_5",
-    "stopCodon": "UGG",
+    "stopCodon": "UGA",
     "chromosome": "15",
     "chromosomeLength": 101991189,
     "transcriptStartPosition": 28115281,
