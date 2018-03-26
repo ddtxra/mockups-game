@@ -553,9 +553,9 @@
 			"chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-15/"
 		}
 	}, {
-		"id": "HERC2-ENST00000261609-Chr15",
+		"id": "HERC2-hg38_sibGene_HTR011213_15_189_5-Chr15",
 		"geneName": "HERC2",
-		"transcript": "ENST00000261609",
+		"transcript": "hg38_sibGene_HTR011213_15_189_5",
 		"chromosome": "15",
 		"description": "blue eyes in combinaison with brown",
 		"descriptionImg": "http://genetics.thetech.org/sites/default/files/450Epistasis.gif",
@@ -571,6 +571,7 @@
 			"img": "https://png.pngtree.com/element_pic/00/16/07/16578993ee35437.jpg"
 		},
 		"externalLinks": {
+			"transcriptLink" : "https://ccg.vital-it.ch/cgi-bin/tromer/query_result.pl?Entry_0=hg38%3AHTR011213",
 			"uniprot": "O95714",
 			"chromosomeWalk": "http://www.chromosomewalk.ch/chromosome/chromosome-15/"
 		}

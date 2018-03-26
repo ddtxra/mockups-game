@@ -291,8 +291,12 @@
             if(gene.externalLinks &&  gene.mutationInfoAlternative && gene.mutationInfoAlternative.rsName){
                 gene.externalLinks.snpediaAlternative = "https://www.snpedia.com/index.php/" + gene.mutationInfoAlternative.rsName;
             }
+
+            //If it not defined
+            if(!gene.externalLinks.transcriptLink){
+                gene.externalLinks.transcriptLink = "http://www.ensembl.org/Homo_sapiens/transview?db=core;transcript=" + gene.transcript
+            }
             
-            gene.externalLinks.transcriptLink = "http://www.ensembl.org/Homo_sapiens/transview?db=core;transcript=" + gene.transcript
 
         })
         

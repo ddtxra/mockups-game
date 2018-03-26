@@ -1006,6 +1006,7 @@
     "id": "SMARCAD1-ENST00000509418-Chr4",
     "geneName": "SMARCAD1",
     "transcript": "ENST00000509418",
+    "stopCodon": "UGA",
     "chromosome": "4",
     "chromosomeLength": 190214555,
     "transcriptStartPosition": 94253294,
@@ -2301,6 +2302,7 @@
     "id": "PCDH15-ENST00000395442-Chr10",
     "geneName": "PCDH15",
     "transcript": "ENST00000395442",
+    "stopCodon": "UGA",
     "chromosome": "10",
     "chromosomeLength": 133797422,
     "transcriptStartPosition": 53808070,
@@ -3385,31 +3387,55 @@
     ]
   },
   {
-    "id": "HERC2-ENST00000261609-Chr15",
+    "id": "HERC2-hg38_sibGene_HTR011213_15_189_5-Chr15",
     "geneName": "HERC2",
-    "transcript": "ENST00000261609",
-    "stopCodon": "UAA",
+    "transcript": "hg38_sibGene_HTR011213_15_189_5",
+    "stopCodon": "UGG",
     "chromosome": "15",
     "chromosomeLength": 101991189,
-    "transcriptStartPosition": 28111040,
-    "transcriptEndPosition": 28322152,
+    "transcriptStartPosition": 28115281,
+    "transcriptEndPosition": 28142238,
     "relativePositionPercentage": 0.28,
     "transcriptDirection": "REVERSE_STRAND",
-    "exonsCount": 92,
-    "exonsRealLength": 14501,
-    "geneRealLength": 211301,
+    "exonsCount": 9,
+    "exonsRealLength": 1332,
+    "geneRealLength": 27179,
     "levelData": [
       {
         "type": "utr",
-        "realLength": 78
+        "realLength": 217
       },
       {
         "type": "intron",
-        "realLength": 612
+        "realLength": 391
       },
       {
         "type": "utr",
-        "realLength": 32
+        "realLength": 116
+      },
+      {
+        "type": "intron",
+        "realLength": 100
+      },
+      {
+        "type": "utr",
+        "realLength": 199
+      },
+      {
+        "type": "intron",
+        "realLength": 5739
+      },
+      {
+        "type": "utr",
+        "realLength": 215
+      },
+      {
+        "type": "intron",
+        "realLength": 3080
+      },
+      {
+        "type": "utr",
+        "realLength": 130
       },
       {
         "type": "start_codon",
@@ -3417,427 +3443,11 @@
       },
       {
         "type": "exon",
-        "realLength": 70
+        "realLength": 168
       },
       {
         "type": "intron",
-        "realLength": 21847
-      },
-      {
-        "type": "exon",
-        "realLength": 115
-      },
-      {
-        "type": "intron",
-        "realLength": 6381
-      },
-      {
-        "type": "exon",
-        "realLength": 135
-      },
-      {
-        "type": "intron",
-        "realLength": 12602
-      },
-      {
-        "type": "exon",
-        "realLength": 220
-      },
-      {
-        "type": "intron",
-        "realLength": 5064
-      },
-      {
-        "type": "exon",
-        "realLength": 101
-      },
-      {
-        "type": "intron",
-        "realLength": 459
-      },
-      {
-        "type": "exon",
-        "realLength": 157
-      },
-      {
-        "type": "intron",
-        "realLength": 1288
-      },
-      {
-        "type": "exon",
-        "realLength": 111
-      },
-      {
-        "type": "intron",
-        "realLength": 509
-      },
-      {
-        "type": "exon",
-        "realLength": 172
-      },
-      {
-        "type": "intron",
-        "realLength": 1348
-      },
-      {
-        "type": "exon",
-        "realLength": 174
-      },
-      {
-        "type": "intron",
-        "realLength": 1260
-      },
-      {
-        "type": "exon",
-        "realLength": 189
-      },
-      {
-        "type": "intron",
-        "realLength": 633
-      },
-      {
-        "type": "exon",
-        "realLength": 152
-      },
-      {
-        "type": "intron",
-        "realLength": 2492
-      },
-      {
-        "type": "exon",
-        "realLength": 158
-      },
-      {
-        "type": "intron",
-        "realLength": 87
-      },
-      {
-        "type": "exon",
-        "realLength": 114
-      },
-      {
-        "type": "intron",
-        "realLength": 2450
-      },
-      {
-        "type": "exon",
-        "realLength": 252
-      },
-      {
-        "type": "intron",
-        "realLength": 1949
-      },
-      {
-        "type": "exon",
-        "realLength": 194
-      },
-      {
-        "type": "intron",
-        "realLength": 3517
-      },
-      {
-        "type": "exon",
-        "realLength": 201
-      },
-      {
-        "type": "intron",
-        "realLength": 745
-      },
-      {
-        "type": "exon",
-        "realLength": 229
-      },
-      {
-        "type": "intron",
-        "realLength": 94
-      },
-      {
-        "type": "exon",
-        "realLength": 125
-      },
-      {
-        "type": "intron",
-        "realLength": 1355
-      },
-      {
-        "type": "exon",
-        "realLength": 179
-      },
-      {
-        "type": "intron",
-        "realLength": 5605
-      },
-      {
-        "type": "exon",
-        "realLength": 185
-      },
-      {
-        "type": "intron",
-        "realLength": 1656
-      },
-      {
-        "type": "exon",
-        "realLength": 156
-      },
-      {
-        "type": "intron",
-        "realLength": 677
-      },
-      {
-        "type": "exon",
-        "realLength": 186
-      },
-      {
-        "type": "intron",
-        "realLength": 7110
-      },
-      {
-        "type": "exon",
-        "realLength": 171
-      },
-      {
-        "type": "intron",
-        "realLength": 386
-      },
-      {
-        "type": "exon",
-        "realLength": 104
-      },
-      {
-        "type": "intron",
-        "realLength": 1002
-      },
-      {
-        "type": "exon",
-        "realLength": 151
-      },
-      {
-        "type": "intron",
-        "realLength": 2680
-      },
-      {
-        "type": "exon",
-        "realLength": 215
-      },
-      {
-        "type": "intron",
-        "realLength": 275
-      },
-      {
-        "type": "exon",
-        "realLength": 133
-      },
-      {
-        "type": "intron",
-        "realLength": 104
-      },
-      {
-        "type": "exon",
-        "realLength": 128
-      },
-      {
-        "type": "intron",
-        "realLength": 94
-      },
-      {
-        "type": "exon",
-        "realLength": 196
-      },
-      {
-        "type": "intron",
-        "realLength": 2647
-      },
-      {
-        "type": "exon",
-        "realLength": 134
-      },
-      {
-        "type": "intron",
-        "realLength": 521
-      },
-      {
-        "type": "exon",
-        "realLength": 174
-      },
-      {
-        "type": "intron",
-        "realLength": 79
-      },
-      {
-        "type": "exon",
-        "realLength": 137
-      },
-      {
-        "type": "intron",
-        "realLength": 115
-      },
-      {
-        "type": "exon",
-        "realLength": 152
-      },
-      {
-        "type": "intron",
-        "realLength": 787
-      },
-      {
-        "type": "exon",
-        "realLength": 192
-      },
-      {
-        "type": "intron",
-        "realLength": 6004
-      },
-      {
-        "type": "exon",
-        "realLength": 188
-      },
-      {
-        "type": "intron",
-        "realLength": 1385
-      },
-      {
-        "type": "exon",
-        "realLength": 193
-      },
-      {
-        "type": "intron",
-        "realLength": 1782
-      },
-      {
-        "type": "exon",
-        "realLength": 183
-      },
-      {
-        "type": "intron",
-        "realLength": 2688
-      },
-      {
-        "type": "exon",
-        "realLength": 182
-      },
-      {
-        "type": "intron",
-        "realLength": 820
-      },
-      {
-        "type": "exon",
-        "realLength": 148
-      },
-      {
-        "type": "intron",
-        "realLength": 384
-      },
-      {
-        "type": "exon",
-        "realLength": 197
-      },
-      {
-        "type": "intron",
-        "realLength": 105
-      },
-      {
-        "type": "exon",
-        "realLength": 231
-      },
-      {
-        "type": "intron",
-        "realLength": 1160
-      },
-      {
-        "type": "exon",
-        "realLength": 139
-      },
-      {
-        "type": "intron",
-        "realLength": 1301
-      },
-      {
-        "type": "exon",
-        "realLength": 144
-      },
-      {
-        "type": "intron",
-        "realLength": 4621
-      },
-      {
-        "type": "exon",
-        "realLength": 143
-      },
-      {
-        "type": "intron",
-        "realLength": 3627
-      },
-      {
-        "type": "exon",
-        "realLength": 268
-      },
-      {
-        "type": "intron",
-        "realLength": 99
-      },
-      {
-        "type": "exon",
-        "realLength": 137
-      },
-      {
-        "type": "intron",
-        "realLength": 560
-      },
-      {
-        "type": "exon",
-        "realLength": 99
-      },
-      {
-        "type": "intron",
-        "realLength": 2688
-      },
-      {
-        "type": "exon",
-        "realLength": 169
-      },
-      {
-        "type": "intron",
-        "realLength": 99
-      },
-      {
-        "type": "exon",
-        "realLength": 126
-      },
-      {
-        "type": "intron",
-        "realLength": 1810
-      },
-      {
-        "type": "exon",
-        "realLength": 109
-      },
-      {
-        "type": "intron",
-        "realLength": 108
-      },
-      {
-        "type": "exon",
-        "realLength": 140
-      },
-      {
-        "type": "intron",
-        "realLength": 4065
-      },
-      {
-        "type": "exon",
-        "realLength": 191
-      },
-      {
-        "type": "intron",
-        "realLength": 718
-      },
-      {
-        "type": "exon",
-        "realLength": 106
-      },
-      {
-        "type": "intron",
-        "realLength": 84
+        "realLength": 1505
       },
       {
         "type": "exon",
@@ -3845,223 +3455,7 @@
       },
       {
         "type": "intron",
-        "realLength": 4214
-      },
-      {
-        "type": "exon",
-        "realLength": 176
-      },
-      {
-        "type": "intron",
-        "realLength": 4066
-      },
-      {
-        "type": "exon",
-        "realLength": 112
-      },
-      {
-        "type": "intron",
-        "realLength": 3179
-      },
-      {
-        "type": "exon",
-        "realLength": 82
-      },
-      {
-        "type": "intron",
-        "realLength": 113
-      },
-      {
-        "type": "exon",
-        "realLength": 144
-      },
-      {
-        "type": "intron",
-        "realLength": 1379
-      },
-      {
-        "type": "exon",
-        "realLength": 91
-      },
-      {
-        "type": "intron",
-        "realLength": 293
-      },
-      {
-        "type": "exon",
-        "realLength": 178
-      },
-      {
-        "type": "intron",
-        "realLength": 183
-      },
-      {
-        "type": "exon",
-        "realLength": 82
-      },
-      {
-        "type": "intron",
-        "realLength": 89
-      },
-      {
-        "type": "exon",
-        "realLength": 172
-      },
-      {
-        "type": "intron",
-        "realLength": 773
-      },
-      {
-        "type": "exon",
-        "realLength": 145
-      },
-      {
-        "type": "intron",
-        "realLength": 893
-      },
-      {
-        "type": "exon",
-        "realLength": 226
-      },
-      {
-        "type": "intron",
-        "realLength": 4741
-      },
-      {
-        "type": "exon",
-        "realLength": 172
-      },
-      {
-        "type": "intron",
-        "realLength": 895
-      },
-      {
-        "type": "exon",
-        "realLength": 184
-      },
-      {
-        "type": "intron",
-        "realLength": 581
-      },
-      {
-        "type": "exon",
-        "realLength": 141
-      },
-      {
-        "type": "intron",
-        "realLength": 4403
-      },
-      {
-        "type": "exon",
-        "realLength": 192
-      },
-      {
-        "type": "intron",
-        "realLength": 10265
-      },
-      {
-        "type": "exon",
-        "realLength": 154
-      },
-      {
-        "type": "intron",
-        "realLength": 6334
-      },
-      {
-        "type": "exon",
-        "realLength": 108
-      },
-      {
-        "type": "intron",
-        "realLength": 1434
-      },
-      {
-        "type": "exon",
-        "realLength": 132
-      },
-      {
-        "type": "intron",
-        "realLength": 439
-      },
-      {
-        "type": "exon",
-        "realLength": 159
-      },
-      {
-        "type": "intron",
-        "realLength": 87
-      },
-      {
-        "type": "exon",
-        "realLength": 119
-      },
-      {
-        "type": "intron",
-        "realLength": 922
-      },
-      {
-        "type": "exon",
-        "realLength": 126
-      },
-      {
-        "type": "intron",
-        "realLength": 435
-      },
-      {
-        "type": "exon",
-        "realLength": 156
-      },
-      {
-        "type": "intron",
-        "realLength": 393
-      },
-      {
-        "type": "exon",
-        "realLength": 116
-      },
-      {
-        "type": "intron",
-        "realLength": 102
-      },
-      {
-        "type": "exon",
-        "realLength": 199
-      },
-      {
-        "type": "intron",
-        "realLength": 5741
-      },
-      {
-        "type": "exon",
-        "realLength": 215
-      },
-      {
-        "type": "intron",
-        "realLength": 2649
-      },
-      {
-        "type": "exon",
-        "realLength": 178
-      },
-      {
-        "type": "intron",
-        "realLength": 393
-      },
-      {
-        "type": "exon",
-        "realLength": 162
-      },
-      {
-        "type": "intron",
-        "realLength": 1507
-      },
-      {
-        "type": "exon",
-        "realLength": 92
-      },
-      {
-        "type": "intron",
-        "realLength": 202
+        "realLength": 200
       },
       {
         "type": "exon",
@@ -4069,7 +3463,7 @@
       },
       {
         "type": "intron",
-        "realLength": 4971
+        "realLength": 4969
       },
       {
         "type": "exon",
@@ -4077,7 +3471,7 @@
       },
       {
         "type": "intron",
-        "realLength": 773
+        "realLength": 771
       },
       {
         "type": "exon",
@@ -4085,7 +3479,7 @@
       },
       {
         "type": "intron",
-        "realLength": 2609
+        "realLength": 2607
       },
       {
         "type": "exon",
@@ -4093,7 +3487,7 @@
       },
       {
         "type": "intron",
-        "realLength": 874
+        "realLength": 872
       },
       {
         "type": "snp",
@@ -4101,7 +3495,7 @@
       },
       {
         "type": "intron",
-        "realLength": 3318
+        "realLength": 3317
       },
       {
         "type": "exon",
@@ -4109,7 +3503,7 @@
       },
       {
         "type": "intron",
-        "realLength": 155
+        "realLength": 153
       },
       {
         "type": "exon",
@@ -4117,43 +3511,11 @@
       },
       {
         "type": "intron",
-        "realLength": 1125
+        "realLength": 1123
       },
       {
         "type": "exon",
-        "realLength": 113
-      },
-      {
-        "type": "intron",
-        "realLength": 628
-      },
-      {
-        "type": "exon",
-        "realLength": 191
-      },
-      {
-        "type": "intron",
-        "realLength": 935
-      },
-      {
-        "type": "exon",
-        "realLength": 106
-      },
-      {
-        "type": "intron",
-        "realLength": 291
-      },
-      {
-        "type": "exon",
-        "realLength": 213
-      },
-      {
-        "type": "intron",
-        "realLength": 1037
-      },
-      {
-        "type": "exon",
-        "realLength": 271
+        "realLength": 125
       },
       {
         "type": "stop_codon",
@@ -4161,7 +3523,7 @@
       },
       {
         "type": "utr",
-        "realLength": 724
+        "realLength": 136
       }
     ]
   },
