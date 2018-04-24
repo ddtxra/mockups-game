@@ -125,6 +125,8 @@
         if(m2 !== undefined){
           //m2 = m2.replace(/(\r\n\t|\n|\r\t)/gm,"<br/>");
             m2 = m2.replace(/(\r\n\t|\n|\r\t)/gm,"\\n");
+            m2 = m2.replace(/(\t)/gm,"  ");
+
         }
         var pre = document.getElementById(lang + '-content');
         var textContent = document.createTextNode(m1 + " = " + m2 + '\n');
