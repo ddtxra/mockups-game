@@ -1,0 +1,425 @@
+[
+	{
+		"author": "Yoshiura, K.-I. et al.",
+		"title": "A SNP in the ABCC11 gene is the determinant of human earwax type.",
+		"journal": "Nat. Genet.",
+		"link": "https://www.nature.com/articles/ng1733",
+		"year": 2006,
+		"gene": "abcc11",
+		"type": "article"
+	},
+	{
+		"author": "Rodriguez, S. et al.",
+		"title": "Dependence of deodorant usage on ABCC11 genotype: scope for personalized genetics in personal hygiene.",
+		"journal": "J. Invest. Dermatol.",
+		"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3674910/",
+		"year": 2013,
+		"gene": "abcc11",
+		"type": "article"
+	},
+	{
+		"author": null,
+		"title": null,
+		"journal": null,
+		"link": "https://en.wikipedia.org/wiki/ABO_(gene)",
+		"year": null,
+		"gene": "abo",
+		"type": "wikipedia"
+	},
+	{
+		"author": "Reid, M. E. et al.",
+		"title": "DNA-based methods in the immunohematology reference laboratory.",
+		"journal": "Transfus. Apher. Sci.",
+		"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3058268/",
+		"year": 2011,
+		"gene": "abo",
+		"type": "article"
+	},
+	{
+		"author": "Yang, N. et al.",
+		"title": "ACTN3 genotype is associated with human elite athletic performance.",
+		"journal": "Am. J. Hum. Genet.",
+		"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1180686/",
+		"year": 2003,
+		"gene": "actn3",
+		"type": "article"
+	},
+	{
+		"author": "MacArthur, D.",
+		"title": "The gene for Jamaican sprinting success? No, not really.",
+		"journal": null,
+		"link": "https://www.wired.com/2008/10/the-gene-for-jamaican-sprinting-success-no-not-really/",
+		"year": 2008,
+		"gene": "actn3",
+		"type": "blog"
+	},
+	{
+		"author": "Morgan, C. J. A. et al.",
+		"title": "AKT1 genotype moderates the acute psychotomimetic effects of naturalistically smoked cannabis in young cannabis smokers.",
+		"journal": "Transl. Psychiatry",
+		"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4872423/",
+		"year": 2016,
+		"gene": "akt1",
+		"type": "article"
+	},
+	{
+		"author": "Yoshida, A. et al.",
+		"title": "Molecular abnormality of an inactive aldehyde dehydrogenase variant commonly found in Orientals.",
+		"journal": "Proc. Natl. Acad. Sci. U.S.A.",
+		"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC344651/",
+		"year": 1984,
+		"gene": "aldh2",
+		"type": "article"
+	},
+	{
+		"author": null,
+		"title": null,
+		"journal": null,
+		"link": "https://en.wikipedia.org/wiki/Apolipoprotein_E",
+		"year": null,
+		"gene": "apoe",
+		"type": "wikipedia"
+	},
+	{
+		"author": "Ellis, J. A. et al.",
+		"title": "Polymorphism of the androgen receptor gene is associated with male pattern baldness.",
+		"journal": "J. Invest. Dermatol.",
+		"link": "https://www.sciencedirect.com/science/article/pii/S0022202X15411753?via%3Dihub",
+		"year": 2001,
+		"gene": "ar",
+		"type": "article"
+	},
+	{
+		"author": "Hillmer, A. M. et al.",
+		"title": "Genetic variation in the human androgen receptor gene is the major determinant of common early-onset androgenetic alopecia.",
+		"journal": "Am. J. Hum. Genet.",
+		"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1226186/",
+		"year": 2005,
+		"gene": "ar",
+		"type": "article"
+	},
+	{
+		"author": "Feliciano, P.",
+		"title": "Melanoma sequencing identifies new druggable targets",
+		"journal": null,
+		"link": "http://blogs.nature.com/freeassociation/2011/08/melanoma_sequencing_identifies_1.html",
+		"year": 2011,
+		"gene": "braf",
+		"type": "blog"
+	},
+	{
+		"author": "Davies, H. et al.",
+		"title": "Mutations of the BRAF gene in human cancer.",
+		"journal": "Nature",
+		"link": "https://www.nature.com/articles/nature00766",
+		"year": 2002,
+		"gene": "braf",
+		"type": "article"
+	},
+	{
+		"author": null,
+		"title": null,
+		"journal": null,
+		"link": "https://en.wikipedia.org/wiki/BRCA1#Mutations_and_cancer_risk",
+		"year": null,
+		"gene": null,
+		"type": "wikipedia"
+	},
+	{
+		"author": "Kuchenbaecker, K. B. et al.",
+		"title": "Risks of Breast, Ovarian, and Contralateral Breast Cancer for BRCA1 and BRCA2 Mutation Carriers.",
+		"journal": "JAMA",
+		"link": "https://jamanetwork.com/journals/jama/fullarticle/2632503",
+		"year": 2017,
+		"gene": "brca1",
+		"type": "article"
+	},
+	{
+		"author": "Thorn, C. F. et al.",
+		"title": "PharmGKB summary:  very important pharmacogene information for CYP1A2.",
+		"journal": "Pharmacogenet. Genomics",
+		"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3346273/",
+		"year": 2012,
+		"gene": "cyp1a2",
+		"type": "article"
+	},
+	{
+		"author": "Fujimoto, A. et al.",
+		"title": "A scan for genetic determinants of human hair morphology: EDAR is associated with Asian hair thickness.",
+		"journal": "Hum. Mol. Genet.",
+		"link": "https://academic.oup.com/hmg/article/17/6/835/601141",
+		"year": 2008,
+		"gene": "edar",
+		"type": "article"
+	},
+	{
+		"author": "Tan, J. et al.",
+		"title": "The adaptive variant EDARV370A is associated with straight hair in East Asians.",
+		"journal": "Hum. Genet.",
+		"link": "https://link.springer.com/article/10.1007%2Fs00439-013-1324-1",
+		"year": 2013,
+		"gene": "edar",
+		"type": "article"
+	},
+	{
+		"author": "la Chapelle, de, A. et al.",
+		"title": "Truncated erythropoietin receptor causes dominantly inherited benign human erythrocytosis.",
+		"journal": "Proc. Natl. Acad. Sci. U.S.A.",
+		"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC46538/",
+		"year": 1993,
+		"gene": "epor",
+		"type": "article"
+	},
+	{
+		"author": null,
+		"title": null,
+		"journal": null,
+		"link": "https://www.omim.org/entry/134934#0003",
+		"year": null,
+		"gene": "fgfr3",
+		"type": "database"
+	},
+	{
+		"author": "Willcox, B. J. et al.",
+		"title": "FOXO3A genotype is strongly associated with human longevity.",
+		"journal": "PNAS",
+		"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2544566/",
+		"year": 2008,
+		"gene": "foxo3",
+		"type": "article"
+	},
+	{
+		"author": "Kelsell, D. P. et al.",
+		"title": "Connexin 26 mutations in hereditary non-syndromic sensorineural deafness.",
+		"journal": "Nature",
+		"link": "https://www.nature.com/articles/387080a0",
+		"year": 1997,
+		"gene": "gjb2",
+		"type": "article"
+	},
+	{
+		"author": "Gasparini, P. et al.",
+		"title": "High carrier frequency of the 35delG deafness mutation in European populations. Genetic Analysis Consortium of GJB2 35delG.",
+		"journal": "Eur. J. Hum. Genet.",
+		"link": "https://www.nature.com/articles/5200406",
+		"year": 2000,
+		"gene": "gjb2",
+		"type": "article"
+	},
+	{
+		"author": "Eiberg, H. et al",
+		"title": "Blue eye color in humans may be caused by a perfectly associated founder mutation in a regulatory element located within the HERC2 gene inhibiting OCA2 expression.",
+		"journal": "Hum. Genet.",
+		"link": "https://link.springer.com/article/10.1007%2Fs00439-007-0460-x",
+		"year": 2008,
+		"gene": "herc2",
+		"type": "article"
+	},
+	{
+		"author": "Ayodo, G. et al..",
+		"title": "Combining evidence of natural selection with association analysis increases power to detect malaria-resistance variants.",
+		"journal": "Am. J. Hum. Genet.",
+		"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1950820/",
+		"year": 2007,
+		"gene": "hbb",
+		"type": "article"
+	},
+	{
+		"author": "Kuokkanen, M. et al.",
+		"title": "Mutations in the translated region of the lactase gene (LCT) underlie congenital lactase deficiency.",
+		"journal": "Am. J. Hum. Genet.",
+		"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1380240/",
+		"year": 2006,
+		"gene": "lct",
+		"type": "article"
+	},
+	{
+		"author": "Savilahti, E. et al.",
+		"title": "Congenital lactase deficiency. A clinical study on 16 patients.",
+		"journal": "Arch. Dis. Child.",
+		"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1627962/",
+		"year": 1983,
+		"gene": "lct",
+		"type": "article"
+	},
+	{
+		"author": "Mengel-From, J. et al.",
+		"title": "Genetic determinants of hair and eye colours in the Scottish and Danish populations.",
+		"journal": "BMC Genet.",
+		"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2810292/",
+		"year": 2009,
+		"gene": "mc1r",
+		"type": "article"
+	},
+	{
+		"author": "Harding, R. M. et al.",
+		"title": "Evidence for variable selective pressures at MC1R.",
+		"journal": "Am. J. Hum. Genet.",
+		"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1288200/",
+		"year": 2000,
+		"gene": "mc1r",
+		"type": "article"
+	},
+	{
+		"author": "Enattah, N. S. et al.",
+		"title": "Identification of a variant associated with adult-type hypolactasia.",
+		"journal": "Nat. Genet.",
+		"link": "https://www.nature.com/articles/ng826",
+		"year": 2002,
+		"gene": "mcm6",
+		"type": "article"
+	},
+	{
+		"author": "Bersaglieri, T. et al.",
+		"title": "Genetic signatures of strong recent positive selection at the lactase gene.",
+		"journal": "Am. J. Hum. Genet.",
+		"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1182075/",
+		"year": 2004,
+		"gene": "mcm6",
+		"type": "article"
+	},
+	{
+		"author": "Branicki, W. et al.",
+		"title": "Association of polymorphic sites in the OCA2 gene with eye colour using the tree scanning method.",
+		"journal": "Ann. Hum. Genet. ",
+		"link": "https://onlinelibrary.wiley.com/doi/full/10.1111/j.1469-1809.2007.00407.x",
+		"year": 2008,
+		"gene": "oca2",
+		"type": "article"
+	},
+	{
+		"author": null,
+		"title": null,
+		"journal": null,
+		"link": "http://www.color-blindness.com/deuteranopia-red-green-color-blindness/",
+		"year": null,
+		"gene": "opn1mw",
+		"type": "webpage"
+	},
+	{
+		"author": "Neitz, J. et al.",
+		"title": "The genetics of normal and defective color vision.",
+		"journal": "Vision Res.",
+		"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3075382/",
+		"year": 2011,
+		"gene": "opn1mw",
+		"type": "article"
+	},
+	{
+		"author": "Roecklein, K. A. et al.",
+		"title": "A missense variant (P10L) of the melanopsin (OPN4) gene in seasonal affective disorder.",
+		"journal": "J. Affect. Disord.",
+		"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2647333/",
+		"year": 2009,
+		"gene": "opn4",
+		"type": "article"
+	},
+	{
+		"author": "McRae, J. F. et al.",
+		"title": "Genetic variation in the odorant receptor OR2J3 is associated with the ability to detect the grassy smelling odor, cis-3-hexen-1-ol.",
+		"journal": "Chem. Senses",
+		"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3408771/",
+		"year": 2012,
+		"gene": "or2j3",
+		"type": "article"
+	},
+	{
+		"author": "Ben-Yosef, T. et al.",
+		"title": "A mutation of PCDH15 among Ashkenazi Jews with the type 1 Usher syndrome.",
+		"journal": "N. Engl. J. Med.",
+		"link": "http://www.nejm.org/doi/full/10.1056/NEJMoa021502",
+		"year": 2003,
+		"gene": "pcdh15",
+		"type": "article"
+	},
+	{
+		"author": "Toh, K. L. et al.",
+		"title": "An hPer2 phosphorylation site mutation in familial advanced sleep phase syndrome.",
+		"journal": "Science",
+		"link": "http://science.sciencemag.org/content/291/5506/1040.long",
+		"year": 2001,
+		"gene": "per2",
+		"type": "article"
+	},
+	{
+		"author": "Jones, C. R. et al.",
+		"title": "Familial advanced sleep-phase syndrome: A short-period circadian rhythm variant in humans.",
+		"journal": "Nat. Med.",
+		"link": "https://www.nature.com/articles/nm0999_1062",
+		"year": 1999,
+		"gene": "per2",
+		"type": "article"
+	},
+	{
+		"author": "Khan, S. S. et al.",
+		"title": "A null mutation in SERPINE1 protects against biological aging in humans.",
+		"journal": "Sci. Adv.",
+		"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5687852/",
+		"year": 2017,
+		"gene": "serpine1",
+		"type": "article"
+	},
+	{
+		"author": "Hunt, K. A. et al.",
+		"title": "Novel celiac disease genetic determinants related to the immune response.",
+		"journal": "Nat. Genet.",
+		"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2673512/",
+		"year": 2008,
+		"gene": "sh2b3",
+		"type": "article"
+	},
+	{
+		"author": "Norton, H. L. et al. ",
+		"title": "Genetic evidence for the convergent evolution of light skin in Europeans and East Asians.",
+		"journal": "Mol. Biol. Evol.",
+		"link": "https://academic.oup.com/mbe/article/24/3/710/1240790",
+		"year": 2007,
+		"gene": "slc24a5",
+		"type": "article"
+	},
+	{
+		"author": "Branicki, W. et al.",
+		"title": "Association of the SLC45A2 gene with physiological human hair colour variation.",
+		"journal": "J. Hum. Genet.",
+		"link": "https://www.nature.com/articles/jhg2008124",
+		"year": 2008,
+		"gene": "slc45a2",
+		"type": "article"
+	},
+	{
+		"author": "Nousbeck, J. et al.",
+		"title": "A mutation in a skin-specific isoform of SMARCAD1 causes autosomal-dominant adermatoglyphia.",
+		"journal": "Am. J. Hum. Genet.",
+		"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3155166/",
+		"year": 2011,
+		"gene": "smarcad1",
+		"type": "article"
+	},
+	{
+		"author": "Kim, U.-K. et al.",
+		"title": "Positional cloning of the human quantitative trait locus underlying taste sensitivity to phenylthiocarbamide.",
+		"journal": "Science",
+		"link": "http://science.sciencemag.org/content/299/5610/1221.full",
+		"year": 2003,
+		"gene": "tas2r38",
+		"type": "article"
+	},
+	{
+		"author": "Grant, S. F. A. et al.",
+		"title": "Variant of transcription factor 7-like 2 (TCF7L2) gene confers risk of type 2 diabetes.",
+		"journal": "Nat. Genet.",
+		"link": "https://www.nature.com/articles/ng1732",
+		"year": 2006,
+		"gene": "tcf7l2",
+		"type": "article"
+	},
+	{
+		"author": "Medland, S. E. et al.",
+		"title": "Common variants in the trichohyalin gene are associated with straight hair in Europeans.",
+		"journal": "Am. J. Hum. Genet.",
+		"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2775823/",
+		"year": 2009,
+		"gene": "tchh",
+		"type": "article"
+	}
+]
