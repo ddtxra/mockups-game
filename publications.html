@@ -13,11 +13,7 @@
 
 <body>
     <div class="container">
-
     <div id="pubText"></div>
-    <pre><code><div style="font-size: 6px" id="pubJson"></div></code></pre>
-    </div>
-
 </body>
 
 
@@ -27,29 +23,16 @@
 
     function loadPublications() {
         $("#genes").empty();
-        $.getJSON('data/publicationsv2.json', function (publications) {
+        $.getJSON('data/publications.json', function (publications) {
 
+            var result = {}
             Object.keys(publications).forEach(function (key){
-                $("#pubText").append("<b>" + key.toUpperCase() + "</b>");
                 pubs = publications[key]
+                $("#pubText").append("<b>" + key.toUpperCase() + " </b> (" + pubs.length + " references) ");
                 pubs.forEach(function (p){
-
-                    var text = ""
-                    if(p.type == "article")
-                        var text = p.author + ", " + p.title + ", " + p.journal + ", " + p.year;
-                    else if(p.type == "blog")
-                        var text = p.author + ", " + p.title + ", " + p.journal + ", " + p.year;
-                    else if(p.type == "wikipedia")
-                        var text =  p.title + ", " + p.journal + ", " + p.year;
-                    else alert(p.type + " not found")
-
-                    $("#pubText").append("<p><a target='_blank' href='" + p.link + "'>" + text + "</a></p>");
-    
+                    $("#pubText").append("<p><a target='_blank' href='" + p.link + "'>" + p.text + "</a></p>");
                 })  
             })
-
-            jsonpub = JSON.stringify(publications, null, 2)
-            $("#pubJson").text(jsonpub)
 
         });
     }
