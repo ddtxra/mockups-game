@@ -21,11 +21,10 @@
 	],
 	"abo": [
 	  {
-		"author": null,
-		"title": null,
+		"title": "ABO",
 		"journal": "Wikipedia",
 		"link": "https://en.wikipedia.org/wiki/ABO_(gene)",
-		"year": null,
+		"year": "as of May 2018",
 		"gene": "abo",
 		"type": "wikipedia"
 	  },
@@ -52,7 +51,7 @@
 	  {
 		"author": "MacArthur, D.",
 		"title": "The gene for Jamaican sprinting success? No, not really.",
-		"journal": "WIRED (Blog)",
+		"journal": "Wired",
 		"link": "https://www.wired.com/2008/10/the-gene-for-jamaican-sprinting-success-no-not-really/",
 		"year": 2008,
 		"gene": "actn3",
@@ -83,11 +82,10 @@
 	],
 	"apoe": [
 	  {
-		"author": null,
 		"title": "Apolipoprotein E",
-		"journal": null,
+		"journal": "Wikipedia",
 		"link": "https://en.wikipedia.org/wiki/Apolipoprotein_E",
-		"year": null,
+		"year": "as of May 2018",
 		"gene": "apoe",
 		"type": "wikipedia"
 	  }
