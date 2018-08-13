@@ -24,7 +24,7 @@
 		"title": "ABO",
 		"journal": "Wikipedia",
 		"link": "https://en.wikipedia.org/wiki/ABO_(gene)",
-		"year": "as of May 2018",
+		"year": "as of April 2018",
 		"gene": "abo",
 		"type": "wikipedia"
 	  },
@@ -85,7 +85,7 @@
 		"title": "Apolipoprotein E",
 		"journal": "Wikipedia",
 		"link": "https://en.wikipedia.org/wiki/Apolipoprotein_E",
-		"year": "as of May 2018",
+		"year": "as of April 2018",
 		"gene": "apoe",
 		"type": "wikipedia"
 	  }
@@ -144,7 +144,7 @@
 		"title": "BRCA1",
 		"link": "https://en.wikipedia.org/wiki/BRCA1#Mutations_and_cancer_risk",
 		"journal": "Wikipedia",
-		"year": "as of May 2018",
+		"year": "as of April 2018",
 		"gene": "brca1",
 		"type": "wikipedia"
 	  }
