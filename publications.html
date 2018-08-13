@@ -12,8 +12,9 @@
 </style>
 
 <body>
+    <div id="pubText"></div>
         <pre><code>
-        <div id="publications"></div>
+        <div style="font-size: 6px" id="pubJson"></div>
         </code></pre>
 
 </body>
@@ -23,22 +24,22 @@
 
     loadPublications()
 
-    var groupBy = function(xs, key) {
-    return xs.reduce(function(rv, x) {
-        (rv[x[key]] = rv[x[key]] || []).push(x);
-        return rv;
-    }, {});
-    };
-
     function loadPublications() {
         $("#genes").empty();
-        $.getJSON('data/publications.json', function (publications) {
+        $.getJSON('data/publicationsv2.json', function (publications) {
 
-        pubs = groupBy(publications, 'gene');
+        $
+        jsonpub = JSON.stringify(publications, null, 2)
 
-        jsonpub = JSON.stringify(pubs, null, 2)
+        Object.keys(publications).forEach(function (key){
+            $("#pubText").append("<b>" + key + "</b>");
+            pubs = publications[key]
+            pubs.forEach(function (p){
+                $("#pubText").append("<p><a href='" + p.link + "'>" + p.author + "- " + p.title + " - " + p.journal + " - " + p.year + " " + p.article + "</a></p>");
+            })  
+        })
 
-        $("#publications").text(jsonpub)
+        $("#pubJson").text(jsonpub)
 
         });
     }
