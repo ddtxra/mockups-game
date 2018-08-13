@@ -12,10 +12,11 @@
 </style>
 
 <body>
+    <div class="container">
+
     <div id="pubText"></div>
-        <pre><code>
-        <div style="font-size: 6px" id="pubJson"></div>
-        </code></pre>
+    <pre><code><div style="font-size: 6px" id="pubJson"></div></code></pre>
+    </div>
 
 </body>
 
@@ -32,10 +33,11 @@
         jsonpub = JSON.stringify(publications, null, 2)
 
         Object.keys(publications).forEach(function (key){
-            $("#pubText").append("<b>" + key + "</b>");
+            $("#pubText").append("<b>" + key.toUpperCase() + "</b>");
             pubs = publications[key]
             pubs.forEach(function (p){
-                $("#pubText").append("<p><a href='" + p.link + "'>" + p.author + "- " + p.title + " - " + p.journal + " - " + p.year + " " + p.article + "</a></p>");
+                var text = p.author + ", " + p.title + ", " + p.journal + ", " + p.year + ", " + p.type;
+                $("#pubText").append("<p><a href='" + p.link + "'>" + text + "</a></p>");
             })  
         })
 
