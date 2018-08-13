@@ -29,19 +29,17 @@
         $("#genes").empty();
         $.getJSON('data/publicationsv2.json', function (publications) {
 
-        $
-        jsonpub = JSON.stringify(publications, null, 2)
+            Object.keys(publications).forEach(function (key){
+                $("#pubText").append("<b>" + key.toUpperCase() + "</b>");
+                pubs = publications[key]
+                pubs.forEach(function (p){
+                    var text = p.author + ", " + p.title + ", " + p.journal + ", " + p.year + ", " + p.type;
+                    $("#pubText").append("<p><a target='_blank' href='" + p.link + "'>" + text + "</a></p>");
+                })  
+            })
 
-        Object.keys(publications).forEach(function (key){
-            $("#pubText").append("<b>" + key.toUpperCase() + "</b>");
-            pubs = publications[key]
-            pubs.forEach(function (p){
-                var text = p.author + ", " + p.title + ", " + p.journal + ", " + p.year + ", " + p.type;
-                $("#pubText").append("<p><a href='" + p.link + "'>" + text + "</a></p>");
-            })  
-        })
-
-        $("#pubJson").text(jsonpub)
+            jsonpub = JSON.stringify(publications, null, 2)
+            $("#pubJson").text(jsonpub)
 
         });
     }
