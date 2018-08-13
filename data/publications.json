@@ -60,7 +60,7 @@
   "BRAF": [
     {
       "link": "http://blogs.nature.com/freeassociation/2011/08/melanoma_sequencing_identifies_1.html",
-      "text": "Feliciano, P., Melanoma sequencing identifies new druggable targets, null, 2011"
+      "text": "Feliciano, P., Melanoma sequencing identifies new druggable targets, Nature blog, 2011"
     },
     {
       "link": "https://www.nature.com/articles/nature00766",
@@ -80,7 +80,7 @@
   "CYP1A2": [
     {
       "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3346273/",
-      "text": "Thorn, C. F. et al., PharmGKB summary:  very important pharmacogene information for CYP1A2., Pharmacogenet. Genomics, 2012"
+      "text": "Thorn, C. F. et al., PharmGKB summary: very important pharmacogene information for CYP1A2., Pharmacogenet. Genomics, 2012"
     }
   ],
   "EDAR": [
@@ -102,7 +102,7 @@
   "FGFR3": [
     {
       "link": "https://www.omim.org/entry/134934#0003",
-      "text": "!!!!!!!!!!!!!!!!!!!!!! TODO !!!!!!!!!!!!!!!!!!!!!!!!!!!"
+      "text": "Online Mendelian Inheritance in Man, OMIM®. Johns Hopkins University, Baltimore, MD. MIM Number: 134934#0003, 10/20/2017. World Wide Web URL: https://omim.org/"
     }
   ],
   "FOXO3": [
@@ -124,13 +124,13 @@
   "HERC2": [
     {
       "link": "https://link.springer.com/article/10.1007%2Fs00439-007-0460-x",
-      "text": "Eiberg, H. et al, Blue eye color in humans may be caused by a perfectly associated founder mutation in a regulatory element located within the HERC2 gene inhibiting OCA2 expression., Hum. Genet., 2008"
+      "text": "Eiberg, H. et al., Blue eye color in humans may be caused by a perfectly associated founder mutation in a regulatory element located within the HERC2 gene inhibiting OCA2 expression., Hum. Genet., 2008"
     }
   ],
   "HBB": [
     {
       "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1950820/",
-      "text": "Ayodo, G. et al.., Combining evidence of natural selection with association analysis increases power to detect malaria-resistance variants., Am. J. Hum. Genet., 2007"
+      "text": "Ayodo, G. et al., Combining evidence of natural selection with association analysis increases power to detect malaria-resistance variants., Am. J. Hum. Genet., 2007"
     }
   ],
   "LCT": [
@@ -172,7 +172,7 @@
   "OPN1MW": [
     {
       "link": "http://www.color-blindness.com/deuteranopia-red-green-color-blindness/",
-      "text": "!!!!!!!!!!!!!!!!!!!!!! TODO !!!!!!!!!!!!!!!!!!!!!!!!!!!"
+      "text": "null, Deuteranopia – Red-Green Color Blindness., www.color-blindness.com, as of April 2018"
     },
     {
       "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3075382/",
@@ -210,7 +210,7 @@
   "SERPINE1": [
     {
       "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5687852/",
-      "text": "Khan, S. S. et al., A null mutation in SERPINE1 protects against biological aging in humans., Sci. Adv., 2017"
+      "text": "Khan, S. S. et al., A mutation in SERPINE1 protects against biological aging in humans., Sci. Adv., 2017"
     }
   ],
   "SH2B3": [
@@ -222,7 +222,7 @@
   "SLC24A5": [
     {
       "link": "https://academic.oup.com/mbe/article/24/3/710/1240790",
-      "text": "Norton, H. L. et al. , Genetic evidence for the convergent evolution of light skin in Europeans and East Asians., Mol. Biol. Evol., 2007"
+      "text": "Norton, H. L. et al., Genetic evidence for the convergent evolution of light skin in Europeans and East Asians., Mol. Biol. Evol., 2007"
     }
   ],
   "SLC45A2": [
