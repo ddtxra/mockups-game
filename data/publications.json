@@ -3,11 +3,11 @@
     {
       "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3674910/",
       "text": "Rodriguez S et al., Dependence of deodorant usage on ABCC11 genotype: scope for personalized genetics in personal hygiene, J Invest Dermatol, 2013"
-    }    
+    },    
     {
       "link": "https://www.nature.com/articles/ng1733",
       "text": "Yoshiura KI et al., A SNP in the ABCC11 gene is the determinant of human earwax type, Nat Genet, 2006"
-    },
+    }
   ],
   "ABO": [
     {
@@ -23,11 +23,11 @@
     {
       "link": "https://www.wired.com/2008/10/the-gene-for-jamaican-sprinting-success-no-not-really/",
       "text": "MacArthur D, The gene for Jamaican sprinting success? No, not really, Wired, 2008"
-    }    
+    },    
     {
       "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1180686/",
       "text": "Yang N et al., ACTN3 genotype is associated with human elite athletic performance, Am J Hum Genet, 2003"
-    },
+    }
   ],
   "AKT1": [
     {
@@ -61,21 +61,21 @@
     {
       "link": "https://www.nature.com/articles/nature00766",
       "text": "Davies H et al., Mutations of the BRAF gene in human cancer, Nature, 2002"
-    }        
+    },        
     {
       "link": "http://blogs.nature.com/freeassociation/2011/08/melanoma_sequencing_identifies_1.html",
       "text": "Feliciano P, Melanoma sequencing identifies new druggable targets, Nature blog, 2011"
-    },
+    }
   ],
   "BRCA1": [
     {
       "link": "https://en.wikipedia.org/wiki/BRCA1#Mutations_and_cancer_risk",
       "text": "BRCA1, Wikipedia, as of April 2018"
-    }    
+    },    
     {
       "link": "https://jamanetwork.com/journals/jama/fullarticle/2632503",
       "text": "Kuchenbaecker KB et al., Risks of Breast, Ovarian, and Contralateral Breast Cancer for BRCA1 and BRCA2 Mutation Carriers, JAMA, 2017"
-    },
+    }
   ],
   "CYP1A2": [
     {
@@ -115,11 +115,11 @@
     {
       "link": "https://www.nature.com/articles/5200406",
       "text": "Gasparini P et al., High carrier frequency of the 35delG deafness mutation in European populations. Genetic Analysis Consortium of GJB2 35delG, Eur J Hum Genet, 2000"
-    }    
+    },    
     {
       "link": "https://www.nature.com/articles/387080a0",
       "text": "Kelsell DP et al., Connexin 26 mutations in hereditary non-syndromic sensorineural deafness, Nature, 1997"
-    },
+    }
   ],
   "HBB": [
     {
@@ -147,21 +147,21 @@
     {
       "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1288200/",
       "text": "Harding RM et al., Evidence for variable selective pressures at MC1R, Am J Hum Genet, 2000"
-    }    
+    },    
     {
       "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2810292/",
       "text": "Mengel-From J et al., Genetic determinants of hair and eye colours in the Scottish and Danish populations, BMC Genet, 2009"
-    },
+    }
   ],
   "MCM6": [
     {
       "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1182075/",
       "text": "Bersaglieri T et al., Genetic signatures of strong recent positive selection at the lactase gene, Am J Hum Genet, 2004"
-    }    
+    },    
     {
       "link": "https://www.nature.com/articles/ng826",
       "text": "Enattah NS et al., Identification of a variant associated with adult-type hypolactasia, Nat Genet, 2002"
-    },
+    }
   ],
   "OCA2": [
     {
@@ -201,11 +201,11 @@
     {
       "link": "https://www.nature.com/articles/nm0999_1062",
       "text": "Jones CR et al., Familial advanced sleep-phase syndrome: A short-period circadian rhythm variant in humans, Nat Med, 1999"
-    }    
+    },    
     {
       "link": "http://science.sciencemag.org/content/291/5506/1040.long",
       "text": "Toh KL et al., An hPer2 phosphorylation site mutation in familial advanced sleep phase syndrome, Science, 2001"
-    },
+    }
   ],
   "SERPINE1": [
     {
